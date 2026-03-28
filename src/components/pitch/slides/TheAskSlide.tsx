@@ -1,61 +1,130 @@
 import SlideLayout from "../SlideLayout";
-import { Target, TrendingUp, Users, Zap } from "lucide-react";
+import { Rocket, Globe, Megaphone, BarChart3, Users, TrendingUp, Mail, CheckCircle } from "lucide-react";
 
-const milestones = [
-  { icon: Zap, title: "Fully Operational Platform", desc: "Complete all core features, data systems, and content workflows" },
-  { icon: Users, title: "10K+ Newsletter Subscribers", desc: "Build the most engaged audience in live commerce" },
-  { icon: TrendingUp, title: "First Revenue", desc: "Activate advertising, sponsored content, and premium profiles" },
-  { icon: Target, title: "Market Position", desc: "Establish Flipr.Media as the definitive source for live commerce news and data" },
+const unlocks = [
+  { icon: Globe, label: "Launch-ready fully operational platform" },
+  { icon: Megaphone, label: "Monetization systems in place" },
+  { icon: BarChart3, label: "Stronger content cadence & editorial" },
+  { icon: Users, label: "Advertiser and sponsor sales motion" },
+  { icon: TrendingUp, label: "Measurable audience growth" },
+  { icon: Rocket, label: "Clearer path to category leadership" },
+];
+
+const idealInvestors = [
+  "Angel Investors",
+  "Strategic Media",
+  "Commerce-Tech",
+  "Creator Economy",
+  "Marketplaces",
+  "Ad-Tech",
+  "Future of Commerce",
 ];
 
 const TheAskSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/5 to-accent/5" />
-    <div className="absolute top-0 right-0 w-[800px] h-[800px] rounded-full bg-primary/3 blur-[150px]" />
+    <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/3 to-accent/5" />
+    <div className="absolute top-0 right-0 w-[800px] h-[800px] rounded-full bg-primary/3 blur-[180px]" />
+    <div className="absolute bottom-0 left-[200px] w-[600px] h-[400px] rounded-full bg-accent/3 blur-[160px]" />
 
-    <div className="relative z-10 flex flex-col items-center justify-center h-full px-20">
-      <div className="text-primary font-mono text-sm tracking-widest mb-6 opacity-0 animate-fade-up">17 — THE ASK</div>
-      
-      <h2 className="text-[56px] font-bold leading-tight text-center mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        We're Raising{" "}
-        <span className="text-primary neon-glow">$500,000</span>
+    <div className="relative z-10 flex flex-col h-full px-20 py-14">
+      {/* Header */}
+      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">17 — THE ASK</div>
+      <h2 className="text-[40px] font-bold leading-tight mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Raising <span className="text-primary neon-glow">$500,000</span> to build the category leader in live selling media.
       </h2>
-      
-      <p className="text-2xl text-muted-foreground text-center max-w-[800px] mb-12 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-        Pre-seed / angel round to take Flipr.Media from proof-of-concept to the category-defining media platform for live commerce.
+      <p className="text-lg text-muted-foreground mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        Complete the platform, accelerate audience growth, establish monetization, and build the operational backbone.
       </p>
 
-      {/* Terms */}
-      <div className="glass-card p-8 mb-10 max-w-[700px] w-full opacity-0 animate-scale-in" style={{ animationDelay: '0.3s' }}>
-        <div className="grid grid-cols-3 gap-8 text-center">
-          <div>
-            <div className="text-3xl font-black text-primary">$500K</div>
-            <div className="text-sm text-muted-foreground mt-1">Raise Amount</div>
+      <div className="flex flex-1 gap-7 min-h-0">
+        {/* Left */}
+        <div className="flex-1 flex flex-col gap-4">
+          {/* Terms card */}
+          <div className="glass-card p-6 border-primary/20 opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
+            <div className="grid grid-cols-3 gap-6 text-center">
+              <div>
+                <div className="text-4xl font-black text-primary">$500K</div>
+                <div className="text-[11px] text-muted-foreground mt-1">Raise Amount</div>
+              </div>
+              <div>
+                <div className="text-4xl font-black text-foreground">SAFE</div>
+                <div className="text-[11px] text-muted-foreground mt-1">Instrument</div>
+              </div>
+              <div>
+                <div className="text-4xl font-black text-accent">12–18mo</div>
+                <div className="text-[11px] text-muted-foreground mt-1">Runway</div>
+              </div>
+            </div>
           </div>
-          <div>
-            <div className="text-3xl font-black text-foreground">SAFE</div>
-            <div className="text-sm text-muted-foreground mt-1">Instrument</div>
+
+          {/* What this round unlocks */}
+          <div className="glass-card p-5 flex-1 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
+            <div className="flex items-center gap-2 mb-4">
+              <CheckCircle className="w-4 h-4 text-primary" />
+              <span className="text-sm font-bold text-foreground">What This Round Unlocks</span>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {unlocks.map((u, i) => (
+                <div key={u.label} className="flex items-center gap-2.5 opacity-0 animate-fade-up" style={{ animationDelay: `${0.4 + i * 0.05}s` }}>
+                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <u.icon className="w-4 h-4 text-primary" />
+                  </div>
+                  <span className="text-[11px] text-foreground/80 font-medium leading-tight">{u.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
-          <div>
-            <div className="text-3xl font-black text-accent">12-18mo</div>
-            <div className="text-sm text-muted-foreground mt-1">Runway</div>
+
+          {/* Ideal investors */}
+          <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
+            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider block mb-2">Ideal Investors</span>
+            <div className="flex flex-wrap gap-2">
+              {idealInvestors.map(inv => (
+                <div key={inv} className="glass-card px-3 py-1.5 text-[10px] font-semibold text-foreground/80">{inv}</div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Milestones */}
-      <div className="grid grid-cols-4 gap-4 max-w-[1200px] w-full">
-        {milestones.map((m, i) => (
-          <div
-            key={m.title}
-            className="glass-card p-6 text-center opacity-0 animate-fade-up"
-            style={{ animationDelay: `${0.4 + i * 0.1}s` }}
-          >
-            <m.icon className="w-8 h-8 text-primary mx-auto mb-3" />
-            <h4 className="text-sm font-bold text-foreground mb-1">{m.title}</h4>
-            <p className="text-xs text-muted-foreground">{m.desc}</p>
+        {/* Right: CTA + Contact */}
+        <div className="w-[480px] flex flex-col gap-4">
+          {/* Big CTA */}
+          <div className="glass-card p-8 border-primary/30 flex-1 flex flex-col items-center justify-center text-center opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
+            <div className="w-16 h-16 rounded-full bg-primary/15 border-2 border-primary/40 flex items-center justify-center mb-4">
+              <Rocket className="w-8 h-8 text-primary" />
+            </div>
+            <h3 className="text-2xl font-bold text-foreground mb-2">Join the Round</h3>
+            <p className="text-[12px] text-muted-foreground leading-relaxed max-w-[360px] mb-6">
+              Be part of building the media and intelligence layer for a $170B+ market.
+              Early investors get access to category ownership in live commerce.
+            </p>
+            <div className="w-full h-px bg-border/30 mb-5" />
+            <div className="text-[11px] text-muted-foreground mb-1">Invest in the future of live commerce media</div>
+            <div className="text-lg font-black text-primary">Flipr.Media</div>
           </div>
-        ))}
+
+          {/* Contact placeholder */}
+          <div className="glass-card p-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.65s' }}>
+            <div className="flex items-center gap-2 mb-3">
+              <Mail className="w-4 h-4 text-primary" />
+              <span className="text-xs font-bold text-foreground">Founder Contact</span>
+            </div>
+            <div className="space-y-1.5">
+              <div className="flex items-center gap-3">
+                <span className="text-[10px] text-muted-foreground w-14">Name</span>
+                <span className="text-[11px] text-foreground font-medium">Brian Weiss</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-[10px] text-muted-foreground w-14">Email</span>
+                <span className="text-[11px] text-primary font-medium">brian@flipr.media</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-[10px] text-muted-foreground w-14">Web</span>
+                <span className="text-[11px] text-primary font-medium">flipr.media</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </SlideLayout>
