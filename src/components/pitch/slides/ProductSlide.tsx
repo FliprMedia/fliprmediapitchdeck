@@ -1,82 +1,82 @@
 import SlideLayout from "../SlideLayout";
-import { Newspaper, Users, Radio, BarChart3, Mail, Star, Monitor, Smartphone, TrendingUp, Megaphone, UserCheck, Database, Mic, Eye, Layers, Zap } from "lucide-react";
+import { Newspaper, Users, Radio, BarChart3, Mail, Star, Monitor, Smartphone, Megaphone, Mic, Layers, Zap, Code } from "lucide-react";
 
 const currentModules = [
-  { icon: Newspaper, title: "Industry News", desc: "Breaking coverage of live selling platforms, sellers, and trends", live: true },
-  { icon: UserCheck, title: "Seller Spotlights", desc: "In-depth profiles and stories of top creators across platforms", live: true },
-  { icon: Radio, title: "Live Show Discovery", desc: "Find and follow live shows across Whatnot, TikTok, eBay, and more", live: true },
-  { icon: Eye, title: "Platform Watch", desc: "Deep-dive reporting on every major live commerce platform", live: true },
-  { icon: Mic, title: "Interviews", desc: "Conversations with sellers, founders, and industry leaders", live: true },
-  { icon: Mail, title: "Newsletter", desc: "Daily/weekly briefing for sellers, platforms, and investors", live: true },
+  { icon: Newspaper, title: "Industry News", desc: "Breaking coverage across all platforms", live: true },
+  { icon: Users, title: "Seller Spotlights", desc: "In-depth creator profiles & stories", live: true },
+  { icon: Radio, title: "Live Show Discovery", desc: "Find shows across Whatnot, TikTok & more", live: true },
+  { icon: Star, title: "Platform Watch", desc: "Deep-dive platform reporting", live: true },
+  { icon: Mic, title: "Interviews", desc: "Conversations with industry leaders", live: true },
+  { icon: Mail, title: "Newsletter", desc: "Daily/weekly industry briefing", live: true },
 ];
 
 const nextModules = [
-  { icon: BarChart3, title: "Rankings / Activity Index", desc: "Industry-first indexes, charts, and seller performance data" },
-  { icon: Megaphone, title: "Advertiser / Sponsor Placements", desc: "Native ad units and sponsored content for brands targeting sellers" },
-  { icon: Star, title: "Premium Seller Profiles", desc: "Verified, enhanced profiles with analytics and credibility signals" },
-  { icon: Database, title: "Data & Insights Products", desc: "Market intelligence, trend reports, and API access for enterprises" },
+  { icon: BarChart3, title: "Rankings & Activity Index", desc: "Seller performance data & benchmarks" },
+  { icon: Megaphone, title: "Advertiser Placements", desc: "Native ads & sponsored content modules" },
+  { icon: Star, title: "Premium Seller Profiles", desc: "Verified profiles with analytics" },
+  { icon: Layers, title: "Data & Insights", desc: "Market intelligence & trend reports" },
 ];
 
 const ProductSlide = () => (
   <SlideLayout>
-    {/* Background */}
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
-    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/3 rounded-full blur-[200px]" />
-    <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-500/3 rounded-full blur-[180px]" />
+    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
+    <div className="absolute inset-0 noise-overlay" />
+    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/[0.03] rounded-full blur-[200px]" />
+    <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-accent/[0.025] rounded-full blur-[180px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-14">
-      {/* Header */}
-      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">05 — PRODUCT OVERVIEW</div>
-      <h2 className="text-[44px] font-bold leading-tight mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Flipr.Media is building the <span className="text-primary">media layer</span> for live selling.
+    <div className="relative z-10 flex flex-col h-full px-24 py-14">
+      <div className="slide-label mb-3 opacity-0 animate-fade-up">05 — PRODUCT OVERVIEW</div>
+      <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Flipr.Media is building the <span className="font-display italic text-[50px] text-primary">media layer</span> for live selling.
       </h2>
-      <p className="text-lg text-muted-foreground mb-8 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+      <p className="slide-subhead mb-7 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         A modular media and intelligence ecosystem — from news and discovery to data, rankings, and advertiser infrastructure.
       </p>
 
-      <div className="flex flex-1 gap-8 min-h-0">
+      <div className="flex flex-1 gap-7 min-h-0">
         {/* Left: Device Mockups */}
         <div className="w-[520px] flex flex-col gap-4 opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
-          {/* Laptop mockup */}
+          {/* Laptop */}
           <div className="flex-1 relative">
-            <div className="absolute inset-0 rounded-xl border border-border/60 bg-card/40 backdrop-blur-sm overflow-hidden flex flex-col">
-              {/* Browser chrome */}
-              <div className="flex items-center gap-2 px-4 py-2.5 border-b border-border/50 bg-muted/30">
+            <div className="absolute inset-0 rounded-2xl overflow-hidden flex flex-col" style={{
+              background: 'linear-gradient(145deg, hsl(var(--card) / 0.7), hsl(var(--card) / 0.4))',
+              border: '1px solid hsl(var(--border) / 0.4)',
+              boxShadow: '0 20px 60px -12px hsl(0 0% 0% / 0.5), 0 0 30px -8px hsl(var(--primary) / 0.05)'
+            }}>
+              <div className="flex items-center gap-2 px-4 py-2.5 border-b border-border/30">
                 <div className="flex gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-destructive/50" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50" />
-                  <div className="w-2.5 h-2.5 rounded-full bg-primary/50" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-[hsl(0,70%,55%)]/50" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-[hsl(45,80%,55%)]/50" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-primary/40" />
                 </div>
                 <div className="flex-1 flex justify-center">
-                  <div className="bg-muted/40 rounded px-8 py-1 text-[10px] text-muted-foreground font-mono">flipr.media</div>
+                  <div className="bg-muted/30 rounded px-6 py-1 text-[9px] text-muted-foreground/40 font-mono-brand">flipr.media</div>
                 </div>
-                <Monitor className="w-3.5 h-3.5 text-muted-foreground/40" />
+                <Monitor className="w-3 h-3 text-muted-foreground/20" />
               </div>
-              {/* Fake site content */}
               <div className="flex-1 p-4 flex flex-col gap-3">
                 <div className="flex items-center gap-3">
-                  <div className="text-lg font-black"><span className="text-primary">Flipr</span><span className="text-foreground">.Media</span></div>
-                  <div className="flex gap-3 ml-auto text-[9px] text-muted-foreground font-medium">
-                    <span>News</span><span>Shows</span><span>Sellers</span><span>Rankings</span><span>Platforms</span>
+                  <div className="text-lg font-black"><span className="text-primary">Flipr</span><span className="text-foreground/60">.Media</span></div>
+                  <div className="flex gap-4 ml-auto text-[9px] text-muted-foreground/40 font-medium">
+                    <span>News</span><span>Shows</span><span>Sellers</span><span>Rankings</span>
                   </div>
                 </div>
-                <div className="h-px bg-primary/20" />
-                {/* Hero article */}
+                <div className="h-px bg-primary/15" />
                 <div className="flex gap-3 flex-1">
                   <div className="flex-1 flex flex-col gap-2">
-                    <div className="bg-muted/40 rounded-lg flex-1 flex items-center justify-center">
-                      <Newspaper className="w-8 h-8 text-primary/20" />
+                    <div className="bg-muted/20 rounded-lg flex-1 flex items-center justify-center border border-border/10">
+                      <Newspaper className="w-6 h-6 text-primary/15" />
                     </div>
-                    <div className="h-2.5 bg-foreground/15 rounded w-[90%]" />
-                    <div className="h-2 bg-muted-foreground/10 rounded w-[70%]" />
+                    <div className="h-2.5 bg-foreground/10 rounded w-[90%]" />
+                    <div className="h-2 bg-muted-foreground/6 rounded w-[65%]" />
                   </div>
-                  <div className="w-[45%] flex flex-col gap-2">
+                  <div className="w-[42%] flex flex-col gap-2">
                     {[1, 2, 3].map(i => (
                       <div key={i} className="flex gap-2 items-start">
-                        <div className="w-12 h-10 bg-muted/40 rounded shrink-0" />
+                        <div className="w-10 h-9 bg-muted/20 rounded shrink-0 border border-border/10" />
                         <div className="flex-1 flex flex-col gap-1 pt-0.5">
-                          <div className="h-2 bg-foreground/12 rounded w-full" />
-                          <div className="h-1.5 bg-muted-foreground/8 rounded w-3/4" />
+                          <div className="h-2 bg-foreground/8 rounded w-full" />
+                          <div className="h-1.5 bg-muted-foreground/5 rounded w-3/4" />
                         </div>
                       </div>
                     ))}
@@ -86,123 +86,116 @@ const ProductSlide = () => (
             </div>
           </div>
 
-          {/* Mobile + Newsletter mockups side by side */}
-          <div className="flex gap-3 h-[180px]">
-            {/* Mobile */}
-            <div className="w-[110px] rounded-xl border-2 border-border/60 bg-card/40 backdrop-blur-sm overflow-hidden flex flex-col">
-              <div className="h-3 border-b border-border/30 flex items-center justify-center">
-                <div className="w-8 h-1 bg-muted-foreground/20 rounded-full" />
+          {/* Bottom: Mobile + Newsletter + Ad module */}
+          <div className="flex gap-3 h-[170px]">
+            <div className="w-[100px] rounded-2xl overflow-hidden flex flex-col" style={{
+              background: 'hsl(var(--card) / 0.5)',
+              border: '2px solid hsl(var(--border) / 0.3)',
+              boxShadow: '0 12px 30px -6px hsl(0 0% 0% / 0.4)'
+            }}>
+              <div className="h-3 border-b border-border/20 flex items-center justify-center">
+                <div className="w-7 h-0.5 bg-muted-foreground/15 rounded-full" />
               </div>
-              <div className="flex-1 p-2 flex flex-col gap-1.5">
-                <div className="text-[7px] font-bold"><span className="text-primary">Flipr</span>.Media</div>
-                <div className="bg-muted/30 rounded h-10 flex items-center justify-center">
-                  <Radio className="w-3 h-3 text-primary/20" />
-                </div>
-                <div className="h-1.5 bg-foreground/10 rounded w-3/4" />
-                <div className="h-1 bg-muted-foreground/8 rounded w-full" />
-                <div className="h-1 bg-muted-foreground/8 rounded w-2/3" />
+              <div className="flex-1 p-2 flex flex-col gap-1">
+                <div className="text-[6px] font-black"><span className="text-primary">Flipr</span><span className="text-foreground/40">.M</span></div>
+                <div className="bg-muted/15 rounded h-9 border border-border/10" />
+                <div className="h-1.5 bg-foreground/6 rounded w-3/4" />
+                <div className="h-1 bg-muted-foreground/4 rounded w-full" />
               </div>
-              <Smartphone className="w-3 h-3 text-muted-foreground/20 mx-auto mb-1" />
+              <Smartphone className="w-2.5 h-2.5 text-muted-foreground/15 mx-auto mb-1" />
             </div>
 
-            {/* Newsletter mockup */}
-            <div className="flex-1 rounded-xl border border-border/60 bg-card/40 backdrop-blur-sm p-3 flex flex-col gap-2">
+            <div className="flex-1 glass-card p-3 flex flex-col gap-2">
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-primary/60" />
-                <span className="text-[10px] font-semibold text-foreground/80">Flipr Daily Briefing</span>
+                <Mail className="w-3.5 h-3.5 text-primary/50" />
+                <span className="text-[9px] font-semibold text-foreground/60">Flipr Daily Briefing</span>
               </div>
-              <div className="h-px bg-border/40" />
+              <div className="h-px bg-border/20" />
               <div className="flex flex-col gap-1.5 flex-1">
                 {["Top sellers this week on Whatnot", "TikTok Shop launches new...", "Exclusive: eBay Live data"].map((t, i) => (
-                  <div key={i} className="flex items-center gap-2">
-                    <div className="w-1 h-1 rounded-full bg-primary/60 shrink-0" />
-                    <span className="text-[8px] text-muted-foreground">{t}</span>
+                  <div key={i} className="flex items-center gap-1.5">
+                    <div className="w-1 h-1 rounded-full bg-primary/40 shrink-0" />
+                    <span className="text-[7px] text-muted-foreground/60">{t}</span>
                   </div>
                 ))}
               </div>
-              <div className="bg-primary/10 border border-primary/20 rounded px-2 py-1 text-center">
-                <span className="text-[8px] text-primary font-medium">Subscribe →</span>
+              <div className="bg-primary/8 border border-primary/15 rounded px-2 py-1 text-center">
+                <span className="text-[7px] text-primary/60 font-medium">Subscribe →</span>
               </div>
             </div>
 
-            {/* Ad placement mockup */}
-            <div className="flex-1 rounded-xl border border-purple-500/30 bg-purple-500/5 backdrop-blur-sm p-3 flex flex-col gap-2">
+            <div className="flex-1 glass-card p-3 flex flex-col gap-2 border-accent/10">
               <div className="flex items-center gap-2">
-                <Megaphone className="w-4 h-4 text-purple-400/60" />
-                <span className="text-[10px] font-semibold text-foreground/80">Sponsor Module</span>
+                <Megaphone className="w-3.5 h-3.5 text-accent/50" />
+                <span className="text-[9px] font-semibold text-foreground/60">Sponsor Module</span>
               </div>
-              <div className="h-px bg-purple-500/20" />
-              <div className="bg-purple-500/8 rounded-lg flex-1 flex flex-col items-center justify-center gap-1">
-                <div className="w-10 h-10 rounded bg-purple-500/15 flex items-center justify-center">
-                  <Star className="w-5 h-5 text-purple-400/40" />
+              <div className="h-px bg-accent/10" />
+              <div className="bg-accent/5 rounded-lg flex-1 flex flex-col items-center justify-center gap-1 border border-accent/10">
+                <div className="w-8 h-8 rounded bg-accent/10 flex items-center justify-center">
+                  <Star className="w-4 h-4 text-accent/30" />
                 </div>
-                <div className="text-[7px] text-purple-300/50">Featured Partner</div>
+                <div className="text-[6px] text-accent/30">Featured Partner</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Right: Module Grid */}
+        {/* Right: Modules */}
         <div className="flex-1 flex flex-col gap-4 min-h-0">
-          {/* Current State */}
+          {/* Live Now */}
           <div>
             <div className="flex items-center gap-2 mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.25s' }}>
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-xs font-semibold text-primary tracking-wide uppercase">Live Now</span>
-              <div className="h-px flex-1 bg-primary/15" />
+              <span className="text-[10px] font-mono-brand text-primary tracking-[0.15em] uppercase">Live Now</span>
+              <div className="h-px flex-1 bg-primary/10" />
             </div>
-            <div className="grid grid-cols-3 gap-2.5">
+            <div className="grid grid-cols-3 gap-2">
               {currentModules.map((m, i) => (
-                <div
-                  key={m.title}
-                  className="glass-card p-3.5 flex flex-col opacity-0 animate-fade-up hover:border-primary/30 transition-all group cursor-default"
-                  style={{ animationDelay: `${0.3 + i * 0.05}s` }}
-                >
+                <div key={m.title} className="glass-card p-3 flex flex-col opacity-0 animate-fade-up group hover:border-primary/20 transition-all"
+                  style={{ animationDelay: `${0.3 + i * 0.04}s` }}>
                   <div className="flex items-center gap-2 mb-1.5">
-                    <m.icon className="w-4.5 h-4.5 text-primary group-hover:scale-110 transition-transform" />
-                    <h3 className="text-[13px] font-semibold text-foreground">{m.title}</h3>
+                    <m.icon className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
+                    <h3 className="text-[12px] font-bold text-foreground">{m.title}</h3>
                   </div>
-                  <p className="text-[10px] text-muted-foreground leading-relaxed">{m.desc}</p>
+                  <p className="text-[9px] text-muted-foreground leading-relaxed">{m.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Next State */}
+          {/* Coming Next */}
           <div>
-            <div className="flex items-center gap-2 mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
-              <div className="w-2 h-2 rounded-full bg-purple-400" />
-              <span className="text-xs font-semibold text-purple-400 tracking-wide uppercase">Coming Next</span>
-              <div className="h-px flex-1 bg-purple-500/15" />
+            <div className="flex items-center gap-2 mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
+              <div className="w-2 h-2 rounded-full bg-accent" />
+              <span className="text-[10px] font-mono-brand text-accent tracking-[0.15em] uppercase">Coming Next</span>
+              <div className="h-px flex-1 bg-accent/10" />
             </div>
-            <div className="grid grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-2 gap-2">
               {nextModules.map((m, i) => (
-                <div
-                  key={m.title}
-                  className="glass-card p-3.5 flex flex-col opacity-0 animate-fade-up hover:border-purple-500/30 transition-all group cursor-default border-purple-500/10"
-                  style={{ animationDelay: `${0.65 + i * 0.05}s` }}
-                >
+                <div key={m.title} className="glass-card p-3 flex flex-col opacity-0 animate-fade-up group hover:border-accent/20 transition-all border-accent/8"
+                  style={{ animationDelay: `${0.6 + i * 0.04}s` }}>
                   <div className="flex items-center gap-2 mb-1.5">
-                    <m.icon className="w-4.5 h-4.5 text-purple-400 group-hover:scale-110 transition-transform" />
-                    <h3 className="text-[13px] font-semibold text-foreground">{m.title}</h3>
+                    <m.icon className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
+                    <h3 className="text-[12px] font-bold text-foreground">{m.title}</h3>
                   </div>
-                  <p className="text-[10px] text-muted-foreground leading-relaxed">{m.desc}</p>
+                  <p className="text-[9px] text-muted-foreground leading-relaxed">{m.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Founder transparency */}
-          <div className="glass-card p-4 flex items-start gap-3 opacity-0 animate-fade-up mt-auto" style={{ animationDelay: '0.85s' }}>
-            <Layers className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+          <div className="glass-card p-4 flex items-start gap-3 opacity-0 animate-fade-up mt-auto" style={{ animationDelay: '0.75s' }}>
+            <div className="w-8 h-8 rounded-lg bg-primary/8 flex items-center justify-center shrink-0 border border-primary/12">
+              <Code className="w-4 h-4 text-primary" />
+            </div>
             <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-semibold text-foreground">Founder Transparency</span>
+              <div className="flex items-center gap-2 mb-0.5">
+                <span className="text-[11px] font-bold text-foreground">Founder Transparency</span>
                 <Zap className="w-3 h-3 text-primary" />
               </div>
-              <p className="text-[10px] text-muted-foreground leading-relaxed">
-                Built to date primarily through rapid Lovable-driven development and vibe coding, with select integrations already in place.
-                Capital now accelerates the transition from strong prototype/media property to fully operational platform.
+              <p className="text-[9px] text-muted-foreground leading-relaxed">
+                Built to date primarily through rapid Lovable-driven development. Capital now accelerates the transition from strong prototype to fully operational platform.
               </p>
             </div>
           </div>

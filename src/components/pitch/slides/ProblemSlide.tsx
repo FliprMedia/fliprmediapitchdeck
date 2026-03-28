@@ -1,15 +1,5 @@
 import SlideLayout from "../SlideLayout";
-import { AlertTriangle, Search, Users, BarChart3, Megaphone, Shuffle, TrendingUp, Eye, Target, Radio, ShieldQuestion, Layers, ArrowRight } from "lucide-react";
-
-const platformBubbles = [
-  { name: "Whatnot", x: 8, y: 18, size: 72 },
-  { name: "TikTok Shop", x: 28, y: 8, size: 80 },
-  { name: "eBay Live", x: 52, y: 22, size: 64 },
-  { name: "Poshmark", x: 72, y: 12, size: 58 },
-  { name: "Instagram Live", x: 18, y: 55, size: 60 },
-  { name: "YouTube Shopping", x: 42, y: 48, size: 68 },
-  { name: "TalkShopLive", x: 65, y: 52, size: 54 },
-];
+import { AlertTriangle, Search, Users, BarChart3, Megaphone, Shuffle, Eye, Radio, ShieldQuestion, Layers, ArrowRight } from "lucide-react";
 
 const painCards = [
   {
@@ -26,7 +16,7 @@ const painCards = [
   {
     title: "Advertisers & Brands",
     icon: Megaphone,
-    color: "secondary",
+    color: "accent",
     pains: [
       "No media channel to reach live sellers",
       "No audience data or targeting tools",
@@ -48,96 +38,84 @@ const painCards = [
 ];
 
 const gapItems = [
-  { icon: Shuffle, label: "Fragmented Information" },
-  { icon: Search, label: "No Discovery Layer" },
-  { icon: BarChart3, label: "No Data or Rankings" },
-  { icon: Megaphone, label: "No Ad Infrastructure" },
-  { icon: AlertTriangle, label: "No Dedicated Press" },
-  { icon: ShieldQuestion, label: "No Credibility Signals" },
-  { icon: Radio, label: "No Live Show Index" },
-  { icon: Layers, label: "No Centralized Platform" },
+  { icon: Shuffle, label: "Fragmented" },
+  { icon: Search, label: "No Discovery" },
+  { icon: BarChart3, label: "No Data" },
+  { icon: Megaphone, label: "No Ad Layer" },
+  { icon: AlertTriangle, label: "No Press" },
+  { icon: ShieldQuestion, label: "No Trust Signals" },
+  { icon: Radio, label: "No Show Index" },
+  { icon: Layers, label: "No Central Hub" },
 ];
 
 const ProblemSlide = () => (
   <SlideLayout>
-    {/* Background */}
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-destructive/5" />
-    
-    {/* Floating disconnected platform bubbles */}
-    <div className="absolute inset-0 opacity-[0.07]">
-      {platformBubbles.map((b, i) => (
-        <div
-          key={b.name}
-          className="absolute rounded-full border border-muted-foreground/40 flex items-center justify-center"
-          style={{
-            left: `${b.x}%`,
-            top: `${b.y}%`,
-            width: b.size,
-            height: b.size,
-            animationDelay: `${i * 0.4}s`,
-            animation: "float 6s ease-in-out infinite",
-          }}
-        >
-          <span className="text-[10px] text-muted-foreground font-medium">{b.name}</span>
-        </div>
+    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
+    <div className="absolute inset-0 noise-overlay" />
+
+    {/* Fragmentation visual — disconnected circles */}
+    <svg className="absolute inset-0 w-full h-full opacity-[0.04]" viewBox="0 0 1920 1080">
+      {[
+        { cx: 200, cy: 200, r: 60 }, { cx: 500, cy: 120, r: 70 }, { cx: 850, cy: 180, r: 55 },
+        { cx: 1200, cy: 100, r: 65 }, { cx: 1500, cy: 200, r: 50 }, { cx: 350, cy: 500, r: 45 },
+        { cx: 1600, cy: 500, r: 55 },
+      ].map((c, i) => (
+        <g key={i}>
+          <circle cx={c.cx} cy={c.cy} r={c.r} fill="none" stroke="hsl(var(--muted-foreground))" strokeWidth="1" strokeDasharray="4 6" />
+        </g>
       ))}
-      {/* Disconnected dashed lines between bubbles */}
-      <svg className="absolute inset-0 w-full h-full">
-        <line x1="12%" y1="22%" x2="30%" y2="14%" stroke="hsl(var(--muted-foreground))" strokeWidth="1" strokeDasharray="6 8" opacity="0.3" />
-        <line x1="34%" y1="14%" x2="54%" y2="26%" stroke="hsl(var(--muted-foreground))" strokeWidth="1" strokeDasharray="6 8" opacity="0.3" />
-        <line x1="56%" y1="28%" x2="74%" y2="16%" stroke="hsl(var(--muted-foreground))" strokeWidth="1" strokeDasharray="6 8" opacity="0.3" />
-        <line x1="22%" y1="58%" x2="44%" y2="52%" stroke="hsl(var(--muted-foreground))" strokeWidth="1" strokeDasharray="6 8" opacity="0.2" />
-        <line x1="46%" y1="52%" x2="67%" y2="56%" stroke="hsl(var(--muted-foreground))" strokeWidth="1" strokeDasharray="6 8" opacity="0.2" />
-      </svg>
-    </div>
+      <line x1="260" y1="200" x2="430" y2="140" stroke="hsl(var(--destructive))" strokeWidth="0.5" strokeDasharray="8 12" opacity="0.5" />
+      <line x1="570" y1="130" x2="795" y2="175" stroke="hsl(var(--destructive))" strokeWidth="0.5" strokeDasharray="8 12" opacity="0.4" />
+      <line x1="905" y1="180" x2="1135" y2="115" stroke="hsl(var(--destructive))" strokeWidth="0.5" strokeDasharray="8 12" opacity="0.3" />
+    </svg>
 
-    {/* Ambient glow */}
-    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-destructive/5 rounded-full blur-[120px]" />
-    <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px]" />
+    <div className="absolute top-[-100px] right-[-50px] w-[700px] h-[700px] bg-destructive/[0.04] rounded-full blur-[180px]" />
+    <div className="absolute bottom-[-100px] left-[200px] w-[500px] h-[500px] bg-primary/[0.03] rounded-full blur-[150px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-16">
+    <div className="relative z-10 flex flex-col h-full px-24 py-16">
       {/* Header */}
-      <div className="mb-8">
-        <div className="text-primary font-mono text-sm tracking-widest mb-4 opacity-0 animate-fade-up">02 — THE PROBLEM</div>
-        <h2 className="text-[48px] font-bold leading-[1.1] mb-5 opacity-0 animate-fade-up max-w-[1100px]" style={{ animationDelay: '0.1s' }}>
-          Live selling is exploding.<br />
-          The industry still lacks its <span className="text-primary">media home.</span>
+      <div className="mb-6">
+        <div className="slide-label mb-4 opacity-0 animate-fade-up">02 — THE PROBLEM</div>
+        <h2 className="slide-headline mb-4 opacity-0 animate-fade-up max-w-[1100px]" style={{ animationDelay: '0.1s' }}>
+          Live selling is exploding.{" "}
+          <span className="font-display italic text-[50px] text-primary">The industry still lacks its media home.</span>
         </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-          Despite billions in commerce volume and rising consumer adoption, live selling has no dedicated media and intelligence layer that organizes the category, elevates its top operators, and attracts industry ad dollars.
+        <p className="slide-subhead max-w-[850px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+          Despite billions in commerce volume, live selling has no dedicated media and intelligence layer.
         </p>
       </div>
 
-      {/* Gap icons strip */}
-      <div className="flex items-center gap-3 mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-        {gapItems.map((item, i) => (
-          <div key={item.label} className="flex items-center gap-2 glass-card px-4 py-2.5 text-sm">
-            <item.icon className="w-4 h-4 text-primary" />
-            <span className="text-muted-foreground whitespace-nowrap">{item.label}</span>
+      {/* Gap strip — visual chips */}
+      <div className="flex items-center gap-2 mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+        {gapItems.map((item) => (
+          <div key={item.label} className="glass-card px-3.5 py-2 flex items-center gap-2">
+            <item.icon className="w-3.5 h-3.5 text-destructive/60" />
+            <span className="text-[11px] text-muted-foreground/70 font-medium whitespace-nowrap">{item.label}</span>
           </div>
         ))}
       </div>
 
-      {/* Main content: 3-column pain cards + split comparison */}
-      <div className="flex-1 flex gap-6">
-        {/* 3 pain cards */}
+      {/* Main: 3 pain cards + comparison */}
+      <div className="flex-1 flex gap-5 min-h-0">
         {painCards.map((card, i) => (
           <div
             key={card.title}
-            className="flex-1 glass-card p-7 flex flex-col opacity-0 animate-fade-up hover:border-primary/20 transition-colors group"
+            className={`flex-1 glass-card p-6 flex flex-col opacity-0 animate-fade-up group relative overflow-hidden`}
             style={{ animationDelay: `${0.25 + i * 0.08}s` }}
           >
-            <div className="flex items-center gap-3 mb-5">
-              <div className={`w-11 h-11 rounded-lg bg-${card.color}/10 flex items-center justify-center`}>
+            {/* Top accent */}
+            <div className={`absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-${card.color}/40 via-${card.color}/20 to-transparent`} />
+            <div className="flex items-center gap-3 mb-4">
+              <div className={`w-10 h-10 rounded-xl bg-${card.color}/10 flex items-center justify-center border border-${card.color}/15`}>
                 <card.icon className={`w-5 h-5 text-${card.color}`} />
               </div>
-              <h3 className="text-xl font-bold text-foreground">{card.title}</h3>
+              <h3 className="text-lg font-bold text-foreground">{card.title}</h3>
             </div>
             <div className="space-y-3 flex-1">
               {card.pains.map((pain, j) => (
-                <div key={j} className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-destructive/60 mt-2 shrink-0" />
-                  <p className="text-sm text-muted-foreground leading-relaxed">{pain}</p>
+                <div key={j} className="flex items-start gap-2.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-destructive/50 mt-2 shrink-0" />
+                  <p className="text-[13px] text-muted-foreground leading-relaxed">{pain}</p>
                 </div>
               ))}
             </div>
@@ -145,35 +123,30 @@ const ProblemSlide = () => (
         ))}
 
         {/* Split comparison */}
-        <div className="w-[380px] shrink-0 flex flex-col gap-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
-          {/* Today */}
-          <div className="flex-1 glass-card p-6 border-destructive/20 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-destructive/60 to-destructive/20" />
-            <div className="text-xs font-mono text-destructive tracking-widest mb-3">TODAY</div>
-            <h4 className="text-lg font-bold text-foreground mb-3">Fragmented & Invisible</h4>
+        <div className="w-[340px] shrink-0 flex flex-col gap-3">
+          <div className="flex-1 glass-card p-5 relative overflow-hidden opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
+            <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-destructive/50 to-destructive/10" />
+            <div className="text-[10px] font-mono-brand text-destructive/70 tracking-[0.2em] mb-2">TODAY</div>
+            <h4 className="text-base font-bold text-foreground mb-3">Fragmented & Invisible</h4>
             <div className="space-y-2">
-              {["Scattered across Reddit, Discord, YouTube", "No central discovery or data", "No advertiser infrastructure", "No editorial authority"].map((t, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <span className="text-destructive">✕</span> {t}
+              {["Scattered across Reddit & Discord", "No discovery or data layer", "No ad infrastructure", "No editorial authority"].map((t, i) => (
+                <div key={i} className="flex items-center gap-2 text-[12px] text-muted-foreground">
+                  <span className="text-destructive/70 text-[10px]">✕</span> {t}
                 </div>
               ))}
             </div>
           </div>
-          
-          {/* Arrow */}
-          <div className="flex items-center justify-center">
-            <ArrowRight className="w-5 h-5 text-primary rotate-90" />
+          <div className="flex justify-center opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
+            <ArrowRight className="w-4 h-4 text-primary/40 rotate-90" />
           </div>
-
-          {/* Flipr future */}
-          <div className="flex-1 glass-card p-6 border-primary/20 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary/60 to-primary/20" />
-            <div className="text-xs font-mono text-primary tracking-widest mb-3">WITH FLIPR.MEDIA</div>
-            <h4 className="text-lg font-bold text-foreground mb-3">Centralized & Powerful</h4>
+          <div className="flex-1 glass-card p-5 relative overflow-hidden opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
+            <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/50 to-primary/10" />
+            <div className="text-[10px] font-mono-brand text-primary tracking-[0.2em] mb-2">WITH FLIPR.MEDIA</div>
+            <h4 className="text-base font-bold text-foreground mb-3">Centralized & Powerful</h4>
             <div className="space-y-2">
-              {["One media hub for the entire industry", "Discovery, rankings & intelligence", "Built-in ad & sponsorship layer", "Trusted editorial brand"].map((t, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <span className="text-primary">✓</span> {t}
+              {["One media hub for the industry", "Discovery, rankings & intel", "Built-in ad & sponsorship layer", "Trusted editorial brand"].map((t, i) => (
+                <div key={i} className="flex items-center gap-2 text-[12px] text-muted-foreground">
+                  <span className="text-primary text-[10px]">✓</span> {t}
                 </div>
               ))}
             </div>
