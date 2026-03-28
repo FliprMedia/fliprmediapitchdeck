@@ -4,11 +4,11 @@ import MobileMockup from "../mockups/MobileMockup";
 import { Globe, Palette, Target, Layers, Zap, Code, Newspaper, Users, Radio, BarChart3, Megaphone, ShoppingBag, ArrowRight } from "lucide-react";
 
 const proofPoints = [
-  { icon: Globe, title: "Product Progress", desc: "Full site built and live — news, seller coverage, platform pages, newsletter, and show discovery all operational" },
-  { icon: Palette, title: "Category Validation", desc: "Branding and concept are clear, differentiated, and resonant — no competitor occupies this niche" },
-  { icon: Target, title: "Advertiser Relevance", desc: "Advertiser and partner thesis is already forming — brands need the live selling creator audience" },
-  { icon: Layers, title: "Ecosystem Readiness", desc: "Content architecture and niche positioning are strong — the product demonstrates the vision" },
-  { icon: Zap, title: "Founder Speed", desc: "Built substantially through Lovable-driven rapid execution — proving capital-efficient capability" },
+  { icon: Globe, title: "Product Is Live", desc: "Operational site with news, seller coverage, platform pages, newsletter, and show discovery — built and deployed" },
+  { icon: Palette, title: "Category Position Is Clear", desc: "Brand, positioning, and concept validated — no competitor occupies this niche anywhere in the market" },
+  { icon: Target, title: "Advertiser Thesis Forming", desc: "Inbound interest from brands validates demand — advertisers need access to the live selling creator audience" },
+  { icon: Layers, title: "Architecture Is Scalable", desc: "Content taxonomy, monetization hooks, and platform structure designed for rapid expansion" },
+  { icon: Zap, title: "Capital Efficiency Proven", desc: "Built to this stage with near-zero capital — demonstrating the founder's ability to ship fast and iterate" },
 ];
 
 const builtWith = [
@@ -29,10 +29,10 @@ const TractionSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-20 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">12 — TRACTION & EARLY PROOF</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Early proof, <span className="font-display italic text-[50px] text-primary">strong category signal.</span>
+        Pre-revenue, <span className="font-display italic text-[50px] text-primary">not pre-product.</span>
       </h2>
       <p className="text-lg text-muted-foreground mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Built with minimal capital. Ready to scale with investment.
+        The product is live. The category position is clear. Capital unlocks revenue and scale.
       </p>
 
       <div className="flex flex-1 gap-6 min-h-0">
@@ -97,8 +97,8 @@ const TractionSlide = () => (
         <div className="flex items-center justify-center gap-3">
           <Zap className="w-3.5 h-3.5 text-primary shrink-0" />
           <p className="text-[10px] text-muted-foreground text-center">
-            <span className="text-foreground font-medium">Founder transparency:</span> Pre-revenue company with a clear product, strong positioning, and validated category thesis.
-            Capital accelerates the path from prototype to fully operational platform.
+            <span className="text-foreground font-medium">Honest assessment:</span> This is a pre-revenue company with a live product, validated positioning, and a clear path to monetization.
+            $500K accelerates the transition from prototype to operating business.
           </p>
           <ArrowRight className="w-3.5 h-3.5 text-primary/40 shrink-0" />
         </div>

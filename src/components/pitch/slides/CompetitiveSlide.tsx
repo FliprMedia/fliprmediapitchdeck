@@ -31,10 +31,10 @@ const CompetitiveSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">10 — COMPETITIVE LANDSCAPE</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Flipr.Media occupies a <span className="font-display italic text-[50px] text-primary">white space.</span>
+        No one else is building this. <span className="font-display italic text-[50px] text-primary">The space is wide open.</span>
       </h2>
       <p className="slide-subhead mb-7 max-w-[1000px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        No existing player combines dedicated live selling coverage, cross-platform editorial, seller discovery, and advertiser infrastructure.
+        Existing players serve single platforms, sell software, or cover commerce broadly. None combine dedicated live selling editorial, cross-platform discovery, and advertiser infrastructure.
       </p>
 
       {/* Comparison Matrix */}
@@ -80,8 +80,7 @@ const CompetitiveSlide = () => (
       {/* Bottom insight */}
       <div className="mt-4 glass-card p-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
         <p className="text-[11px] text-muted-foreground leading-relaxed text-center">
-          Most alternatives either serve a <span className="text-foreground font-semibold">single platform</span>, sell software, or cover commerce broadly.
-          Flipr.Media is positioned to become the <span className="text-primary font-bold">category-defining media brand</span> for live selling — owning editorial, discovery, data, and advertiser access.
+          Flipr.Media is the only player positioned to own <span className="text-foreground font-semibold">editorial authority</span>, <span className="text-foreground font-semibold">seller discovery</span>, <span className="text-foreground font-semibold">advertiser access</span>, and <span className="text-primary font-bold">category-level data</span> — all in one brand. That's the moat.
         </p>
       </div>
     </div>

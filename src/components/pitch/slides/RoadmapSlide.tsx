@@ -73,10 +73,10 @@ const RoadmapSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">11 — PRODUCT ROADMAP</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        From media property to <span className="font-display italic text-[50px] text-primary">category operating layer.</span>
+        Media property today. <span className="font-display italic text-[50px] text-primary">Industry operating system tomorrow.</span>
       </h2>
       <p className="slide-subhead mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Each phase compounds audience, data, and revenue into deeper moats.
+        Each phase compounds audience, data, and revenue — creating deeper moats and higher-margin products at every stage.
       </p>
 
       {/* Timeline bar */}
