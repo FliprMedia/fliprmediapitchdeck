@@ -27,14 +27,14 @@ const futureHires = [
 
 const TeamSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
-    <div className="absolute top-[100px] left-[100px] w-[500px] h-[500px] bg-primary/3 rounded-full blur-[200px]" />
+    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
+    <div className="absolute inset-0 noise-overlay" />
+    <div className="absolute top-[100px] left-[100px] w-[500px] h-[500px] bg-primary/[0.03] rounded-full blur-[200px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-14">
-      {/* Header */}
-      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">16 — TEAM & FOUNDER</div>
-      <h2 className="text-[42px] font-bold leading-tight mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Founder-led, category-obsessed, <span className="text-primary">execution-driven.</span>
+    <div className="relative z-10 flex flex-col h-full px-24 py-14">
+      <div className="slide-label mb-3 opacity-0 animate-fade-up">16 — TEAM & FOUNDER</div>
+      <h2 className="slide-headline mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Founder-led, category-obsessed, <span className="font-display italic text-[50px] text-primary">execution-driven.</span>
       </h2>
 
       <div className="flex flex-1 gap-7 min-h-0">

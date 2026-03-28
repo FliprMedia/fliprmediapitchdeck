@@ -49,16 +49,16 @@ const chartData = funds.map(f => ({ name: f.category, value: f.pct, color: f.col
 
 const UseOfFundsSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
-    <div className="absolute bottom-0 left-[200px] w-[600px] h-[500px] bg-primary/3 rounded-full blur-[180px]" />
+    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
+    <div className="absolute inset-0 noise-overlay" />
+    <div className="absolute bottom-0 left-[200px] w-[600px] h-[500px] bg-primary/[0.03] rounded-full blur-[180px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-14">
-      {/* Header */}
-      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">14 — USE OF FUNDS</div>
-      <h2 className="text-[42px] font-bold leading-tight mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        How <span className="text-primary">$500,000</span> accelerates Flipr.Media.
+    <div className="relative z-10 flex flex-col h-full px-24 py-14">
+      <div className="slide-label mb-3 opacity-0 animate-fade-up">14 — USE OF FUNDS</div>
+      <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        How <span className="text-primary neon-glow">$500,000</span> accelerates Flipr.Media.
       </h2>
-      <p className="text-lg text-muted-foreground mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+      <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Capital to finish the platform, build audience, and activate revenue streams.
       </p>
 
