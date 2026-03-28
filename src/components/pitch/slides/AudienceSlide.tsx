@@ -81,10 +81,10 @@ const AudienceSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">07 — AUDIENCE & USERS</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Multiple high-value audiences, <span className="font-display italic text-[50px] text-primary">one category hub.</span>
+        Seven distinct audiences. <span className="font-display italic text-[50px] text-primary">All monetizable.</span>
       </h2>
       <p className="text-lg text-muted-foreground mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Every stakeholder in live commerce comes to Flipr.Media for information, discovery, and connection.
+        Every stakeholder in the live commerce value chain needs what Flipr.Media is building — and each one represents a revenue stream.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
