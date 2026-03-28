@@ -1,84 +1,166 @@
 import SlideLayout from "../SlideLayout";
-import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Cell, Legend } from "recharts";
+import { TrendingUp, Award, Users, Database, RefreshCw, Megaphone, ArrowRight, Star } from "lucide-react";
 
-const revenueProjection = [
-  { year: "Year 1", revenue: 150, arr: "$150K" },
-  { year: "Year 2", revenue: 800, arr: "$800K" },
-  { year: "Year 3", revenue: 2500, arr: "$2.5M" },
-  { year: "Year 4", revenue: 6000, arr: "$6M" },
-  { year: "Year 5", revenue: 12000, arr: "$12M" },
+const scenarioData = [
+  {
+    year: "Year 1",
+    conservative: 80,
+    base: 150,
+    upside: 250,
+  },
+  {
+    year: "Year 2",
+    conservative: 300,
+    base: 600,
+    upside: 1000,
+  },
+  {
+    year: "Year 3",
+    conservative: 700,
+    base: 1500,
+    upside: 3000,
+  },
 ];
 
-const exits = [
-  { type: "Strategic Acquisition", buyer: "Major media, platform, or commerce company", range: "$30M–$100M+", timeline: "Year 3-5" },
-  { type: "PE / Growth Equity", buyer: "Media-focused PE firm roll-up", range: "$50M–$150M+", timeline: "Year 4-6" },
-  { type: "IPO Path", buyer: "Public markets via continued scaling", range: "$200M+", timeline: "Year 6+" },
+const streams = [
+  "Advertisers & Display",
+  "Newsletter Sponsors",
+  "Premium Placements",
+  "Seller Subscriptions / Profiles",
+  "Featured Listings",
+  "Reports & Research",
+  "Partnerships & Events",
+  "Future Intelligence Products",
+];
+
+const valueDrivers = [
+  { icon: Award, label: "Media Brand Equity" },
+  { icon: Users, label: "Audience Ownership" },
+  { icon: Database, label: "Category Data" },
+  { icon: RefreshCw, label: "Recurring Subscriptions" },
+  { icon: Megaphone, label: "Advertiser Network" },
+  { icon: TrendingUp, label: "M&A Optionality" },
 ];
 
 const RevenueSlide = () => (
   <SlideLayout>
     <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/5" />
+    <div className="absolute top-[100px] right-[100px] w-[500px] h-[500px] bg-accent/3 rounded-full blur-[180px]" />
 
-    <div className="relative z-10 flex h-full px-20 py-16">
-      <div className="w-[750px] flex flex-col">
-        <div className="text-primary font-mono text-sm tracking-widest mb-4 opacity-0 animate-fade-up">15 — REVENUE POTENTIAL</div>
-        <h2 className="text-[40px] font-bold leading-tight mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          Path to <span className="text-primary">$10M+ ARR</span>{" "}
-          and Exit-Scale Value
-        </h2>
+    <div className="relative z-10 flex flex-col h-full px-20 py-14">
+      {/* Header */}
+      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">15 — REVENUE POTENTIAL</div>
+      <h2 className="text-[42px] font-bold leading-tight mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Media first. <span className="text-primary">High-margin expansion next.</span>
+      </h2>
+      <p className="text-lg text-muted-foreground mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        Strategic revenue pathways — not guaranteed forecasts. Illustrative scenarios based on category opportunity.
+      </p>
 
-        {/* Revenue chart */}
-        <div className="glass-card p-6 mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          <div className="text-sm text-muted-foreground mb-4 font-medium">Projected Annual Revenue ($K)</div>
-          <div className="h-[260px]">
-            <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={revenueProjection}>
-                <defs>
-                  <linearGradient id="revGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="hsl(145 100% 49%)" stopOpacity={0.4} />
-                    <stop offset="100%" stopColor="hsl(263 70% 58%)" stopOpacity={0.1} />
-                  </linearGradient>
-                </defs>
-                <XAxis dataKey="year" stroke="hsl(240 5% 35%)" fontSize={12} tickLine={false} />
-                <YAxis stroke="hsl(240 5% 35%)" fontSize={12} tickLine={false} axisLine={false} tickFormatter={v => `$${v >= 1000 ? `${v/1000}M` : `${v}K`}`} />
-                <Area type="monotone" dataKey="revenue" stroke="hsl(145 100% 49%)" strokeWidth={3} fill="url(#revGrad)" />
-              </AreaChart>
-            </ResponsiveContainer>
+      <div className="flex flex-1 gap-7 min-h-0">
+        {/* Left: Chart + Streams */}
+        <div className="flex-1 flex flex-col gap-4">
+          {/* Scenario chart */}
+          <div className="glass-card p-5 flex-1 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+            <div className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-3">3-Year Revenue Scenarios ($K)</div>
+            <div className="h-[260px]">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={scenarioData} barCategoryGap="25%">
+                  <XAxis dataKey="year" stroke="hsl(240 5% 35%)" fontSize={11} tickLine={false} />
+                  <YAxis stroke="hsl(240 5% 35%)" fontSize={10} tickLine={false} axisLine={false} tickFormatter={v => v >= 1000 ? `$${v/1000}M` : `$${v}K`} />
+                  <Bar dataKey="conservative" name="Conservative" radius={[3, 3, 0, 0]} fill="hsl(240 10% 40%)" />
+                  <Bar dataKey="base" name="Base" radius={[3, 3, 0, 0]} fill="hsl(145 100% 49%)" />
+                  <Bar dataKey="upside" name="Upside" radius={[3, 3, 0, 0]} fill="hsl(263 70% 58%)" />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+            {/* Custom legend */}
+            <div className="flex items-center justify-center gap-6 mt-2">
+              {[
+                { label: "Conservative", color: "hsl(240 10% 40%)" },
+                { label: "Base", color: "hsl(145 100% 49%)" },
+                { label: "Upside", color: "hsl(263 70% 58%)" },
+              ].map(l => (
+                <div key={l.label} className="flex items-center gap-1.5">
+                  <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: l.color }} />
+                  <span className="text-[10px] text-muted-foreground">{l.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Revenue streams */}
+          <div className="glass-card p-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider block mb-2">Revenue Streams Modeled</span>
+            <div className="flex flex-wrap gap-1.5">
+              {streams.map(s => (
+                <div key={s} className="px-2.5 py-1 rounded-full bg-muted/30 text-[9px] text-foreground/70 font-medium">{s}</div>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* Comparable valuations */}
-        <div className="flex gap-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-          {[
-            { name: "Industry Avg", multiple: "8-12x", metric: "Revenue" },
-            { name: "Media + Data", multiple: "15-25x", metric: "Revenue" },
-            { name: "Commerce-Tech", multiple: "20-40x", metric: "Revenue" },
-          ].map(c => (
-            <div key={c.name} className="glass-card p-4 flex-1 text-center">
-              <div className="text-xs text-muted-foreground mb-1">{c.name}</div>
-              <div className="text-2xl font-black text-primary">{c.multiple}</div>
-              <div className="text-xs text-muted-foreground">{c.metric}</div>
+        {/* Right: Narrative + Scenario cards */}
+        <div className="w-[500px] flex flex-col gap-4">
+          {/* Scenario summary cards */}
+          <div className="grid grid-cols-3 gap-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+            {[
+              { label: "Conservative", yr3: "$700K", color: "hsl(240 10% 40%)", desc: "Organic growth, limited sales" },
+              { label: "Base", yr3: "$1.5M", color: "hsl(145 100% 49%)", desc: "Active sales, strong content" },
+              { label: "Upside", yr3: "$3M+", color: "hsl(263 70% 58%)", desc: "Fast adoption, premium products" },
+            ].map(s => (
+              <div key={s.label} className="glass-card p-3 text-center">
+                <div className="text-[9px] font-semibold text-muted-foreground uppercase mb-1">{s.label}</div>
+                <div className="text-2xl font-black mb-0.5" style={{ color: s.color }}>{s.yr3}</div>
+                <div className="text-[8px] text-muted-foreground">Year 3</div>
+                <div className="text-[8px] text-muted-foreground mt-1">{s.desc}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Narrative box */}
+          <div className="glass-card p-5 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
+            <div className="flex items-center gap-2 mb-2">
+              <Star className="w-4 h-4 text-primary" />
+              <span className="text-xs font-bold text-foreground">Long-Term Vision</span>
             </div>
-          ))}
+            <p className="text-[11px] text-muted-foreground leading-relaxed">
+              "The near-term goal is not to become just a publication. The long-term goal is to <span className="text-primary font-semibold">own the media, discovery, and intelligence layer</span> for a fast-growing commerce category — creating compounding value through audience, data, and advertiser relationships."
+            </p>
+          </div>
+
+          {/* Multiple reference */}
+          <div className="grid grid-cols-3 gap-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
+            {[
+              { label: "Media", range: "8–12x" },
+              { label: "Media + Data", range: "15–25x" },
+              { label: "Commerce-Tech", range: "20–40x" },
+            ].map(m => (
+              <div key={m.label} className="glass-card p-3 text-center border-accent/10">
+                <div className="text-[9px] text-muted-foreground mb-0.5">{m.label}</div>
+                <div className="text-lg font-black text-accent">{m.range}</div>
+                <div className="text-[8px] text-muted-foreground">Revenue Multiple</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Exit scenarios */}
-      <div className="flex-1 flex flex-col justify-center pl-8">
-        <h3 className="text-xl font-bold text-foreground mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>Exit Scenarios</h3>
-        <div className="space-y-4">
-          {exits.map((e, i) => (
-            <div
-              key={e.type}
-              className="glass-card p-6 opacity-0 animate-fade-up"
-              style={{ animationDelay: `${0.35 + i * 0.1}s` }}
-            >
-              <div className="flex items-center justify-between mb-2">
-                <h4 className="text-lg font-bold text-foreground">{e.type}</h4>
-                <span className="text-xs text-muted-foreground font-mono">{e.timeline}</span>
+      {/* Bottom: Strategic value drivers */}
+      <div className="mt-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
+        <div className="flex items-center gap-3">
+          <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider shrink-0">Strategic Value Drivers</span>
+          <div className="h-px flex-1 bg-border/30" />
+        </div>
+        <div className="flex items-center justify-between mt-3">
+          {valueDrivers.map((d, i) => (
+            <div key={d.label} className="flex items-center gap-1.5">
+              {i > 0 && <ArrowRight className="w-3 h-3 text-muted-foreground/20 mr-2" />}
+              <div className="glass-card px-3 py-1.5 flex items-center gap-2">
+                <d.icon className="w-3.5 h-3.5 text-primary" />
+                <span className="text-[10px] font-semibold text-foreground">{d.label}</span>
               </div>
-              <p className="text-sm text-muted-foreground mb-2">{e.buyer}</p>
-              <div className="text-2xl font-black text-primary">{e.range}</div>
             </div>
           ))}
         </div>
