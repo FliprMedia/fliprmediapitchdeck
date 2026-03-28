@@ -74,14 +74,14 @@ const wheelNodes = personas.map((p, i) => ({
 
 const AudienceSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
-    <div className="absolute top-[300px] right-[200px] w-[500px] h-[500px] bg-accent/3 rounded-full blur-[180px]" />
+    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
+    <div className="absolute inset-0 noise-overlay" />
+    <div className="absolute top-[300px] right-[200px] w-[500px] h-[500px] bg-accent/[0.03] rounded-full blur-[180px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-14">
-      {/* Header */}
-      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">07 — AUDIENCE & USERS</div>
-      <h2 className="text-[42px] font-bold leading-tight mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Multiple high-value audiences, <span className="text-primary">one category hub.</span>
+    <div className="relative z-10 flex flex-col h-full px-24 py-14">
+      <div className="slide-label mb-3 opacity-0 animate-fade-up">07 — AUDIENCE & USERS</div>
+      <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Multiple high-value audiences, <span className="font-display italic text-[50px] text-primary">one category hub.</span>
       </h2>
       <p className="text-lg text-muted-foreground mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Every stakeholder in live commerce comes to Flipr.Media for information, discovery, and connection.

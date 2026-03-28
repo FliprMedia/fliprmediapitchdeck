@@ -32,14 +32,16 @@ const CategoryLeaderSlide = () => (
   <SlideLayout>
     <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/5" />
     <div className="absolute top-0 left-[400px] w-[700px] h-[700px] bg-accent/3 rounded-full blur-[200px]" />
+    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
+    <div className="absolute inset-0 noise-overlay" />
+    <div className="absolute top-0 left-[400px] w-[700px] h-[700px] bg-accent/[0.03] rounded-full blur-[200px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-14">
-      {/* Header */}
-      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">13 — CATEGORY LEADERSHIP</div>
-      <h2 className="text-[42px] font-bold leading-tight mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Own the audience, own the narrative, <span className="text-primary">own the economics.</span>
+    <div className="relative z-10 flex flex-col h-full px-24 py-14">
+      <div className="slide-label mb-3 opacity-0 animate-fade-up">13 — CATEGORY LEADERSHIP</div>
+      <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Own the audience, own the narrative, <span className="font-display italic text-[50px] text-primary">own the economics.</span>
       </h2>
-      <p className="text-lg text-muted-foreground mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+      <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Category-defining media businesses command significant value when they become the trusted gateway into a fast-growing market.
       </p>
 

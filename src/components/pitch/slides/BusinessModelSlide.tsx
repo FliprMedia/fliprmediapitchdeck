@@ -68,16 +68,16 @@ const revenueData = [
 
 const BusinessModelSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
-    <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-accent/3 rounded-full blur-[180px]" />
+    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
+    <div className="absolute inset-0 noise-overlay" />
+    <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-accent/[0.03] rounded-full blur-[180px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-14">
-      {/* Header */}
-      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">08 — BUSINESS MODEL</div>
-      <h2 className="text-[42px] font-bold leading-tight mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Multi-layered revenue from <span className="text-primary">media to intelligence.</span>
+    <div className="relative z-10 flex flex-col h-full px-24 py-14">
+      <div className="slide-label mb-3 opacity-0 animate-fade-up">08 — BUSINESS MODEL</div>
+      <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Multi-layered revenue from <span className="font-display italic text-[50px] text-primary">media to intelligence.</span>
       </h2>
-      <p className="text-lg text-muted-foreground mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+      <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Stacked monetization model that evolves from ad-supported media into high-margin data and intelligence products.
       </p>
 
