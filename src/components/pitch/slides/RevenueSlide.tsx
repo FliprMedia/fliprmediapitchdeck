@@ -52,10 +52,10 @@ const RevenueSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">15 — REVENUE POTENTIAL</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Media first. <span className="font-display italic text-[50px] text-primary">High-margin expansion next.</span>
+        Media revenue first. <span className="font-display italic text-[50px] text-primary">SaaS-like margins next.</span>
       </h2>
       <p className="slide-subhead mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Strategic revenue pathways — not guaranteed forecasts. Illustrative scenarios based on category opportunity.
+        Illustrative scenarios — not forecasts. Each pathway shows how stacked revenue layers compound into a high-value asset.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -126,7 +126,7 @@ const RevenueSlide = () => (
               <span className="text-xs font-bold text-foreground">Long-Term Vision</span>
             </div>
             <p className="text-[11px] text-muted-foreground leading-relaxed">
-              "The near-term goal is not to become just a publication. The long-term goal is to <span className="text-primary font-semibold">own the media, discovery, and intelligence layer</span> for a fast-growing commerce category — creating compounding value through audience, data, and advertiser relationships."
+              "The goal isn't to build a publication. It's to own the <span className="text-primary font-semibold">media, discovery, and intelligence layer</span> for a category growing 30%+ annually — then compound that position into recurring, high-margin revenue that commands premium multiples."
             </p>
           </div>
 
