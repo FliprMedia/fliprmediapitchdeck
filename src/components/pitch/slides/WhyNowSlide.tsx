@@ -21,12 +21,12 @@ const evolution = [
 ];
 
 const themes = [
-  { icon: TrendingUp, title: "US Livestream Commerce Surging", desc: "US livestream ecommerce hit $14.64B in 2025 — accelerating rapidly" },
-  { icon: ShoppingBag, title: "Shoppable Media Mainstream", desc: "30%+ of US internet users made a shoppable media purchase in 2025" },
-  { icon: Users, title: "Creator-Merchants Rising", desc: "Live sellers building real businesses — part creator, part retailer" },
-  { icon: Radio, title: "Buy-Where-You-Watch Era", desc: "TikTok, YouTube, eBay, Whatnot all investing in live commerce" },
-  { icon: Target, title: "Advertisers Need Vertical Media", desc: "Brands need performance channels to reach commerce creators" },
-  { icon: Globe, title: "No Media Layer Exists Yet", desc: "The category lacks its TechCrunch, Bloomberg, or PitchBook" },
+  { icon: TrendingUp, title: "US Livestream Commerce Hit $14.64B", desc: "Growing 30%+ YoY — the fastest-rising segment in ecommerce" },
+  { icon: ShoppingBag, title: "Shoppable Media Is Mainstream", desc: "30%+ of US internet users made a shoppable media purchase in 2025" },
+  { icon: Users, title: "Creator-Merchants Are a New Asset Class", desc: "Live sellers building six- and seven-figure businesses — part creator, part retailer" },
+  { icon: Radio, title: "Every Major Platform Is Investing", desc: "TikTok, YouTube, eBay, Whatnot, Amazon — all pouring capital into live commerce" },
+  { icon: Target, title: "Advertisers Have No Way In", desc: "Brands want to reach commerce creators, but there's no media channel serving them" },
+  { icon: Globe, title: "The Category Has No Voice", desc: "No TechCrunch, no Bloomberg, no PitchBook exists for this market. That's the gap." },
 ];
 
 const WhyNowSlide = () => (
@@ -46,10 +46,10 @@ const WhyNowSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">03 — WHY NOW</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Why this moment <span className="font-display italic text-[50px] text-primary">matters.</span>
+        The window is open <span className="font-display italic text-[50px] text-primary">right now.</span>
       </h2>
       <p className="slide-subhead mb-6 max-w-[800px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Live commerce is at an inflection point — growing fast, fragmenting attention, and creating a massive opening for a category-defining media brand.
+        Six forces are converging to create a once-in-a-category opportunity for a media brand that moves first.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">

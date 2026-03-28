@@ -30,8 +30,8 @@ const MarketSlide = () => (
       <div className="mb-6">
         <div className="slide-label mb-3 opacity-0 animate-fade-up">04 — MARKET OPPORTUNITY</div>
         <h2 className="slide-headline mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          A large and expanding market with multiple{" "}
-          <span className="font-display italic text-[50px] text-primary">value layers.</span>
+          Massive TAM. Clear monetization layers.{" "}
+          <span className="font-display italic text-[50px] text-primary">Capital-efficient entry.</span>
         </h2>
       </div>
 
@@ -112,10 +112,10 @@ const MarketSlide = () => (
                 <Megaphone className="w-4.5 h-4.5 text-primary" />
               </div>
               <div>
-                <div className="text-sm font-bold text-foreground mb-1">Why the media layer matters</div>
+                <div className="text-sm font-bold text-foreground mb-1">Why a small share creates outsized value</div>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Even a small share of attention and advertising inside a fast-growing ecosystem can create substantial enterprise value. 
-                  The company that owns audience, data, rankings, and advertiser access in live commerce will build a highly defensible position.
+                  Vertical media brands don't need to capture the TAM — they monetize the attention around it. 
+                  The company that owns audience, rankings, and advertiser access in live commerce builds a highly defensible, high-margin position with multiple exit paths.
                 </p>
               </div>
             </div>
