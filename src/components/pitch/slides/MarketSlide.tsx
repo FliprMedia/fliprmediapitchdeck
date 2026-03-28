@@ -21,18 +21,17 @@ const somChannels = [
 
 const MarketSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/5" />
-    
-    {/* Ambient glows */}
-    <div className="absolute top-[100px] left-[300px] w-[500px] h-[500px] bg-secondary/4 rounded-full blur-[140px]" />
-    <div className="absolute bottom-[50px] right-[200px] w-[400px] h-[400px] bg-primary/4 rounded-full blur-[120px]" />
+    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
+    <div className="absolute inset-0 noise-overlay" />
+    <div className="absolute top-[100px] left-[300px] w-[500px] h-[500px] bg-accent/[0.035] rounded-full blur-[180px]" />
+    <div className="absolute bottom-[50px] right-[200px] w-[400px] h-[400px] bg-primary/[0.03] rounded-full blur-[150px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-14">
-      {/* Header */}
+    <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="mb-6">
-        <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">04 — MARKET OPPORTUNITY</div>
-        <h2 className="text-[46px] font-bold leading-[1.1] mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          A large and expanding market<br />with multiple <span className="text-primary">value layers.</span>
+        <div className="slide-label mb-3 opacity-0 animate-fade-up">04 — MARKET OPPORTUNITY</div>
+        <h2 className="slide-headline mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          A large and expanding market with multiple{" "}
+          <span className="font-display italic text-[50px] text-primary">value layers.</span>
         </h2>
       </div>
 
