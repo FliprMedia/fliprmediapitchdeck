@@ -30,16 +30,16 @@ const moats = [
 
 const FirstOfKindSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
-    <div className="absolute top-[200px] left-[400px] w-[600px] h-[600px] bg-primary/3 rounded-full blur-[200px]" />
+    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
+    <div className="absolute inset-0 noise-overlay" />
+    <div className="absolute top-[200px] left-[400px] w-[600px] h-[600px] bg-primary/[0.03] rounded-full blur-[200px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-14">
-      {/* Header */}
-      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">06 — FIRST-OF-ITS-KIND</div>
-      <h2 className="text-[42px] font-bold leading-tight mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Not another commerce site. <span className="text-muted-foreground">Not another creator blog.</span>
+    <div className="relative z-10 flex flex-col h-full px-24 py-14">
+      <div className="slide-label mb-3 opacity-0 animate-fade-up">06 — FIRST-OF-ITS-KIND</div>
+      <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Not another commerce site. <span className="font-display italic text-[50px] text-muted-foreground/60">Not another creator blog.</span>
       </h2>
-      <p className="text-lg text-muted-foreground mb-8 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+      <p className="slide-subhead mb-8 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         No platform is dedicated to covering, ranking, profiling, and organizing the live selling industry itself.
       </p>
 
