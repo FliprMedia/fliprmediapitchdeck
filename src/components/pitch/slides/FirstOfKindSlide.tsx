@@ -20,12 +20,12 @@ const ecosystemNodes = [
 ];
 
 const moats = [
-  { icon: Target, title: "Niche Category Ownership", desc: "First-mover in a fast-growing vertical with no incumbent media brand" },
-  { icon: Users, title: "Audience Concentration", desc: "Aggregating fragmented attention into a single trusted destination" },
-  { icon: Award, title: "Trusted Editorial Brand", desc: "Credibility compounds — becoming the source of record for the industry" },
-  { icon: BarChart3, title: "Proprietary Rankings & Data", desc: "Exclusive indexes, seller profiles, and performance benchmarks" },
-  { icon: Megaphone, title: "Advertiser Relationships", desc: "Direct relationships with brands targeting commerce creators" },
-  { icon: Database, title: "Industry Dataset & Lead Gen", desc: "Future data products and lead generation engine for platforms and brands" },
+  { icon: Target, title: "First-Mover Advantage", desc: "No incumbent — the category is ours to define and own" },
+  { icon: Users, title: "Audience Aggregation", desc: "Consolidating fragmented attention into one monetizable destination" },
+  { icon: Award, title: "Editorial Brand Equity", desc: "Trust and credibility compound over time — hard for late entrants to replicate" },
+  { icon: BarChart3, title: "Proprietary Data Moat", desc: "Seller rankings, performance indexes, and category benchmarks no one else has" },
+  { icon: Megaphone, title: "Advertiser Lock-In", desc: "Direct relationships with brands — once established, switching costs are high" },
+  { icon: Database, title: "Data Products & Lead Gen", desc: "High-margin intelligence layer that gets more valuable with scale" },
 ];
 
 const FirstOfKindSlide = () => (
@@ -37,10 +37,10 @@ const FirstOfKindSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">06 — FIRST-OF-ITS-KIND</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Not another commerce site. <span className="font-display italic text-[50px] text-muted-foreground/60">Not another creator blog.</span>
+        This isn't another media site. <span className="font-display italic text-[50px] text-muted-foreground/60">It's a category-level infrastructure play.</span>
       </h2>
       <p className="slide-subhead mb-8 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        No platform is dedicated to covering, ranking, profiling, and organizing the live selling industry itself.
+        No one else is building the editorial, discovery, and advertiser layer for live selling. Flipr.Media occupies uncontested space.
       </p>
 
       <div className="flex flex-1 gap-8 min-h-0">
@@ -126,7 +126,7 @@ const FirstOfKindSlide = () => (
           {/* Key positioning line */}
           <div className="glass-card p-4 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
             <p className="text-sm text-foreground font-medium text-center leading-relaxed">
-              "Flipr.Media sits above the platforms as the category's <span className="text-primary font-bold">editorial, discovery, and advertiser hub</span>."
+              "Flipr.Media sits above the platforms as the category's <span className="text-primary font-bold">editorial layer, discovery engine, and advertiser gateway</span> — the infrastructure no one else is building."
             </p>
           </div>
         </div>

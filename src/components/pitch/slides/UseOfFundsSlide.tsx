@@ -56,10 +56,10 @@ const UseOfFundsSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">14 — USE OF FUNDS</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        How <span className="text-primary neon-glow">$500,000</span> accelerates Flipr.Media.
+        <span className="text-primary neon-glow">$500K</span> buys 12–18 months of focused execution.
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Capital to finish the platform, build audience, and activate revenue streams.
+        Every dollar is mapped to a specific milestone: complete the platform, activate revenue, and prove the model before raising again.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">

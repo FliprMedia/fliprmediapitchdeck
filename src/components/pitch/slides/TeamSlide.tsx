@@ -2,11 +2,11 @@ import SlideLayout from "../SlideLayout";
 import { User, Plus, Eye, Zap, Palette, Target, Mic, Rocket, Code, Users, FileText, Handshake, TrendingUp } from "lucide-react";
 
 const whyWin = [
-  { icon: Palette, label: "Understands media & storytelling" },
-  { icon: Eye, label: "Sees white space early" },
-  { icon: Code, label: "Builds quickly with modern tools" },
-  { icon: Target, label: "Positions brands & sells opportunity" },
-  { icon: Mic, label: "Blends editorial instinct with BD" },
+  { icon: Palette, label: "Deep media instinct — knows how to build editorial brands" },
+  { icon: Eye, label: "Spotted white space before any competitor" },
+  { icon: Code, label: "Shipped a full product solo using modern AI tooling" },
+  { icon: Target, label: "Understands both the audience and the business model" },
+  { icon: Mic, label: "Combines editorial credibility with business development" },
 ];
 
 const credibilityChips = [
@@ -34,7 +34,7 @@ const TeamSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">16 — TEAM & FOUNDER</div>
       <h2 className="slide-headline mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Founder-led, category-obsessed, <span className="font-display italic text-[50px] text-primary">execution-driven.</span>
+        Solo founder. Full product. <span className="font-display italic text-[50px] text-primary">Zero capital burned.</span>
       </h2>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -50,9 +50,9 @@ const TeamSlide = () => (
                 <h3 className="text-2xl font-bold text-foreground">Brian Weiss</h3>
                 <p className="text-sm text-primary font-semibold">Founder & CEO — Flipr.Media</p>
                 <p className="text-[11px] text-muted-foreground mt-2 leading-relaxed">
-                  Media-minded entrepreneur with a background in entertainment and marketing. Spotted the live selling
-                  category early, recognized the media gap, and built Flipr.Media from the ground up using Lovable and
-                  modern AI-driven workflows — demonstrating speed, resourcefulness, and deep founder hustle.
+                  Background in entertainment, marketing, and brand strategy. Identified the live selling media gap early,
+                  built and launched the entire Flipr.Media platform using AI-driven workflows — demonstrating
+                  the speed, resourcefulness, and product instinct that define successful solo founders.
                 </p>
               </div>
             </div>
@@ -89,9 +89,9 @@ const TeamSlide = () => (
               <Zap className="w-4 h-4 text-accent" />
               <span className="text-xs font-bold text-foreground">Built with Lovable</span>
             </div>
-            <p className="text-[10px] text-muted-foreground leading-relaxed">
-              Leveraged AI-powered vibe coding to build and launch a full media platform from scratch — proving that
-              a single founder with vision and modern tools can create real products fast.
+             <p className="text-[10px] text-muted-foreground leading-relaxed">
+              Leveraged AI-powered development to build and launch a complete media platform solo — proving that
+              the right founder with modern tools can create real products before raising a dollar.
             </p>
           </div>
         </div>
@@ -104,7 +104,7 @@ const TeamSlide = () => (
             <div className="h-px flex-1 bg-primary/15" />
           </div>
           <p className="text-[11px] text-muted-foreground mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.52s' }}>
-            Key hires unlocked by this round to scale from founder-led to operational team.
+            This round funds the first key hires to scale from founder-led execution to an operational team.
           </p>
 
           <div className="flex flex-col gap-3 flex-1">
@@ -128,8 +128,7 @@ const TeamSlide = () => (
           {/* Team philosophy */}
           <div className="glass-card p-4 mt-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.8s' }}>
             <p className="text-[10px] text-muted-foreground leading-relaxed text-center italic">
-              "Small, focused teams with strong founder DNA build the best vertical media companies.
-              This round enables the transition from solo founder to <span className="text-primary font-semibold not-italic">high-leverage operating team</span>."
+              "The best vertical media companies start with a single obsessed founder. This round enables the transition to a <span className="text-primary font-semibold not-italic">high-leverage operating team</span>."
             </p>
           </div>
         </div>

@@ -7,10 +7,10 @@ const painCards = [
     icon: Users,
     color: "primary",
     pains: [
-      "No centralized profile or reputation system",
-      "No way to be discovered across platforms",
-      "No press coverage or credibility signals",
-      "No performance benchmarks or rankings",
+      "No cross-platform profile or reputation layer",
+      "No way to be discovered by buyers or brands",
+      "Zero press infrastructure — no credibility signals",
+      "No benchmarks to measure or prove performance",
     ],
   },
   {
@@ -18,21 +18,21 @@ const painCards = [
     icon: Megaphone,
     color: "accent",
     pains: [
-      "No media channel to reach live sellers",
-      "No audience data or targeting tools",
-      "No sponsorship or ad infrastructure",
-      "No industry benchmarks for campaign ROI",
+      "No dedicated media channel to reach live sellers",
+      "No audience segmentation or targeting data",
+      "No sponsorship, native ad, or placement infrastructure",
+      "No ROI benchmarks — impossible to plan spend",
     ],
   },
   {
-    title: "Audiences & Investors",
+    title: "Platforms & Investors",
     icon: Eye,
     color: "primary",
     pains: [
-      "No discovery layer for live shows or sellers",
-      "No aggregated news or trend coverage",
-      "No market intelligence or data products",
-      "No trusted editorial voice for the category",
+      "No aggregated discovery layer for shows or sellers",
+      "No independent reporting on the live commerce sector",
+      "No market intelligence, rankings, or trend data",
+      "No trusted editorial source — category lacks credibility",
     ],
   },
 ];
@@ -42,8 +42,8 @@ const gapItems = [
   { icon: Search, label: "No Discovery" },
   { icon: BarChart3, label: "No Data" },
   { icon: Megaphone, label: "No Ad Layer" },
-  { icon: AlertTriangle, label: "No Press" },
-  { icon: ShieldQuestion, label: "No Trust Signals" },
+  { icon: AlertTriangle, label: "No Coverage" },
+  { icon: ShieldQuestion, label: "No Trust Layer" },
   { icon: Radio, label: "No Show Index" },
   { icon: Layers, label: "No Central Hub" },
 ];
@@ -77,11 +77,11 @@ const ProblemSlide = () => (
       <div className="mb-6">
         <div className="slide-label mb-4 opacity-0 animate-fade-up">02 — THE PROBLEM</div>
         <h2 className="slide-headline mb-4 opacity-0 animate-fade-up max-w-[1100px]" style={{ animationDelay: '0.1s' }}>
-          Live selling is exploding.{" "}
-          <span className="font-display italic text-[50px] text-primary">The industry still lacks its media home.</span>
+          A $170B market with zero{" "}
+          <span className="font-display italic text-[50px] text-primary">media infrastructure.</span>
         </h2>
         <p className="slide-subhead max-w-[850px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-          Despite billions in commerce volume, live selling has no dedicated media and intelligence layer.
+          Live commerce generates billions in GMV across 7+ platforms — yet no one covers it, ranks it, or monetizes the attention around it.
         </p>
       </div>
 
@@ -129,7 +129,7 @@ const ProblemSlide = () => (
             <div className="text-[10px] font-mono-brand text-destructive/70 tracking-[0.2em] mb-2">TODAY</div>
             <h4 className="text-base font-bold text-foreground mb-3">Fragmented & Invisible</h4>
             <div className="space-y-2">
-              {["Scattered across Reddit & Discord", "No discovery or data layer", "No ad infrastructure", "No editorial authority"].map((t, i) => (
+              {["Industry conversation stuck in Reddit & Discord", "No centralized discovery or data", "No ad infrastructure for advertisers", "No editorial authority or trust layer"].map((t, i) => (
                 <div key={i} className="flex items-center gap-2 text-[12px] text-muted-foreground">
                   <span className="text-destructive/70 text-[10px]">✕</span> {t}
                 </div>

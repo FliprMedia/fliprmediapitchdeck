@@ -39,10 +39,10 @@ const CategoryLeaderSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">13 — CATEGORY LEADERSHIP</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Own the audience, own the narrative, <span className="font-display italic text-[50px] text-primary">own the economics.</span>
+        Own the audience. Own the data. <span className="font-display italic text-[50px] text-primary">Own the exit.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Category-defining media businesses command significant value when they become the trusted gateway into a fast-growing market.
+        Vertical media brands that become the trusted gateway into fast-growing markets command premium valuations and attract strategic acquirers.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -119,7 +119,7 @@ const CategoryLeaderSlide = () => (
               <span className="text-xs font-bold text-foreground">Strategic Value Drivers</span>
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-              {["Strategic acquisition appeal", "Media + commerce + data multiples", "Defensible niche leadership", "Future platform optionality"].map(d => (
+              {["Strategic acquirer appeal", "Media + data hybrid multiples", "Defensible niche monopoly", "Platform optionality (SaaS, events, data)"].map(d => (
                 <div key={d} className="flex items-center gap-1.5">
                   <div className="w-1 h-1 rounded-full bg-accent/50 shrink-0" />
                   <span className="text-[10px] text-muted-foreground">{d}</span>
@@ -131,7 +131,7 @@ const CategoryLeaderSlide = () => (
           {/* Whatnot reference */}
           <div className="glass-card p-4 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.9s' }}>
             <p className="text-[11px] text-muted-foreground leading-relaxed italic">
-              "Whatnot's roughly <span className="text-primary font-bold not-italic">$4.97B valuation</span> highlights investor belief in the long-term scale of livestream commerce infrastructure and category winners."
+              "Whatnot's <span className="text-primary font-bold not-italic">$4.97B valuation</span> signals deep investor conviction in live commerce infrastructure. The media layer serving this ecosystem is still unclaimed."
             </p>
           </div>
         </div>

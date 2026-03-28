@@ -75,10 +75,10 @@ const BusinessModelSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">08 — BUSINESS MODEL</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Multi-layered revenue from <span className="font-display italic text-[50px] text-primary">media to intelligence.</span>
+        Four revenue layers. <span className="font-display italic text-[50px] text-primary">Increasing margin at each level.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Stacked monetization model that evolves from ad-supported media into high-margin data and intelligence products.
+        Starts with proven media economics. Scales into high-margin data and intelligence products — the same playbook as PitchBook and The Information.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">

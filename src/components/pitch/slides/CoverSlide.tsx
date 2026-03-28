@@ -71,13 +71,13 @@ const CoverSlide = () => (
 
       {/* Subheadline */}
       <h1 className="text-[30px] font-semibold leading-[1.25] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
-        <span className="text-foreground/90">The first media and intelligence platform</span>{" "}
-        <span className="gradient-text font-display italic text-[32px]">built for the live selling economy.</span>
+        <span className="text-foreground/90">The media and intelligence platform</span>{" "}
+        <span className="gradient-text font-display italic text-[32px]">for the $170B+ live commerce economy.</span>
       </h1>
 
       {/* Support */}
       <p className="text-[17px] text-muted-foreground leading-relaxed mb-10 max-w-[580px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
-        Raising $500,000 to complete the platform, accelerate audience growth, and build the category-defining media brand for livestream commerce.
+        Live selling is the fastest-growing segment in commerce. There is no media brand serving it. We're building it — and raising $500K to own the category.
       </p>
 
       {/* Raise pill */}

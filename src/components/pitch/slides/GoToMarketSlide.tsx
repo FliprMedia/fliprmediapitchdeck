@@ -69,10 +69,10 @@ const GoToMarketSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">09 — GO-TO-MARKET</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Build credibility fast, own the niche, <span className="font-display italic text-[50px] text-primary">scale with community.</span>
+        Content builds authority. Authority builds <span className="font-display italic text-[50px] text-primary">a revenue engine.</span>
       </h2>
       <p className="slide-subhead mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        A phased strategy that compounds content into authority, audience, and revenue.
+        Three phases. Each compounds into the next. By month 9, multiple revenue streams are active.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -129,10 +129,10 @@ const GoToMarketSlide = () => (
           <div className="glass-card p-4 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
             <div className="flex items-center gap-2 mb-1">
               <Rocket className="w-4 h-4 text-primary" />
-              <span className="text-xs font-bold text-foreground">Community Flywheel Effect</span>
+              <span className="text-xs font-bold text-foreground">Built-In Viral Loop</span>
             </div>
             <p className="text-[10px] text-muted-foreground leading-relaxed">
-              Sellers share their Flipr profiles and coverage → new sellers want to be featured → content supply grows → audience grows → advertisers follow.
+              Sellers share their Flipr coverage → new sellers want to be featured → content grows → audience grows → advertisers pay for access. The flywheel is self-reinforcing.
             </p>
           </div>
         </div>
