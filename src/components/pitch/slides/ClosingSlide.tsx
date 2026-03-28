@@ -55,8 +55,8 @@ const ClosingSlide = () => (
 
       {/* Headline */}
       <h2 className="text-[34px] font-bold text-center text-foreground mb-4 max-w-[900px] opacity-0 animate-fade-up leading-[1.2]" style={{ animationDelay: '0.2s' }}>
-        The live selling economy will have a{" "}
-        <span className="font-display italic text-primary text-[36px]">defining media brand.</span>
+        Every fast-growing category gets a{" "}
+        <span className="font-display italic text-primary text-[36px]">defining media brand.</span> This is ours to build.
       </h2>
 
       {/* Divider */}
@@ -64,9 +64,8 @@ const ClosingSlide = () => (
 
       {/* Closing copy */}
       <p className="text-[17px] text-muted-foreground text-center max-w-[800px] leading-[1.7] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
-        Flipr.Media is built to become the trusted voice, discovery engine, and intelligence layer for one of the
-        fastest-evolving commerce behaviors on the internet. The platforms are growing. The sellers are rising.
-        The advertisers are coming. The category now needs its <span className="text-primary font-semibold">media leader</span>.
+        The platforms are scaling. The sellers are rising. The advertisers are coming. 
+        The only thing missing is the media layer that connects them all. That's Flipr.Media — and the window to build it is <span className="text-primary font-semibold">right now</span>.
       </p>
 
       {/* Contact card */}

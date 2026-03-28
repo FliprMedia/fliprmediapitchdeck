@@ -2,12 +2,12 @@ import SlideLayout from "../SlideLayout";
 import { Rocket, Globe, Megaphone, BarChart3, Users, TrendingUp, Mail, CheckCircle } from "lucide-react";
 
 const unlocks = [
-  { icon: Globe, label: "Launch-ready fully operational platform" },
-  { icon: Megaphone, label: "Monetization systems in place" },
-  { icon: BarChart3, label: "Stronger content cadence & editorial" },
-  { icon: Users, label: "Advertiser and sponsor sales motion" },
-  { icon: TrendingUp, label: "Measurable audience growth" },
-  { icon: Rocket, label: "Clearer path to category leadership" },
+  { icon: Globe, label: "Fully operational platform with monetization" },
+  { icon: Megaphone, label: "Active advertiser and sponsor revenue" },
+  { icon: BarChart3, label: "Consistent editorial cadence at scale" },
+  { icon: Users, label: "Outbound sales motion for brands" },
+  { icon: TrendingUp, label: "Measurable audience and subscriber growth" },
+  { icon: Rocket, label: "Clear metrics for a Series A conversation" },
 ];
 
 const idealInvestors = [
@@ -25,11 +25,11 @@ const TheAskSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">17 — THE ASK</div>
       <h2 className="text-[38px] font-extrabold leading-[1.15] mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Raising <span className="text-primary neon-glow">$500,000</span> to build the category leader{" "}
-        <span className="font-display italic text-[40px]">in live selling media.</span>
+        <span className="text-primary neon-glow">$500K</span> to own the media layer{" "}
+        <span className="font-display italic text-[40px]">of a $170B+ market.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Complete the platform, accelerate audience growth, establish monetization, and build the operational backbone.
+        Complete the platform. Activate revenue. Prove the model. Position for a strong Series A.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -90,8 +90,8 @@ const TheAskSlide = () => (
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-3">Join the Round</h3>
             <p className="text-[12px] text-muted-foreground leading-relaxed max-w-[340px] mb-6">
-              Be part of building the media and intelligence layer for a $170B+ market.
-              Early investors get access to category ownership in live commerce.
+              First-mover position in the media layer of a $170B+ market.
+              Early investors are buying category ownership at pre-revenue pricing.
             </p>
             <div className="divider-glow w-full mb-5" />
             <div className="text-[10px] text-muted-foreground/50 mb-1 font-mono-brand tracking-[0.1em] uppercase">Invest in the future of live commerce media</div>
