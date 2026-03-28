@@ -1,4 +1,6 @@
 import SlideLayout from "../SlideLayout";
+import DesktopMockup from "../mockups/DesktopMockup";
+import MobileMockup from "../mockups/MobileMockup";
 
 const ClosingSlide = () => (
   <SlideLayout>
@@ -19,35 +21,24 @@ const ClosingSlide = () => (
       backgroundSize: '120px 120px'
     }} />
 
-    {/* Ghosted mockup layers */}
-    <div className="absolute left-[-80px] top-[150px] w-[420px] opacity-[0.04] rotate-[-8deg]">
-      <div className="rounded-2xl border border-border/20 bg-card/10 overflow-hidden">
-        <div className="flex items-center gap-1.5 px-3 py-2 border-b border-border/10">
-          <div className="w-2 h-2 rounded-full bg-muted-foreground/10" />
-          <div className="w-2 h-2 rounded-full bg-muted-foreground/10" />
-          <div className="w-2 h-2 rounded-full bg-muted-foreground/10" />
-        </div>
-        <div className="p-5 space-y-3">
-          <div className="h-2.5 bg-foreground/5 rounded w-1/2" />
-          <div className="grid grid-cols-3 gap-2">
-            {[1,2,3].map(i => <div key={i} className="h-20 bg-muted/5 rounded-lg" />)}
-          </div>
-        </div>
-      </div>
+    {/* Ghosted large mockups — left */}
+    <div className="absolute left-[-100px] top-[100px] opacity-[0.06] rotate-[-6deg]">
+      <DesktopMockup variant="homepage" className="w-[450px] h-[320px]" />
     </div>
 
-    <div className="absolute right-[-60px] bottom-[180px] w-[380px] opacity-[0.03] rotate-[6deg]">
-      <div className="rounded-2xl border border-border/15 bg-card/8 overflow-hidden">
-        <div className="flex items-center gap-1.5 px-3 py-2 border-b border-border/8">
-          <div className="w-2 h-2 rounded-full bg-muted-foreground/8" />
-          <div className="w-2 h-2 rounded-full bg-muted-foreground/8" />
-          <div className="w-2 h-2 rounded-full bg-muted-foreground/8" />
-        </div>
-        <div className="p-4 space-y-2">
-          <div className="h-2 bg-foreground/4 rounded w-2/3" />
-          <div className="h-24 bg-muted/4 rounded-lg" />
-        </div>
-      </div>
+    {/* Ghosted mobile — right */}
+    <div className="absolute right-[40px] top-[120px] opacity-[0.05] rotate-[5deg]">
+      <MobileMockup variant="seller" className="w-[100px] h-[190px]" />
+    </div>
+
+    {/* Ghosted desktop — bottom right */}
+    <div className="absolute right-[-80px] bottom-[120px] opacity-[0.04] rotate-[4deg]">
+      <DesktopMockup variant="platforms" className="w-[400px] h-[280px]" />
+    </div>
+
+    {/* Ghosted mobile — bottom left */}
+    <div className="absolute left-[60px] bottom-[100px] opacity-[0.05] rotate-[-4deg]">
+      <MobileMockup variant="live" className="w-[90px] h-[170px]" />
     </div>
 
     {/* Main content */}
