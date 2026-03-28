@@ -1,100 +1,92 @@
 import SlideLayout from "../SlideLayout";
+import { Check, Minus } from "lucide-react";
 
-const competitors = [
-  { name: "Reddit / Discord", coverage: 2, commerce: 4, data: 1, monetization: 1, dedicated: false },
-  { name: "YouTube / TikTok", coverage: 2, commerce: 3, data: 1, monetization: 1, dedicated: false },
-  { name: "Generic Tech Press", coverage: 1, commerce: 1, data: 1, monetization: 3, dedicated: false },
-  { name: "Platform Blogs", coverage: 2, commerce: 3, data: 2, monetization: 1, dedicated: false },
-  { name: "Flipr.Media", coverage: 5, commerce: 5, data: 5, monetization: 4, dedicated: true },
+const columns = [
+  "Dedicated to Live Selling",
+  "Cross-Platform Coverage",
+  "Editorial Credibility",
+  "Seller Discovery",
+  "Advertiser Inventory",
+  "Rankings & Data",
+  "Category Brand",
 ];
 
-const Dot = ({ filled }: { filled: boolean }) => (
-  <div className={`w-3 h-3 rounded-full ${filled ? 'bg-primary' : 'bg-muted-foreground/20'}`} />
-);
-
-const Rating = ({ value }: { value: number }) => (
-  <div className="flex gap-1">
-    {[1,2,3,4,5].map(i => <Dot key={i} filled={i <= value} />)}
-  </div>
-);
+const competitors = [
+  { name: "Flipr.Media", highlight: true, scores: [true, true, true, true, true, true, true] },
+  { name: "General Ecommerce Media", highlight: false, scores: [false, true, true, false, true, false, false] },
+  { name: "Creator Economy Newsletters", highlight: false, scores: [false, false, true, false, false, false, false] },
+  { name: "Platform Seller Communities", highlight: false, scores: [true, false, false, true, false, false, false] },
+  { name: "Marketplace Blogs", highlight: false, scores: [false, false, false, false, false, false, false] },
+  { name: "Social Trend Pages", highlight: false, scores: [false, false, false, false, false, false, false] },
+  { name: "Seller Tools / SaaS", highlight: false, scores: [false, false, false, true, false, true, false] },
+  { name: "Agencies / Consultants", highlight: false, scores: [false, false, false, false, true, false, false] },
+];
 
 const CompetitiveSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/5" />
+    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
+    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/3 rounded-full blur-[200px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-16">
-      <div className="text-primary font-mono text-sm tracking-widest mb-4 opacity-0 animate-fade-up">10 — COMPETITIVE LANDSCAPE</div>
-      <h2 className="text-[44px] font-bold leading-tight mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        No Real <span className="text-primary">Direct Competitor</span> Exists
+    <div className="relative z-10 flex flex-col h-full px-20 py-14">
+      {/* Header */}
+      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">10 — COMPETITIVE LANDSCAPE</div>
+      <h2 className="text-[42px] font-bold leading-tight mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Flipr.Media occupies a <span className="text-primary">white space.</span>
       </h2>
+      <p className="text-lg text-muted-foreground mb-6 max-w-[1000px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        No existing player combines dedicated live selling coverage, cross-platform editorial, seller discovery, and advertiser infrastructure.
+      </p>
 
-      <div className="flex gap-8 flex-1">
-        {/* Quadrant chart */}
-        <div className="w-[520px] flex items-center justify-center opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
-          <div className="relative w-[460px] h-[460px]">
-            {/* Axes */}
-            <div className="absolute left-0 right-0 top-1/2 h-[1px] bg-border" />
-            <div className="absolute top-0 bottom-0 left-1/2 w-[1px] bg-border" />
-            {/* Labels */}
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-muted-foreground">General Coverage</div>
-            <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-xs text-muted-foreground font-semibold text-primary">Deep Coverage</div>
-            <div className="absolute top-1/2 -left-[90px] -translate-y-1/2 text-xs text-muted-foreground -rotate-90">General Media</div>
-            <div className="absolute top-1/2 -right-[100px] -translate-y-1/2 text-xs text-muted-foreground font-semibold text-primary -rotate-90">Commerce-Focused</div>
-            
-            {/* Competitor dots */}
-            <div className="absolute top-[280px] left-[280px] flex flex-col items-center">
-              <div className="w-4 h-4 rounded-full bg-muted-foreground/30" />
-              <span className="text-[10px] text-muted-foreground mt-1">Reddit/Discord</span>
-            </div>
-            <div className="absolute top-[300px] left-[160px] flex flex-col items-center">
-              <div className="w-4 h-4 rounded-full bg-muted-foreground/30" />
-              <span className="text-[10px] text-muted-foreground mt-1">YouTube</span>
-            </div>
-            <div className="absolute top-[150px] left-[100px] flex flex-col items-center">
-              <div className="w-4 h-4 rounded-full bg-muted-foreground/30" />
-              <span className="text-[10px] text-muted-foreground mt-1">Tech Press</span>
-            </div>
-            <div className="absolute top-[220px] left-[300px] flex flex-col items-center">
-              <div className="w-4 h-4 rounded-full bg-muted-foreground/30" />
-              <span className="text-[10px] text-muted-foreground mt-1">Platform Blogs</span>
-            </div>
-            {/* Flipr */}
-            <div className="absolute top-[60px] right-[40px] flex flex-col items-center">
-              <div className="w-7 h-7 rounded-full bg-primary animate-pulse-neon flex items-center justify-center">
-                <span className="text-[8px] font-bold text-primary-foreground">F</span>
-              </div>
-              <span className="text-xs text-primary font-bold mt-1">Flipr.Media</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Comparison table */}
-        <div className="flex-1 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
-          <div className="glass-card overflow-hidden">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b border-border">
-                  <th className="text-left p-4 text-sm font-medium text-muted-foreground">Source</th>
-                  <th className="text-center p-4 text-xs font-medium text-muted-foreground">Coverage</th>
-                  <th className="text-center p-4 text-xs font-medium text-muted-foreground">Commerce</th>
-                  <th className="text-center p-4 text-xs font-medium text-muted-foreground">Data</th>
-                  <th className="text-center p-4 text-xs font-medium text-muted-foreground">Monetize</th>
-                </tr>
-              </thead>
-              <tbody>
-                {competitors.map(c => (
-                  <tr key={c.name} className={`border-b border-border/50 ${c.dedicated ? 'bg-primary/5' : ''}`}>
-                    <td className={`p-4 text-sm font-medium ${c.dedicated ? 'text-primary' : 'text-foreground'}`}>{c.name}</td>
-                    <td className="p-4"><div className="flex justify-center"><Rating value={c.coverage} /></div></td>
-                    <td className="p-4"><div className="flex justify-center"><Rating value={c.commerce} /></div></td>
-                    <td className="p-4"><div className="flex justify-center"><Rating value={c.data} /></div></td>
-                    <td className="p-4"><div className="flex justify-center"><Rating value={c.monetization} /></div></td>
-                  </tr>
+      {/* Comparison Matrix */}
+      <div className="flex-1 glass-card overflow-hidden opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+        <table className="w-full h-full">
+          <thead>
+            <tr className="border-b border-border">
+              <th className="text-left px-5 py-3 text-[12px] font-semibold text-muted-foreground w-[260px]">Competitor</th>
+              {columns.map(col => (
+                <th key={col} className="text-center px-2 py-3 text-[10px] font-semibold text-muted-foreground leading-tight">{col}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {competitors.map((c, i) => (
+              <tr
+                key={c.name}
+                className={`border-b border-border/30 transition-colors ${
+                  c.highlight
+                    ? 'bg-primary/8'
+                    : i % 2 === 1
+                    ? 'bg-muted/5'
+                    : ''
+                }`}
+              >
+                <td className={`px-5 py-2.5 text-[13px] font-semibold ${c.highlight ? 'text-primary' : 'text-foreground/80'}`}>
+                  {c.highlight && <span className="inline-block w-2 h-2 rounded-full bg-primary mr-2 animate-pulse" />}
+                  {c.name}
+                </td>
+                {c.scores.map((score, j) => (
+                  <td key={j} className="text-center px-2 py-2.5">
+                    {score ? (
+                      <div className={`w-6 h-6 rounded-full ${c.highlight ? 'bg-primary/20' : 'bg-primary/10'} flex items-center justify-center mx-auto`}>
+                        <Check className={`w-3.5 h-3.5 ${c.highlight ? 'text-primary' : 'text-primary/70'}`} />
+                      </div>
+                    ) : (
+                      <Minus className="w-3.5 h-3.5 text-muted-foreground/25 mx-auto" />
+                    )}
+                  </td>
                 ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Bottom insight */}
+      <div className="mt-4 glass-card p-4 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+        <p className="text-[12px] text-muted-foreground leading-relaxed text-center">
+          Most alternatives either serve a <span className="text-foreground font-medium">single platform</span>, sell software, or cover commerce broadly.
+          Flipr.Media is positioned to become the <span className="text-primary font-bold">category-defining media brand</span> for live selling — owning editorial, discovery, data, and advertiser access across the entire ecosystem.
+        </p>
       </div>
     </div>
   </SlideLayout>
