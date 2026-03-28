@@ -1,77 +1,159 @@
 import SlideLayout from "../SlideLayout";
-import { X, Check } from "lucide-react";
+import { Shield, Users, BarChart3, Megaphone, Database, Award, ShoppingCart, Eye, Wrench, Building2, Target } from "lucide-react";
 
-const beforeItems = [
-  "Sellers rely on Reddit threads and Discord for news",
-  "No centralized discovery for live shows",
-  "Brands have no way to reach live sellers",
-  "No rankings, data, or industry benchmarks",
-  "No press coverage of live commerce ecosystem",
+const existsToday = [
+  { icon: ShoppingCart, label: "Marketplaces", desc: "Facilitate transactions" },
+  { icon: Eye, label: "Social Platforms", desc: "Host attention" },
+  { icon: Wrench, label: "Seller Tools", desc: "Help sellers operate" },
+  { icon: Building2, label: "Agencies", desc: "Help with marketing" },
 ];
 
-const afterItems = [
-  "One platform for all live commerce news and intel",
-  "Discover live shows across every major platform",
-  "Brands reach sellers through targeted media + ads",
-  "Industry-first rankings, indexes, and data",
-  "Dedicated editorial team covering the space",
+const ecosystemNodes = [
+  { label: "Whatnot", angle: 0 },
+  { label: "TikTok Shop", angle: 45 },
+  { label: "Sellers", angle: 90 },
+  { label: "Brands", angle: 135 },
+  { label: "eBay Live", angle: 180 },
+  { label: "Audiences", angle: 225 },
+  { label: "Advertisers", angle: 270 },
+  { label: "Agencies", angle: 315 },
+];
+
+const moats = [
+  { icon: Target, title: "Niche Category Ownership", desc: "First-mover in a fast-growing vertical with no incumbent media brand" },
+  { icon: Users, title: "Audience Concentration", desc: "Aggregating fragmented attention into a single trusted destination" },
+  { icon: Award, title: "Trusted Editorial Brand", desc: "Credibility compounds — becoming the source of record for the industry" },
+  { icon: BarChart3, title: "Proprietary Rankings & Data", desc: "Exclusive indexes, seller profiles, and performance benchmarks" },
+  { icon: Megaphone, title: "Advertiser Relationships", desc: "Direct relationships with brands targeting commerce creators" },
+  { icon: Database, title: "Industry Dataset & Lead Gen", desc: "Future data products and lead generation engine for platforms and brands" },
 ];
 
 const FirstOfKindSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/5" />
+    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5" />
+    <div className="absolute top-[200px] left-[400px] w-[600px] h-[600px] bg-primary/3 rounded-full blur-[200px]" />
 
-    <div className="relative z-10 flex flex-col h-full px-20 py-16">
-      <div className="text-primary font-mono text-sm tracking-widest mb-4 opacity-0 animate-fade-up">06 — FIRST-OF-ITS-KIND</div>
-      <h2 className="text-[48px] font-bold leading-tight mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        What Makes Flipr <span className="text-primary">Unprecedented</span>
+    <div className="relative z-10 flex flex-col h-full px-20 py-14">
+      {/* Header */}
+      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">06 — FIRST-OF-ITS-KIND</div>
+      <h2 className="text-[42px] font-bold leading-tight mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Not another commerce site. <span className="text-muted-foreground">Not another creator blog.</span>
       </h2>
+      <p className="text-lg text-muted-foreground mb-8 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        No platform is dedicated to covering, ranking, profiling, and organizing the live selling industry itself.
+      </p>
 
-      <div className="flex gap-8 flex-1">
-        {/* Before */}
-        <div className="flex-1 glass-card p-8 border-destructive/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          <h3 className="text-2xl font-bold mb-6 text-destructive/80">Before Flipr</h3>
-          <div className="space-y-5">
-            {beforeItems.map(item => (
-              <div key={item} className="flex items-start gap-3">
-                <X className="w-5 h-5 text-destructive/60 mt-0.5 shrink-0" />
-                <span className="text-muted-foreground">{item}</span>
-              </div>
-            ))}
+      <div className="flex flex-1 gap-8 min-h-0">
+        {/* Left: What exists + Ecosystem map */}
+        <div className="w-[680px] flex flex-col gap-5">
+          {/* What exists today */}
+          <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3 block">What exists today</span>
+            <div className="grid grid-cols-4 gap-2.5">
+              {existsToday.map((item, i) => (
+                <div key={item.label} className="glass-card p-3 text-center border-muted-foreground/10 opacity-0 animate-fade-up" style={{ animationDelay: `${0.25 + i * 0.04}s` }}>
+                  <item.icon className="w-5 h-5 text-muted-foreground/50 mx-auto mb-1.5" />
+                  <div className="text-[11px] font-semibold text-foreground/70">{item.label}</div>
+                  <div className="text-[9px] text-muted-foreground">{item.desc}</div>
+                </div>
+              ))}
+            </div>
+            <div className="text-center text-[10px] text-destructive/60 font-medium mt-2 italic">
+              None cover, rank, or organize the live selling industry
+            </div>
           </div>
-        </div>
 
-        {/* After */}
-        <div className="flex-1 glass-card p-8 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-          <h3 className="text-2xl font-bold mb-6 text-primary">After Flipr</h3>
-          <div className="space-y-5">
-            {afterItems.map(item => (
-              <div key={item} className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                <span className="text-foreground">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Venn diagram */}
-        <div className="w-[400px] flex items-center justify-center opacity-0 animate-scale-in" style={{ animationDelay: '0.4s' }}>
-          <div className="relative w-[350px] h-[350px]">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[200px] h-[200px] rounded-full border-2 border-primary/30 bg-primary/5 flex items-center justify-center">
-              <span className="text-sm font-semibold text-primary mt-[-20px]">Media</span>
-            </div>
-            <div className="absolute bottom-0 left-[30px] w-[200px] h-[200px] rounded-full border-2 border-accent/30 bg-accent/5 flex items-end justify-center pb-6">
-              <span className="text-sm font-semibold text-accent">Data</span>
-            </div>
-            <div className="absolute bottom-0 right-[30px] w-[200px] h-[200px] rounded-full border-2 border-foreground/20 bg-foreground/5 flex items-end justify-center pb-6">
-              <span className="text-sm font-semibold text-foreground/70">Commerce</span>
-            </div>
+          {/* Ecosystem map */}
+          <div className="flex-1 relative opacity-0 animate-scale-in" style={{ animationDelay: '0.4s' }}>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center mt-8">
-                <div className="text-lg font-black text-primary">Flipr</div>
-                <div className="text-xs text-muted-foreground">.Media</div>
+              <div className="relative w-[380px] h-[380px]">
+                {/* Connection lines */}
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 380 380">
+                  {ecosystemNodes.map((node) => {
+                    const rad = (node.angle * Math.PI) / 180;
+                    const cx = 190 + Math.cos(rad) * 155;
+                    const cy = 190 + Math.sin(rad) * 155;
+                    return (
+                      <line
+                        key={node.label}
+                        x1="190" y1="190"
+                        x2={cx} y2={cy}
+                        stroke="hsl(var(--primary))"
+                        strokeOpacity="0.15"
+                        strokeWidth="1"
+                        strokeDasharray="4 4"
+                      />
+                    );
+                  })}
+                </svg>
+
+                {/* Center: Flipr */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                  <div className="w-[120px] h-[120px] rounded-full bg-primary/10 border-2 border-primary/40 flex items-center justify-center backdrop-blur-sm">
+                    <div className="text-center">
+                      <div className="text-xl font-black text-primary">Flipr</div>
+                      <div className="text-[10px] text-primary/70 font-medium">.Media</div>
+                      <div className="text-[7px] text-muted-foreground mt-0.5">Editorial • Discovery<br/>Advertiser Hub</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Orbiting nodes */}
+                {ecosystemNodes.map((node) => {
+                  const rad = (node.angle * Math.PI) / 180;
+                  const x = 190 + Math.cos(rad) * 155;
+                  const y = 190 + Math.sin(rad) * 155;
+                  return (
+                    <div
+                      key={node.label}
+                      className="absolute z-10"
+                      style={{
+                        left: `${x}px`,
+                        top: `${y}px`,
+                        transform: 'translate(-50%, -50%)',
+                      }}
+                    >
+                      <div className="glass-card px-3 py-1.5 text-[10px] font-semibold text-foreground/80 whitespace-nowrap">
+                        {node.label}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
+          </div>
+
+          {/* Key positioning line */}
+          <div className="glass-card p-4 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
+            <p className="text-sm text-foreground font-medium text-center leading-relaxed">
+              "Flipr.Media sits above the platforms as the category's <span className="text-primary font-bold">editorial, discovery, and advertiser hub</span>."
+            </p>
+          </div>
+        </div>
+
+        {/* Right: Why this is defensible */}
+        <div className="flex-1 flex flex-col min-h-0">
+          <div className="flex items-center gap-2 mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
+            <Shield className="w-5 h-5 text-primary" />
+            <span className="text-base font-bold text-foreground">Why This Is Defensible</span>
+            <div className="h-px flex-1 bg-primary/15" />
+          </div>
+          <div className="flex flex-col gap-3 flex-1">
+            {moats.map((moat, i) => (
+              <div
+                key={moat.title}
+                className="glass-card p-4 flex items-start gap-3 opacity-0 animate-fade-up hover:border-primary/30 transition-colors"
+                style={{ animationDelay: `${0.6 + i * 0.06}s` }}
+              >
+                <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <moat.icon className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-[13px] font-semibold text-foreground mb-0.5">{moat.title}</h3>
+                  <p className="text-[10px] text-muted-foreground leading-relaxed">{moat.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
