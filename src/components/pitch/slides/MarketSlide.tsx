@@ -1,78 +1,125 @@
 import SlideLayout from "../SlideLayout";
+import { TrendingUp, DollarSign, Globe, Layers, Megaphone } from "lucide-react";
 
-const platforms = [
-  "Whatnot", "TikTok Shop", "eBay Live", "Poshmark", 
-  "Instagram Live", "YouTube Shopping", "TalkShopLive", "Amazon Live"
+const tamLayers = [
+  { label: "TAM", title: "Global Live + Social Commerce", value: "$1.48T+", sub: "Social commerce ecosystem (2025)", size: 420, borderColor: "border-secondary/25", textColor: "text-secondary" },
+  { label: "SAM", title: "US Live Selling + Media & Ad Spend", value: "$20B+", sub: "US livestream commerce + adjacent ad market", size: 300, borderColor: "border-primary/30", textColor: "text-primary" },
+  { label: "SOM", title: "Early Revenue Opportunity", value: "$5–15M", sub: "Ads, sponsorships, premium, data, lead gen", size: 170, borderColor: "border-primary/50", textColor: "text-primary", filled: true },
+];
+
+const stats = [
+  { icon: Globe, value: "$172.86B", label: "Global live commerce market", sub: "2025 estimate" },
+  { icon: TrendingUp, value: "$230.28B", label: "Expected 2026 market", sub: "33% YoY growth" },
+  { icon: DollarSign, value: "$1.48T", label: "Global social commerce", sub: "2025 market size" },
+  { icon: Layers, value: "$14.64B", label: "US livestream ecommerce", sub: "2025 sales" },
+];
+
+const somChannels = [
+  "Advertising", "Sponsorships", "Premium Profiles", "Newsletter", 
+  "Featured Placements", "Research & Data", "Lead Generation",
 ];
 
 const MarketSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/5" />
+    <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/5" />
+    
+    {/* Ambient glows */}
+    <div className="absolute top-[100px] left-[300px] w-[500px] h-[500px] bg-secondary/4 rounded-full blur-[140px]" />
+    <div className="absolute bottom-[50px] right-[200px] w-[400px] h-[400px] bg-primary/4 rounded-full blur-[120px]" />
 
-    <div className="relative z-10 flex h-full">
-      <div className="w-[700px] flex flex-col justify-center pl-20 pr-10">
-        <div className="text-primary font-mono text-sm tracking-widest mb-4 opacity-0 animate-fade-up">04 — MARKET OPPORTUNITY</div>
-        <h2 className="text-[48px] font-bold leading-tight mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          Massive TAM,{" "}
-          <span className="text-primary">Zero Competition</span>
+    <div className="relative z-10 flex flex-col h-full px-20 py-14">
+      {/* Header */}
+      <div className="mb-6">
+        <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">04 — MARKET OPPORTUNITY</div>
+        <h2 className="text-[46px] font-bold leading-[1.1] mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          A large and expanding market<br />with multiple <span className="text-primary">value layers.</span>
         </h2>
-
-        {/* TAM/SAM/SOM */}
-        <div className="relative w-[400px] h-[400px] mx-auto opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
-          {/* TAM */}
-          <div className="absolute inset-0 rounded-full border-2 border-primary/20 flex items-start justify-center pt-8">
-            <div className="text-center">
-              <div className="text-sm text-muted-foreground">TAM</div>
-              <div className="text-2xl font-bold text-primary">$50B+</div>
-              <div className="text-xs text-muted-foreground">Live Commerce GMV</div>
-            </div>
-          </div>
-          {/* SAM */}
-          <div className="absolute inset-[60px] rounded-full border-2 border-accent/30 flex items-start justify-center pt-8">
-            <div className="text-center">
-              <div className="text-sm text-muted-foreground">SAM</div>
-              <div className="text-2xl font-bold text-accent">$2B+</div>
-              <div className="text-xs text-muted-foreground">Media & Ad Spend</div>
-            </div>
-          </div>
-          {/* SOM */}
-          <div className="absolute inset-[130px] rounded-full border-2 border-primary/40 bg-primary/5 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-sm text-muted-foreground">SOM</div>
-              <div className="text-2xl font-bold text-primary">$50M+</div>
-              <div className="text-xs text-muted-foreground">Year 1-3 Target</div>
-            </div>
-          </div>
-        </div>
       </div>
 
-      {/* Right side */}
-      <div className="flex-1 flex flex-col justify-center pr-16 gap-6">
-        {/* Key stats */}
-        <div className="grid grid-cols-2 gap-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-          {[
-            { num: "$50B+", label: "Global Live Commerce GMV", sub: "Growing 30%+ YoY" },
-            { num: "2M+", label: "Active Live Sellers", sub: "US alone" },
-            { num: "500M+", label: "Live Commerce Viewers", sub: "Monthly globally" },
-            { num: "$0", label: "Dedicated Media Spend", sub: "Industry-specific" },
-          ].map(s => (
-            <div key={s.label} className="glass-card p-5">
-              <div className="text-3xl font-black text-primary">{s.num}</div>
-              <div className="text-sm font-medium text-foreground mt-1">{s.label}</div>
-              <div className="text-xs text-muted-foreground mt-1">{s.sub}</div>
-            </div>
-          ))}
+      {/* Main content */}
+      <div className="flex-1 flex gap-10">
+        {/* Left: TAM/SAM/SOM concentric circles */}
+        <div className="w-[520px] flex items-center justify-center opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
+          <div className="relative" style={{ width: 420, height: 420 }}>
+            {tamLayers.map((layer) => {
+              const offset = (420 - layer.size) / 2;
+              return (
+                <div
+                  key={layer.label}
+                  className={`absolute rounded-full border-2 ${layer.borderColor} flex flex-col items-center justify-center ${layer.filled ? 'bg-primary/8' : ''}`}
+                  style={{ width: layer.size, height: layer.size, top: offset, left: offset }}
+                >
+                  {layer.label === "TAM" && (
+                    <div className="absolute top-5 text-center">
+                      <div className={`text-xs font-mono tracking-widest ${layer.textColor} mb-1`}>{layer.label}</div>
+                      <div className={`text-2xl font-black ${layer.textColor}`}>{layer.value}</div>
+                      <div className="text-[11px] text-muted-foreground mt-0.5 max-w-[200px]">{layer.title}</div>
+                    </div>
+                  )}
+                  {layer.label === "SAM" && (
+                    <div className="absolute top-4 text-center">
+                      <div className={`text-xs font-mono tracking-widest ${layer.textColor} mb-1`}>{layer.label}</div>
+                      <div className={`text-xl font-black ${layer.textColor}`}>{layer.value}</div>
+                      <div className="text-[10px] text-muted-foreground mt-0.5 max-w-[160px]">{layer.title}</div>
+                    </div>
+                  )}
+                  {layer.label === "SOM" && (
+                    <div className="text-center">
+                      <div className={`text-xs font-mono tracking-widest ${layer.textColor} mb-1`}>{layer.label}</div>
+                      <div className={`text-xl font-black ${layer.textColor}`}>{layer.value}</div>
+                      <div className="text-[9px] text-muted-foreground mt-0.5 max-w-[120px] leading-tight">{layer.title}</div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
 
-        {/* Platforms */}
-        <div className="glass-card p-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.45s' }}>
-          <div className="text-sm text-muted-foreground mb-3 font-medium">Platforms We Cover</div>
-          <div className="flex flex-wrap gap-2">
-            {platforms.map(p => (
-              <span key={p} className="px-4 py-2 rounded-full bg-muted text-sm font-medium text-foreground border border-border">
-                {p}
-              </span>
+        {/* Right: Stats + SOM channels + Why media matters */}
+        <div className="flex-1 flex flex-col gap-5">
+          {/* Stat callout grid */}
+          <div className="grid grid-cols-2 gap-3.5">
+            {stats.map((s, i) => (
+              <div key={s.label} className="glass-card p-5 opacity-0 animate-fade-up" style={{ animationDelay: `${0.2 + i * 0.06}s` }}>
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <s.icon className="w-4 h-4 text-primary" />
+                  </div>
+                  <span className="text-xs text-muted-foreground font-mono">{s.sub}</span>
+                </div>
+                <div className="text-2xl font-black text-primary">{s.value}</div>
+                <div className="text-sm text-muted-foreground mt-0.5">{s.label}</div>
+              </div>
             ))}
+          </div>
+
+          {/* SOM channels */}
+          <div className="glass-card p-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
+            <div className="text-xs font-mono text-muted-foreground tracking-widest mb-3">SOM REVENUE CHANNELS</div>
+            <div className="flex flex-wrap gap-2">
+              {somChannels.map(c => (
+                <span key={c} className="px-3.5 py-1.5 rounded-full bg-primary/8 border border-primary/15 text-xs font-medium text-primary">
+                  {c}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Why media layer matters */}
+          <div className="glass-card p-5 border-primary/15 opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
+            <div className="flex items-start gap-3">
+              <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                <Megaphone className="w-4.5 h-4.5 text-primary" />
+              </div>
+              <div>
+                <div className="text-sm font-bold text-foreground mb-1">Why the media layer matters</div>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Even a small share of attention and advertising inside a fast-growing ecosystem can create substantial enterprise value. 
+                  The company that owns audience, data, rankings, and advertiser access in live commerce will build a highly defensible position.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
