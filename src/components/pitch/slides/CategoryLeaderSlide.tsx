@@ -1,80 +1,137 @@
 import SlideLayout from "../SlideLayout";
-import { Shield, Database, Trophy, Megaphone, Heart } from "lucide-react";
+import { Eye, Heart, Search, Target, BarChart3, FileText, Layers, ArrowUp, Star, TrendingUp } from "lucide-react";
 
-const moats = [
-  { icon: Shield, title: "Audience Lock-In", desc: "Daily habit through newsletter + discovery" },
-  { icon: Database, title: "Proprietary Data", desc: "Rankings, indexes, seller metrics nobody else has" },
-  { icon: Trophy, title: "Brand Trust", desc: "Editorial credibility built over time, hard to replicate" },
-  { icon: Megaphone, title: "Advertiser Network", desc: "Direct relationships with brands wanting to reach sellers" },
-  { icon: Heart, title: "Community", desc: "Seller profiles, engagement, and identity on-platform" },
+const controls = [
+  { icon: Eye, label: "Attention" },
+  { icon: Heart, label: "Audience Trust" },
+  { icon: Search, label: "Seller Discovery" },
+  { icon: Target, label: "Advertiser Demand" },
+  { icon: BarChart3, label: "Rankings & Data" },
+  { icon: FileText, label: "Category Narrative" },
+  { icon: Layers, label: "Premium Intel Products" },
+];
+
+const ladder = [
+  { label: "Media Brand", color: "primary", opacity: "40" },
+  { label: "Audience Concentration", color: "primary", opacity: "50" },
+  { label: "Advertiser Network", color: "primary", opacity: "60" },
+  { label: "Industry Data", color: "accent", opacity: "50" },
+  { label: "Premium Intelligence", color: "accent", opacity: "60" },
+  { label: "Category Platform Value", color: "accent", opacity: "80" },
 ];
 
 const comparables = [
-  { name: "TechCrunch", category: "Startups / VC", outcome: "Acquired by AOL for $30M → Verizon" },
-  { name: "The Block", category: "Crypto / Web3", outcome: "Scaled to $60M+ revenue" },
-  { name: "The Information", category: "Tech / Business", outcome: "$100M+ valuation, premium model" },
-  { name: "Pitchbook", category: "VC / PE Data", outcome: "Acquired by Morningstar for $225M" },
-  { name: "Business of Fashion", category: "Fashion Industry", outcome: "$100M+ valuation, events + data" },
+  { name: "TechCrunch", niche: "Startups", outcome: "Acquired $30M → Verizon portfolio" },
+  { name: "The Block", niche: "Crypto", outcome: "Scaled to $60M+ revenue" },
+  { name: "PitchBook", niche: "VC/PE Data", outcome: "Acquired for $225M by Morningstar" },
+  { name: "Business of Fashion", niche: "Fashion", outcome: "$100M+ valuation, events + data" },
+  { name: "The Information", niche: "Tech", outcome: "$100M+ valuation, premium subs" },
 ];
 
 const CategoryLeaderSlide = () => (
   <SlideLayout>
     <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/5" />
+    <div className="absolute top-0 left-[400px] w-[700px] h-[700px] bg-accent/3 rounded-full blur-[200px]" />
 
-    <div className="relative z-10 flex h-full px-20 py-16">
-      <div className="w-[700px] flex flex-col">
-        <div className="text-primary font-mono text-sm tracking-widest mb-4 opacity-0 animate-fade-up">13 — CATEGORY LEADERSHIP</div>
-        <h2 className="text-[40px] font-bold leading-tight mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          Why Niche Vertical Media{" "}
-          <span className="text-primary">Wins Big</span>
-        </h2>
+    <div className="relative z-10 flex flex-col h-full px-20 py-14">
+      {/* Header */}
+      <div className="text-primary font-mono text-sm tracking-widest mb-3 opacity-0 animate-fade-up">13 — CATEGORY LEADERSHIP</div>
+      <h2 className="text-[42px] font-bold leading-tight mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        Own the audience, own the narrative, <span className="text-primary">own the economics.</span>
+      </h2>
+      <p className="text-lg text-muted-foreground mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        Category-defining media businesses command significant value when they become the trusted gateway into a fast-growing market.
+      </p>
 
-        {/* Moats */}
-        <div className="space-y-3 mb-8">
-          {moats.map((m, i) => (
-            <div
-              key={m.title}
-              className="glass-card p-4 flex items-center gap-4 opacity-0 animate-fade-up"
-              style={{ animationDelay: `${0.2 + i * 0.07}s` }}
-            >
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                <m.icon className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <h4 className="text-sm font-semibold text-foreground">{m.title}</h4>
-                <p className="text-xs text-muted-foreground">{m.desc}</p>
-              </div>
+      <div className="flex flex-1 gap-7 min-h-0">
+        {/* Left: Controls + Ladder */}
+        <div className="w-[580px] flex flex-col gap-4">
+          {/* What Flipr controls */}
+          <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">What Flipr.Media Controls</span>
+            <div className="flex flex-wrap gap-2">
+              {controls.map((c, i) => (
+                <div key={c.label} className="glass-card px-3 py-2 flex items-center gap-2 opacity-0 animate-fade-up" style={{ animationDelay: `${0.25 + i * 0.04}s` }}>
+                  <c.icon className="w-3.5 h-3.5 text-primary" />
+                  <span className="text-[10px] font-semibold text-foreground">{c.label}</span>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Value Ladder */}
+          <div className="flex-1 flex flex-col justify-center opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
+            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">Value Creation Ladder</span>
+            <div className="flex flex-col gap-1.5">
+              {ladder.map((step, i) => {
+                const width = 55 + i * 8;
+                return (
+                  <div key={step.label} className="flex items-center gap-3">
+                    <div
+                      className={`h-10 rounded-lg bg-${step.color}/15 border border-${step.color}/20 flex items-center px-4 transition-all`}
+                      style={{ width: `${width}%` }}
+                    >
+                      <span className={`text-[11px] font-semibold text-${step.color}`}>{step.label}</span>
+                    </div>
+                    {i < ladder.length - 1 && <ArrowUp className="w-3 h-3 text-muted-foreground/30 rotate-0 shrink-0" />}
+                    {i === ladder.length - 1 && (
+                      <div className="glass-card px-2 py-0.5 border-accent/30">
+                        <Star className="w-3 h-3 text-accent inline mr-1" />
+                        <span className="text-[8px] font-bold text-accent">HIGH VALUE</span>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
-        <div className="glass-card p-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
-          <p className="text-sm text-muted-foreground italic leading-relaxed">
-            "The most defensible media companies own the attention, data, and advertiser access inside a specific vertical. 
-            Flipr.Media is building exactly this for live commerce."
-          </p>
-        </div>
-      </div>
-
-      {/* Comparables */}
-      <div className="flex-1 flex flex-col justify-center pl-8">
-        <h3 className="text-xl font-bold text-foreground mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
-          Comparable Success Stories
-        </h3>
-        <div className="space-y-3">
-          {comparables.map((c, i) => (
-            <div
-              key={c.name}
-              className="glass-card p-5 opacity-0 animate-fade-up"
-              style={{ animationDelay: `${0.4 + i * 0.08}s` }}
-            >
-              <div className="flex items-center justify-between mb-1">
-                <h4 className="text-lg font-bold text-foreground">{c.name}</h4>
-                <span className="text-xs text-muted-foreground font-mono">{c.category}</span>
-              </div>
-              <p className="text-sm text-primary">{c.outcome}</p>
+        {/* Right: Comparables + Valuation logic */}
+        <div className="flex-1 flex flex-col gap-4 min-h-0">
+          {/* Comparables */}
+          <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
+            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">Comparable Category Leaders</span>
+            <div className="flex flex-col gap-2">
+              {comparables.map((c, i) => (
+                <div key={c.name} className="glass-card px-4 py-2.5 flex items-center gap-3 opacity-0 animate-fade-up" style={{ animationDelay: `${0.6 + i * 0.05}s` }}>
+                  <div className="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <TrendingUp className="w-3.5 h-3.5 text-primary" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[12px] font-bold text-foreground">{c.name}</span>
+                      <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-muted/40 text-muted-foreground font-medium">{c.niche}</span>
+                    </div>
+                    <span className="text-[10px] text-primary/80">{c.outcome}</span>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Valuation logic */}
+          <div className="glass-card p-4 border-accent/15 opacity-0 animate-fade-up" style={{ animationDelay: '0.85s' }}>
+            <div className="flex items-center gap-2 mb-2">
+              <Star className="w-4 h-4 text-accent" />
+              <span className="text-xs font-bold text-foreground">Strategic Value Drivers</span>
+            </div>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+              {["Strategic acquisition appeal", "Media + commerce + data multiples", "Defensible niche leadership", "Future platform optionality"].map(d => (
+                <div key={d} className="flex items-center gap-1.5">
+                  <div className="w-1 h-1 rounded-full bg-accent/50 shrink-0" />
+                  <span className="text-[10px] text-muted-foreground">{d}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Whatnot reference */}
+          <div className="glass-card p-4 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.9s' }}>
+            <p className="text-[11px] text-muted-foreground leading-relaxed italic">
+              "Whatnot's roughly <span className="text-primary font-bold not-italic">$4.97B valuation</span> highlights investor belief in the long-term scale of livestream commerce infrastructure and category winners."
+            </p>
+          </div>
         </div>
       </div>
     </div>
