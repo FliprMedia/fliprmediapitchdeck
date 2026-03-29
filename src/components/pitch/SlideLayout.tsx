@@ -10,11 +10,11 @@ const SlideLayout: React.FC<SlideLayoutProps> = ({ children, className = "", hid
   return (
     <div className={`relative w-[1920px] h-[1080px] overflow-hidden ${className}`}>
       {children}
-      {/* Persistent brand logo — bottom left footer */}
+      {/* Persistent brand logo — top right header */}
       {!hideLogo && (
-        <div className="absolute bottom-6 left-10 z-50 flex items-center gap-0.5">
-          <span className="text-[18px] font-black tracking-[-0.03em] leading-none text-primary/50">Flipr</span>
-          <span className="text-[18px] font-black tracking-[-0.03em] leading-none text-foreground/30">.Media</span>
+        <div className="absolute top-8 right-10 z-50 flex items-center gap-0.5">
+          <span className="text-[20px] font-black tracking-[-0.03em] leading-none text-primary/60">Flipr</span>
+          <span className="text-[20px] font-black tracking-[-0.03em] leading-none text-foreground/40">.Media</span>
         </div>
       )}
     </div>
