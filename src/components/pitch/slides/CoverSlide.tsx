@@ -10,7 +10,7 @@ const stats = [
 ];
 
 const CoverSlide = () => (
-  <SlideLayout>
+  <SlideLayout hideLogo>
     <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
     <div className="absolute inset-0 noise-overlay" />
 
