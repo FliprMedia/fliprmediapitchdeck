@@ -1,6 +1,7 @@
 import SlideLayout from "../SlideLayout";
 import DesktopMockup from "../mockups/DesktopMockup";
 import MobileMockup from "../mockups/MobileMockup";
+import fliprLogoDark from "@/assets/flipr-logo-dark.png";
 
 const ClosingSlide = () => (
   <SlideLayout>
@@ -47,10 +48,7 @@ const ClosingSlide = () => (
 
       {/* Logo */}
       <div className="mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <div className="text-[110px] font-black tracking-[-0.04em] leading-none">
-          <span className="text-primary neon-glow">Flipr</span>
-          <span className="text-foreground">.Media</span>
-        </div>
+        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[140px] w-auto" />
       </div>
 
       {/* Headline */}
