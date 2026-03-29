@@ -23,8 +23,8 @@ const CoverSlide = () => (
     <div className="absolute top-0 left-[160px] w-px h-[500px] bg-gradient-to-b from-primary/15 via-primary/3 to-transparent" />
 
     {/* Large glowing background logo — centered */}
-    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[52%] z-[1]">
-      <img src={fliprLogoDark} alt="" className="h-[750px] w-auto opacity-15" />
+    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]">
+      <img src={fliprLogoDark} alt="" className="h-[800px] w-auto opacity-[0.12]" />
     </div>
 
     {/* Main content */}
@@ -39,17 +39,17 @@ const CoverSlide = () => (
 
       {/* Hero Logo — large and prominent */}
       <div className="mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[200px] w-auto" />
+        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[260px] w-auto" />
       </div>
 
       {/* Subheadline */}
-      <h1 className="text-[34px] font-bold leading-[1.25] mb-5 max-w-[850px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
+      <h1 className="text-[38px] font-bold leading-[1.2] mb-5 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
         <span className="text-foreground">The media, discovery, and intelligence platform</span>{" "}
-        <span className="gradient-text font-display italic text-[36px]">for the $170B+ live commerce economy.</span>
+        <span className="gradient-text font-display italic text-[40px]">for the $170B+ live commerce economy.</span>
       </h1>
 
       {/* Support copy */}
-      <p className="text-[17px] text-muted-foreground leading-relaxed mb-8 max-w-[720px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
+      <p className="text-[18px] text-foreground/80 leading-relaxed mb-8 max-w-[720px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
         Live selling sits at the intersection of live commerce, social commerce, creator-led retail, and advertising. As the ecosystem matures, value will accrue to the trusted media and intelligence layer that shapes attention, rankings, and advertiser demand. We're building it.
       </p>
 
