@@ -9,6 +9,7 @@ import FirstOfKindSlide from "./slides/FirstOfKindSlide";
 import AudienceSlide from "./slides/AudienceSlide";
 import BusinessModelSlide from "./slides/BusinessModelSlide";
 import GoToMarketSlide from "./slides/GoToMarketSlide";
+import FlywheelSlide from "./slides/FlywheelSlide";
 import CompetitiveSlide from "./slides/CompetitiveSlide";
 import RoadmapSlide from "./slides/RoadmapSlide";
 import TractionSlide from "./slides/TractionSlide";
