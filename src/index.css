@@ -22,7 +22,7 @@
     --secondary-foreground: 0 0% 100%;
 
     --muted: 240 10% 14%;
-    --muted-foreground: 240 5% 55%;
+    --muted-foreground: 240 5% 72%;
 
     --accent: 263 70% 58%;
     --accent-foreground: 0 0% 100%;
@@ -128,16 +128,16 @@
   }
 
   .slide-label {
-    @apply font-mono-brand text-sm tracking-[0.2em] uppercase;
+    @apply font-mono-brand text-base tracking-[0.2em] uppercase font-semibold;
     color: hsl(var(--primary));
   }
 
   .slide-headline {
-    @apply text-[46px] font-extrabold leading-[1.1] tracking-tight;
+    @apply text-[54px] font-extrabold leading-[1.08] tracking-tight;
   }
 
   .slide-subhead {
-    @apply text-lg leading-relaxed;
+    @apply text-xl leading-relaxed;
     color: hsl(var(--muted-foreground));
   }
 
