@@ -126,7 +126,7 @@ const RevenueSlide = () => (
               <span className="text-xs font-bold text-foreground">Long-Term Vision</span>
             </div>
             <p className="text-[11px] text-muted-foreground leading-relaxed">
-              "The goal isn't to build a publication. It's to own the <span className="text-primary font-semibold">media, discovery, and intelligence layer</span> for a category growing 30%+ annually — then compound that position into recurring, high-margin revenue that commands premium multiples."
+              "Flipr.Media is being built not merely as a publication, but as a <span className="text-primary font-semibold">category platform with future optionality</span> across media, sponsorship, intelligence, and industry infrastructure — compounding into recurring, high-margin revenue that commands premium multiples."
             </p>
           </div>
 

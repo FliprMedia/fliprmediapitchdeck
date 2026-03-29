@@ -55,8 +55,8 @@ const ClosingSlide = () => (
 
       {/* Headline */}
       <h2 className="text-[34px] font-bold text-center text-foreground mb-4 max-w-[900px] opacity-0 animate-fade-up leading-[1.2]" style={{ animationDelay: '0.2s' }}>
-        Every fast-growing category gets a{" "}
-        <span className="font-display italic text-primary text-[36px]">defining media brand.</span> This is ours to build.
+        Every maturing ecosystem needs a trusted{" "}
+        <span className="font-display italic text-primary text-[36px]">media, discovery, and intelligence layer.</span>
       </h2>
 
       {/* Divider */}
@@ -64,8 +64,7 @@ const ClosingSlide = () => (
 
       {/* Closing copy */}
       <p className="text-[17px] text-muted-foreground text-center max-w-[800px] leading-[1.7] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
-        The platforms are scaling. The sellers are rising. The advertisers are coming. 
-        The only thing missing is the media layer that connects them all. That's Flipr.Media — and the window to build it is <span className="text-primary font-semibold">right now</span>.
+        Flipr.Media sits at the intersection of live commerce, social commerce, creator-led retail, and advertising. As the ecosystem matures, value accrues to the layer that shapes attention, rankings, and advertiser demand. That layer is <span className="text-primary font-semibold">ours to own</span>.
       </p>
 
       {/* Contact card */}
