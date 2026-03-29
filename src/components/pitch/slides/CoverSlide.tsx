@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import fliprLogoDark from "@/assets/flipr-logo-dark.png";
 
 const platforms = ["Whatnot", "TikTok Shop", "eBay Live", "Poshmark", "Instagram Live", "YouTube Shopping", "TalkShopLive"];
 
@@ -35,10 +36,7 @@ const CoverSlide = () => (
 
       {/* Hero Logo */}
       <div className="mb-12 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <div className="text-[160px] font-black tracking-[-0.05em] leading-[0.85]">
-          <span className="text-primary neon-glow">Flipr</span>
-          <span className="text-foreground">.Media</span>
-        </div>
+        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[180px] w-auto" />
       </div>
 
       {/* Subheadline */}

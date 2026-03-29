@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import fliprLogo from "@/assets/flipr-logo-light.png";
 
 interface SlideLayoutProps {
   children: React.ReactNode;
@@ -12,9 +13,8 @@ const SlideLayout: React.FC<SlideLayoutProps> = ({ children, className = "", hid
       {children}
       {/* Persistent brand logo — top right header */}
       {!hideLogo && (
-        <div className="absolute top-8 right-10 z-50 flex items-center gap-0.5">
-          <span className="text-[20px] font-black tracking-[-0.03em] leading-none text-primary/60">Flipr</span>
-          <span className="text-[20px] font-black tracking-[-0.03em] leading-none text-foreground/40">.Media</span>
+        <div className="absolute top-6 right-10 z-50">
+          <img src={fliprLogo} alt="Flipr.Media" className="h-[36px] w-auto opacity-70" />
         </div>
       )}
     </div>
