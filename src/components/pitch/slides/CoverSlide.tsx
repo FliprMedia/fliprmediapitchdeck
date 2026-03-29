@@ -24,29 +24,34 @@ const CoverSlide = () => (
     {/* Single subtle accent line */}
     <div className="absolute top-0 left-[160px] w-px h-[500px] bg-gradient-to-b from-primary/15 via-primary/3 to-transparent" />
 
+    {/* Hero Logo — large background element, right side */}
+    <div className="absolute right-[-80px] top-1/2 -translate-y-1/2 z-[1] opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+      <img src={fliprLogoDark} alt="Flipr.Media" className="h-[900px] w-auto opacity-30" />
+    </div>
+
     {/* Main content — left-aligned, vertically centered */}
-    <div className="relative z-10 flex flex-col justify-center h-full pl-24 pr-32 max-w-[1500px]">
+    <div className="relative z-10 flex flex-col justify-center h-full pl-24 pr-32 max-w-[1200px]">
       {/* Badge */}
-      <div className="mb-12 opacity-0 animate-fade-up">
+      <div className="mb-8 opacity-0 animate-fade-up">
         <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/[0.04] text-primary text-[11px] font-mono-brand tracking-[0.15em] uppercase">
           <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
           Investor Presentation — 2025
         </span>
       </div>
 
-      {/* Hero Logo */}
-      <div className="mb-12 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[900px] w-auto" />
+      {/* Prominent Logo */}
+      <div className="mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[220px] w-auto" />
       </div>
 
       {/* Subheadline */}
-      <h1 className="text-[30px] font-semibold leading-[1.3] mb-7 max-w-[820px] opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+      <h1 className="text-[30px] font-semibold leading-[1.3] mb-5 max-w-[820px] opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
         <span className="text-foreground/90">The media, discovery, and intelligence platform</span>{" "}
         <span className="gradient-text font-display italic text-[32px]">for the $170B+ live commerce economy.</span>
       </h1>
 
       {/* Support copy */}
-      <p className="text-[16px] text-muted-foreground/70 leading-relaxed mb-12 max-w-[680px] opacity-0 animate-fade-up" style={{ animationDelay: '0.28s' }}>
+      <p className="text-[15px] text-muted-foreground/70 leading-relaxed mb-8 max-w-[680px] opacity-0 animate-fade-up" style={{ animationDelay: '0.28s' }}>
         Live selling sits at the intersection of live commerce, social commerce, creator-led retail, and advertising. As the ecosystem matures, value will accrue to the trusted media and intelligence layer that shapes attention, rankings, and advertiser demand. We're building it.
       </p>
 
