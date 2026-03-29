@@ -23,8 +23,8 @@ const CoverSlide = () => (
     <div className="absolute top-0 left-[160px] w-px h-[500px] bg-gradient-to-b from-primary/15 via-primary/3 to-transparent" />
 
     {/* Large glowing background logo — centered */}
-    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[52%] z-[1]">
-      <img src={fliprLogoDark} alt="" className="h-[750px] w-auto opacity-15" />
+    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]">
+      <img src={fliprLogoDark} alt="" className="h-[800px] w-auto opacity-[0.12]" />
     </div>
 
     {/* Main content */}
@@ -39,38 +39,38 @@ const CoverSlide = () => (
 
       {/* Hero Logo — large and prominent */}
       <div className="mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[200px] w-auto" />
+        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[260px] w-auto" />
       </div>
 
       {/* Subheadline */}
-      <h1 className="text-[34px] font-bold leading-[1.25] mb-5 max-w-[850px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
+      <h1 className="text-[38px] font-bold leading-[1.2] mb-5 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
         <span className="text-foreground">The media, discovery, and intelligence platform</span>{" "}
-        <span className="gradient-text font-display italic text-[36px]">for the $170B+ live commerce economy.</span>
+        <span className="gradient-text font-display italic text-[40px]">for the $170B+ live commerce economy.</span>
       </h1>
 
       {/* Support copy */}
-      <p className="text-[17px] text-muted-foreground leading-relaxed mb-8 max-w-[720px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
+      <p className="text-[18px] text-foreground/80 leading-relaxed mb-8 max-w-[720px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
         Live selling sits at the intersection of live commerce, social commerce, creator-led retail, and advertising. As the ecosystem matures, value will accrue to the trusted media and intelligence layer that shapes attention, rankings, and advertiser demand. We're building it.
       </p>
 
       {/* Raise pill + platform strip */}
       <div className="flex items-center gap-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.34s' }}>
         <div className="glass-card-elevated px-7 py-4 flex items-center gap-5 animate-pulse-neon shrink-0">
-          <span className="text-primary font-mono-brand text-[12px] tracking-[0.2em]">RAISING</span>
+          <span className="text-primary font-mono-brand text-[14px] tracking-[0.2em]">RAISING</span>
           <span className="text-[44px] font-black text-foreground tracking-tight stat-value">$500K</span>
           <div className="h-10 w-px bg-border/30" />
           <div className="text-left">
-            <div className="text-[12px] text-muted-foreground/70">Instrument</div>
-            <div className="text-[15px] font-semibold text-foreground/90">Pre-Seed / SAFE</div>
+            <div className="text-[14px] text-muted-foreground/70">Instrument</div>
+            <div className="text-[15px] font-semibold text-foreground">Pre-Seed / SAFE</div>
           </div>
         </div>
 
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-          <span className="text-[11px] text-muted-foreground/50 font-mono-brand tracking-[0.15em] uppercase mr-1">Covering</span>
+          <span className="text-[13px] text-muted-foreground/70 font-mono-brand tracking-[0.15em] uppercase mr-1">Covering</span>
           {platforms.map((p, i) => (
             <span key={p} className="flex items-center gap-2.5">
-              <span className="text-[13px] text-muted-foreground/60 font-medium">{p}</span>
-              {i < platforms.length - 1 && <span className="text-primary/20 text-[8px]">●</span>}
+              <span className="text-[13px] text-muted-foreground/80 font-medium">{p}</span>
+              {i < platforms.length - 1 && <span className="text-primary/20 text-[13px]">●</span>}
             </span>
           ))}
         </div>
@@ -85,7 +85,7 @@ const CoverSlide = () => (
           <div key={s.label} className="flex items-center">
             <div className="px-16 py-5 text-center">
               <div className="text-[28px] font-black text-primary tracking-tight stat-value">{s.value}</div>
-              <div className="text-[12px] text-muted-foreground/60 mt-1 tracking-wide">{s.label}</div>
+              <div className="text-[14px] text-muted-foreground/80 mt-1 tracking-wide">{s.label}</div>
             </div>
             {i < stats.length - 1 && <div className="w-px h-10 bg-border/20" />}
           </div>

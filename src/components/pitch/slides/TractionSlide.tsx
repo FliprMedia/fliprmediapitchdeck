@@ -48,8 +48,8 @@ const TractionSlide = () => (
                 <point.icon className="w-4 h-4 text-primary" />
               </div>
               <div>
-                <h3 className="text-[12px] font-bold text-foreground mb-0.5">{point.title}</h3>
-                <p className="text-[9px] text-muted-foreground leading-relaxed">{point.desc}</p>
+                <h3 className="text-[14px] font-bold text-foreground mb-0.5">{point.title}</h3>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">{point.desc}</p>
               </div>
             </div>
           ))}
@@ -58,16 +58,16 @@ const TractionSlide = () => (
           <div className="glass-card p-3 border-primary/15 opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
             <div className="flex items-center gap-2 mb-2">
               <Code className="w-3.5 h-3.5 text-primary" />
-              <span className="text-[10px] font-bold text-foreground">Built With Minimal Capital</span>
+              <span className="text-[13px] font-bold text-foreground">Built With Minimal Capital</span>
               <div className="ml-auto glass-card px-2 py-0.5 border-primary/20">
-                <span className="text-[7px] font-bold text-primary">LOVABLE-POWERED</span>
+                <span className="text-[13px] font-bold text-primary">LOVABLE-POWERED</span>
               </div>
             </div>
             <div className="grid grid-cols-3 gap-1.5">
               {builtWith.map(item => (
                 <div key={item.label} className="flex items-center gap-1.5 bg-muted/20 rounded-lg px-2 py-1.5">
                   <item.icon className="w-3 h-3 text-primary/70 shrink-0" />
-                  <span className="text-[8px] text-foreground/80 font-medium">{item.label}</span>
+                  <span className="text-[13px] text-foreground/95 font-medium">{item.label}</span>
                 </div>
               ))}
             </div>
@@ -87,7 +87,7 @@ const TractionSlide = () => (
 
           {/* Label */}
           <div className="text-center opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
-            <span className="text-[9px] text-muted-foreground/40 font-mono-brand tracking-wider">LIVE SITE — FLIPR.MEDIA</span>
+            <span className="text-[14px] text-muted-foreground/70 font-mono-brand tracking-wider">LIVE SITE — FLIPR.MEDIA</span>
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@ const TractionSlide = () => (
       <div className="mt-3 glass-card p-2.5 border-primary/15 opacity-0 animate-fade-up" style={{ animationDelay: '0.8s' }}>
         <div className="flex items-center justify-center gap-3">
           <Zap className="w-3.5 h-3.5 text-primary shrink-0" />
-          <p className="text-[10px] text-muted-foreground text-center">
+          <p className="text-[13px] text-muted-foreground text-center">
             <span className="text-foreground font-medium">Honest assessment:</span> This is a pre-revenue company with a live product, validated positioning, and a clear path to monetization.
             $500K accelerates the transition from prototype to operating business.
           </p>

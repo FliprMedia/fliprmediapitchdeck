@@ -133,11 +133,11 @@
   }
 
   .slide-headline {
-    @apply text-[54px] font-extrabold leading-[1.08] tracking-tight;
+    @apply text-[56px] font-extrabold leading-[1.08] tracking-tight;
   }
 
   .slide-subhead {
-    @apply text-xl leading-relaxed;
+    @apply text-[22px] leading-relaxed;
     color: hsl(var(--muted-foreground));
   }
 

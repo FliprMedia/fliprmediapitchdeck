@@ -86,13 +86,13 @@ const RoadmapSlide = () => (
           {phases.map((p, i) => (
             <div key={p.num} className="absolute top-1/2 -translate-y-1/2 flex flex-col items-center" style={{ left: `${i * 28 + 6}%` }}>
               <div className={`w-5 h-5 rounded-full border-2 ${i === 0 ? 'bg-primary border-primary' : `border-muted-foreground/30 bg-background`} z-10`} />
-              <span className={`text-[10px] font-bold mt-2 ${i === 0 ? 'text-primary' : 'text-muted-foreground'}`}>{p.timeline}</span>
+              <span className={`text-[13px] font-bold mt-2 ${i === 0 ? 'text-primary' : 'text-muted-foreground'}`}>{p.timeline}</span>
             </div>
           ))}
         </div>
         {/* Arrow at end */}
         <div className="absolute right-0 top-1/2 -translate-y-1/2">
-          <ArrowRight className="w-5 h-5 text-muted-foreground/30" />
+          <ArrowRight className="w-5 h-5 text-muted-foreground/80" />
         </div>
       </div>
 
@@ -110,7 +110,7 @@ const RoadmapSlide = () => (
                 <phase.icon className={`w-4 h-4 text-${phase.badgeColor}`} />
               </div>
               <div>
-                <span className={`text-[9px] px-2 py-0.5 rounded-full bg-${phase.badgeColor}/10 text-${phase.badgeColor} font-bold`}>
+                <span className={`text-[14px] px-2 py-0.5 rounded-full bg-${phase.badgeColor}/10 text-${phase.badgeColor} font-bold`}>
                   {phase.badge}
                 </span>
               </div>
@@ -122,7 +122,7 @@ const RoadmapSlide = () => (
               {phase.items.map(item => (
                 <div key={item} className="flex items-start gap-2">
                   <div className={`w-1.5 h-1.5 rounded-full bg-${phase.badgeColor}/40 shrink-0 mt-1.5`} />
-                  <span className="text-[11px] text-muted-foreground leading-relaxed">{item}</span>
+                  <span className="text-[13px] text-muted-foreground leading-relaxed">{item}</span>
                 </div>
               ))}
             </div>
@@ -134,7 +134,7 @@ const RoadmapSlide = () => (
       <div className="mt-5 flex items-center justify-center gap-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
         {["Media Property", "Discovery Platform", "Data & Intelligence", "Industry OS"].map((label, i) => (
           <div key={label} className="flex items-center gap-3">
-            <div className={`glass-card px-4 py-1.5 text-[10px] font-semibold ${i === 3 ? 'text-primary border-primary/30' : 'text-foreground/70'}`}>
+            <div className={`glass-card px-4 py-1.5 text-[13px] font-semibold ${i === 3 ? 'text-primary border-primary/30' : 'text-foreground'}`}>
               {label}
             </div>
             {i < 3 && <ArrowRight className="w-3.5 h-3.5 text-primary/30" />}

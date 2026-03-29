@@ -90,7 +90,7 @@ const ProblemSlide = () => (
         {gapItems.map((item) => (
           <div key={item.label} className="glass-card px-3.5 py-2 flex items-center gap-2">
             <item.icon className="w-3.5 h-3.5 text-destructive/60" />
-            <span className="text-[11px] text-muted-foreground/70 font-medium whitespace-nowrap">{item.label}</span>
+            <span className="text-[13px] text-muted-foreground/70 font-medium whitespace-nowrap">{item.label}</span>
           </div>
         ))}
       </div>
@@ -126,12 +126,12 @@ const ProblemSlide = () => (
         <div className="w-[340px] shrink-0 flex flex-col gap-3">
           <div className="flex-1 glass-card p-5 relative overflow-hidden opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-destructive/50 to-destructive/10" />
-            <div className="text-[10px] font-mono-brand text-destructive/70 tracking-[0.2em] mb-2">TODAY</div>
+            <div className="text-[13px] font-mono-brand text-destructive/70 tracking-[0.2em] mb-2">TODAY</div>
             <h4 className="text-base font-bold text-foreground mb-3">Fragmented & Invisible</h4>
             <div className="space-y-2">
               {["Industry conversation stuck in Reddit & Discord", "No centralized discovery or data", "No ad infrastructure for advertisers", "No editorial authority or trust layer"].map((t, i) => (
-                <div key={i} className="flex items-center gap-2 text-[12px] text-muted-foreground">
-                  <span className="text-destructive/70 text-[10px]">✕</span> {t}
+                <div key={i} className="flex items-center gap-2 text-[14px] text-muted-foreground">
+                  <span className="text-destructive/70 text-[13px]">✕</span> {t}
                 </div>
               ))}
             </div>
@@ -141,12 +141,12 @@ const ProblemSlide = () => (
           </div>
           <div className="flex-1 glass-card p-5 relative overflow-hidden opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/50 to-primary/10" />
-            <div className="text-[10px] font-mono-brand text-primary tracking-[0.2em] mb-2">WITH FLIPR.MEDIA</div>
+            <div className="text-[13px] font-mono-brand text-primary tracking-[0.2em] mb-2">WITH FLIPR.MEDIA</div>
             <h4 className="text-base font-bold text-foreground mb-3">Centralized & Powerful</h4>
             <div className="space-y-2">
               {["One media hub for the industry", "Discovery, rankings & intel", "Built-in ad & sponsorship layer", "Trusted editorial brand"].map((t, i) => (
-                <div key={i} className="flex items-center gap-2 text-[12px] text-muted-foreground">
-                  <span className="text-primary text-[10px]">✓</span> {t}
+                <div key={i} className="flex items-center gap-2 text-[14px] text-muted-foreground">
+                  <span className="text-primary text-[13px]">✓</span> {t}
                 </div>
               ))}
             </div>
