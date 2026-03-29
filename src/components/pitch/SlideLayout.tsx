@@ -3,12 +3,21 @@ import React, { useEffect, useRef, useState } from "react";
 interface SlideLayoutProps {
   children: React.ReactNode;
   className?: string;
+  hideLogo?: boolean;
 }
 
-const SlideLayout: React.FC<SlideLayoutProps> = ({ children, className = "" }) => {
+const SlideLayout: React.FC<SlideLayoutProps> = ({ children, className = "", hideLogo = false }) => {
   return (
     <div className={`relative w-[1920px] h-[1080px] overflow-hidden ${className}`}>
       {children}
+      {!hideLogo && (
+        <div className="absolute top-6 right-8 z-50 opacity-60 hover:opacity-90 transition-opacity">
+          <div className="text-[22px] font-black tracking-[-0.03em] leading-none select-none">
+            <span className="text-primary">Flipr</span>
+            <span className="text-foreground/70">.Media</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
