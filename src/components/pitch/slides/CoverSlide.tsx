@@ -36,7 +36,7 @@ const CoverSlide = () => (
 
       {/* Hero Logo */}
       <div className="mb-12 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[180px] w-auto" />
+        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[900px] w-auto" />
       </div>
 
       {/* Subheadline */}
