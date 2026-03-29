@@ -39,10 +39,10 @@ const CategoryLeaderSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">13 — CATEGORY LEADERSHIP</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Own the audience. Own the data. <span className="font-display italic text-[50px] text-primary">Own the exit.</span>
+        Own the attention. Own the data. <span className="font-display italic text-[50px] text-primary">Own the category economics.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Vertical media brands that become the trusted gateway into fast-growing markets command premium valuations and attract strategic acquirers.
+        Value in maturing ecosystems accrues not only to transaction platforms, but to the trusted media, discovery, and intelligence layers that shape attention, rankings, and advertiser demand.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -119,7 +119,7 @@ const CategoryLeaderSlide = () => (
               <span className="text-xs font-bold text-foreground">Strategic Value Drivers</span>
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-              {["Strategic acquirer appeal", "Media + data hybrid multiples", "Defensible niche monopoly", "Platform optionality (SaaS, events, data)"].map(d => (
+              {["Strategic acquisition appeal", "Media + commerce + data multiples", "Defensible niche leadership", "Future optionality: sponsorship, intelligence, infrastructure"].map(d => (
                 <div key={d} className="flex items-center gap-1.5">
                   <div className="w-1 h-1 rounded-full bg-accent/50 shrink-0" />
                   <span className="text-[10px] text-muted-foreground">{d}</span>

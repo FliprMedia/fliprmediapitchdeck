@@ -112,10 +112,9 @@ const MarketSlide = () => (
                 <Megaphone className="w-4.5 h-4.5 text-primary" />
               </div>
               <div>
-                <div className="text-sm font-bold text-foreground mb-1">Why a small share creates outsized value</div>
+                <div className="text-sm font-bold text-foreground mb-1">Why the media layer captures outsized value</div>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Vertical media brands don't need to capture the TAM — they monetize the attention around it. 
-                  The company that owns audience, rankings, and advertiser access in live commerce builds a highly defensible, high-margin position with multiple exit paths.
+                  As live commerce matures, value accrues not only to transaction platforms, but to the trusted media, discovery, and intelligence layers that shape attention, rankings, and advertiser demand — with future optionality across sponsorship, data products, and industry infrastructure.
                 </p>
               </div>
             </div>
