@@ -9,6 +9,7 @@ import FirstOfKindSlide from "./slides/FirstOfKindSlide";
 import AudienceSlide from "./slides/AudienceSlide";
 import BusinessModelSlide from "./slides/BusinessModelSlide";
 import GoToMarketSlide from "./slides/GoToMarketSlide";
+import FlywheelSlide from "./slides/FlywheelSlide";
 import CompetitiveSlide from "./slides/CompetitiveSlide";
 import RoadmapSlide from "./slides/RoadmapSlide";
 import TractionSlide from "./slides/TractionSlide";
@@ -22,13 +23,13 @@ import ClosingSlide from "./slides/ClosingSlide";
 const slides = [
   CoverSlide, ProblemSlide, WhyNowSlide, MarketSlide, ProductSlide,
   FirstOfKindSlide, AudienceSlide, BusinessModelSlide, GoToMarketSlide,
-  CompetitiveSlide, RoadmapSlide, TractionSlide, CategoryLeaderSlide,
+  FlywheelSlide, CompetitiveSlide, RoadmapSlide, TractionSlide, CategoryLeaderSlide,
   UseOfFundsSlide, RevenueSlide, TeamSlide, TheAskSlide, ClosingSlide,
 ];
 
 const slideLabels = [
   "Cover", "Problem", "Why Now", "Market", "Product", "First-of-Kind",
-  "Audience", "Business Model", "Go-To-Market", "Competitive", "Roadmap",
+  "Audience", "Business Model", "Go-To-Market", "Flywheel", "Competitive", "Roadmap",
   "Traction", "Category Leader", "Use of Funds", "Revenue", "Team", "The Ask", "Closing",
 ];
 
