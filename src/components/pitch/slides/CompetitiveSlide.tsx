@@ -42,9 +42,9 @@ const CompetitiveSlide = () => (
         <table className="w-full h-full">
           <thead>
             <tr className="border-b border-border/40">
-              <th className="text-left px-6 py-4 text-[11px] font-mono-brand text-muted-foreground/60 tracking-[0.1em] uppercase w-[280px]">Competitor</th>
+              <th className="text-left px-6 py-4 text-[13px] font-mono-brand text-muted-foreground/80 tracking-[0.1em] uppercase w-[280px]">Competitor</th>
               {columns.map(col => (
-                <th key={col} className="text-center px-3 py-4 text-[9px] font-mono-brand text-muted-foreground/50 leading-tight tracking-[0.05em] uppercase">{col}</th>
+                <th key={col} className="text-center px-3 py-4 text-[14px] font-mono-brand text-muted-foreground/70 leading-tight tracking-[0.05em] uppercase">{col}</th>
               ))}
             </tr>
           </thead>
@@ -56,7 +56,7 @@ const CompetitiveSlide = () => (
                   c.highlight ? 'bg-primary/[0.06]' : i % 2 === 1 ? 'bg-muted/[0.03]' : ''
                 }`}
               >
-                <td className={`px-6 py-3 text-[13px] font-semibold ${c.highlight ? 'text-primary' : 'text-foreground/70'}`}>
+                <td className={`px-6 py-3 text-[13px] font-semibold ${c.highlight ? 'text-primary' : 'text-foreground'}`}>
                   {c.highlight && <span className="inline-block w-2 h-2 rounded-full bg-primary mr-2.5 animate-pulse" />}
                   {c.name}
                 </td>
@@ -79,7 +79,7 @@ const CompetitiveSlide = () => (
 
       {/* Bottom insight */}
       <div className="mt-4 glass-card p-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-        <p className="text-[11px] text-muted-foreground leading-relaxed text-center">
+        <p className="text-[13px] text-muted-foreground leading-relaxed text-center">
           Flipr.Media is the only player positioned to own <span className="text-foreground font-semibold">editorial authority</span>, <span className="text-foreground font-semibold">seller discovery</span>, <span className="text-foreground font-semibold">advertiser access</span>, and <span className="text-primary font-bold">category-level data</span> — all in one brand. That's the moat.
         </p>
       </div>

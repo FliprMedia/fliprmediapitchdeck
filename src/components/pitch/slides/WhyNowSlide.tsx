@@ -57,8 +57,8 @@ const WhyNowSlide = () => (
         <div className="w-[620px] flex flex-col gap-4">
           <div className="glass-card-elevated p-6 flex-1 opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
             <div className="flex items-center justify-between mb-3">
-              <span className="text-[10px] font-mono-brand text-muted-foreground/60 tracking-[0.15em] uppercase">US Livestream Ecommerce ($B)</span>
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-mono-brand">ILLUSTRATIVE</span>
+              <span className="text-[13px] font-mono-brand text-muted-foreground/80 tracking-[0.15em] uppercase">US Livestream Ecommerce ($B)</span>
+              <span className="text-[13px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-mono-brand">ILLUSTRATIVE</span>
             </div>
             <div className="h-[250px]">
               <ResponsiveContainer width="100%" height="100%">
@@ -79,21 +79,21 @@ const WhyNowSlide = () => (
             </div>
             <div className="flex items-center justify-center gap-2 mt-2">
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-[11px] text-primary font-semibold stat-value">$14.64B</span>
-              <span className="text-[10px] text-muted-foreground">US livestream ecommerce in 2025</span>
+              <span className="text-[13px] text-primary font-semibold stat-value">$14.64B</span>
+              <span className="text-[13px] text-muted-foreground">US livestream ecommerce in 2025</span>
             </div>
           </div>
 
           {/* Timeline */}
           <div className="glass-card p-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <div className="text-[10px] font-mono-brand text-muted-foreground/50 tracking-[0.15em] uppercase mb-3">Evolution</div>
+            <div className="text-[13px] font-mono-brand text-muted-foreground/70 tracking-[0.15em] uppercase mb-3">Evolution</div>
             <div className="flex items-center gap-0">
               {evolution.map((t, i) => (
                 <div key={t.era} className="flex items-center flex-1">
                   <div className="flex flex-col items-center gap-1.5 flex-1">
                     <div className={`w-3 h-3 rounded-full ${t.active ? 'bg-primary ring-4 ring-primary/20' : 'bg-muted-foreground/20 border border-muted-foreground/30'}`} />
-                    <span className={`text-[11px] font-bold ${t.active ? 'text-primary' : 'text-muted-foreground/60'}`}>{t.era}</span>
-                    <span className={`text-[9px] ${t.active ? 'text-primary/70 font-semibold' : 'text-muted-foreground/40'}`}>{t.label}</span>
+                    <span className={`text-[13px] font-bold ${t.active ? 'text-primary' : 'text-muted-foreground/80'}`}>{t.era}</span>
+                    <span className={`text-[14px] ${t.active ? 'text-primary/70 font-semibold' : 'text-muted-foreground/70'}`}>{t.label}</span>
                   </div>
                   {i < evolution.length - 1 && <div className="h-px flex-1 bg-border/30 -mt-5" />}
                 </div>
@@ -105,7 +105,7 @@ const WhyNowSlide = () => (
           <div className="flex gap-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
             {["Commerce", "Content", "Creators", "Community"].map((b, i) => (
               <div key={b} className={`glass-card px-4 py-2 flex-1 text-center border-${i % 2 === 0 ? 'primary' : 'accent'}/12`}>
-                <span className={`text-[11px] font-bold text-${i % 2 === 0 ? 'primary' : 'accent'}`}>{b}</span>
+                <span className={`text-[13px] font-bold text-${i % 2 === 0 ? 'primary' : 'accent'}`}>{b}</span>
               </div>
             ))}
           </div>
@@ -121,7 +121,7 @@ const WhyNowSlide = () => (
               </div>
               <div>
                 <h3 className="text-[13px] font-bold text-foreground mb-0.5">{theme.title}</h3>
-                <p className="text-[10px] text-muted-foreground leading-relaxed">{theme.desc}</p>
+                <p className="text-[13px] text-muted-foreground leading-relaxed">{theme.desc}</p>
               </div>
             </div>
           ))}

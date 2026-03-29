@@ -49,7 +49,7 @@ const TeamSlide = () => (
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-foreground">Brian Weiss</h3>
                 <p className="text-sm text-primary font-semibold">Founder & CEO — Flipr.Media</p>
-                <p className="text-[11px] text-muted-foreground mt-2 leading-relaxed">
+                <p className="text-[13px] text-muted-foreground mt-2 leading-relaxed">
                   Background in entertainment, marketing, and brand strategy. Identified the live selling media gap early,
                   built and launched the entire Flipr.Media platform using AI-driven workflows — demonstrating
                   the speed, resourcefulness, and product instinct that define successful solo founders.
@@ -61,7 +61,7 @@ const TeamSlide = () => (
           {/* Credibility chips */}
           <div className="flex flex-wrap gap-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
             {credibilityChips.map(chip => (
-              <div key={chip} className="glass-card px-3 py-1.5 text-[10px] font-semibold text-foreground/80">{chip}</div>
+              <div key={chip} className="glass-card px-3 py-1.5 text-[13px] font-semibold text-foreground/95">{chip}</div>
             ))}
           </div>
 
@@ -77,7 +77,7 @@ const TeamSlide = () => (
                   <div className="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                     <w.icon className="w-3.5 h-3.5 text-primary" />
                   </div>
-                  <span className="text-[11px] text-foreground/80 font-medium">{w.label}</span>
+                  <span className="text-[13px] text-foreground/95 font-medium">{w.label}</span>
                 </div>
               ))}
             </div>
@@ -89,7 +89,7 @@ const TeamSlide = () => (
               <Zap className="w-4 h-4 text-accent" />
               <span className="text-xs font-bold text-foreground">Built with Lovable</span>
             </div>
-             <p className="text-[10px] text-muted-foreground leading-relaxed">
+             <p className="text-[13px] text-muted-foreground leading-relaxed">
               Leveraged AI-powered development to build and launch a complete media platform solo — proving that
               the right founder with modern tools can create real products before raising a dollar.
             </p>
@@ -103,7 +103,7 @@ const TeamSlide = () => (
             <span className="text-base font-bold text-foreground">Founder + Future Hires</span>
             <div className="h-px flex-1 bg-primary/15" />
           </div>
-          <p className="text-[11px] text-muted-foreground mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.52s' }}>
+          <p className="text-[13px] text-muted-foreground mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.52s' }}>
             This round funds the first key hires to scale from founder-led execution to an operational team.
           </p>
 
@@ -115,11 +115,11 @@ const TeamSlide = () => (
                 style={{ animationDelay: `${0.55 + i * 0.06}s` }}
               >
                 <div className="w-10 h-10 rounded-lg bg-muted/30 border border-dashed border-muted-foreground/20 flex items-center justify-center shrink-0">
-                  <Plus className="w-4 h-4 text-muted-foreground/50" />
+                  <Plus className="w-4 h-4 text-muted-foreground/70" />
                 </div>
                 <div>
                   <h4 className="text-[13px] font-bold text-foreground mb-0.5">{hire.role}</h4>
-                  <p className="text-[10px] text-muted-foreground leading-relaxed">{hire.desc}</p>
+                  <p className="text-[13px] text-muted-foreground leading-relaxed">{hire.desc}</p>
                 </div>
               </div>
             ))}
@@ -127,7 +127,7 @@ const TeamSlide = () => (
 
           {/* Team philosophy */}
           <div className="glass-card p-4 mt-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.8s' }}>
-            <p className="text-[10px] text-muted-foreground leading-relaxed text-center italic">
+            <p className="text-[13px] text-muted-foreground leading-relaxed text-center italic">
               "The best vertical media companies start with a single obsessed founder. This round enables the transition to a <span className="text-primary font-semibold not-italic">high-leverage operating team</span>."
             </p>
           </div>

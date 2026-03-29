@@ -110,7 +110,7 @@ const AudienceSlide = () => (
               <div className="w-[110px] h-[110px] rounded-full bg-primary/10 border-2 border-primary/40 flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-lg font-black text-primary">Flipr</div>
-                  <div className="text-[9px] text-primary/60 font-medium">.Media</div>
+                  <div className="text-[14px] text-primary/60 font-medium">.Media</div>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@ const AudienceSlide = () => (
               return (
                 <div key={node.label} className="absolute z-10"
                   style={{ left: `${x}px`, top: `${y}px`, transform: 'translate(-50%, -50%)' }}>
-                  <div className="glass-card px-2.5 py-1 text-[9px] font-semibold text-foreground/80 whitespace-nowrap">
+                  <div className="glass-card px-2.5 py-1 text-[14px] font-semibold text-foreground/95 whitespace-nowrap">
                     {node.label}
                   </div>
                 </div>
@@ -136,13 +136,13 @@ const AudienceSlide = () => (
         <div className="flex-1 flex flex-col gap-2 min-h-0 overflow-hidden">
           {/* Column headers */}
           <div className="grid grid-cols-[1fr_1.2fr_1.2fr_1fr_0.7fr] gap-3 px-3 mb-1 opacity-0 animate-fade-up" style={{ animationDelay: '0.25s' }}>
-            <span className="text-[9px] font-bold text-muted-foreground uppercase tracking-wider">Audience</span>
-            <span className="text-[9px] font-bold text-muted-foreground uppercase tracking-wider">What They Want</span>
-            <span className="text-[9px] font-bold text-muted-foreground uppercase tracking-wider">Why Flipr</span>
-            <span className="text-[9px] font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1">
+            <span className="text-[14px] font-bold text-muted-foreground uppercase tracking-wider">Audience</span>
+            <span className="text-[14px] font-bold text-muted-foreground uppercase tracking-wider">What They Want</span>
+            <span className="text-[14px] font-bold text-muted-foreground uppercase tracking-wider">Why Flipr</span>
+            <span className="text-[14px] font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1">
               <DollarSign className="w-3 h-3" /> Monetization
             </span>
-            <span className="text-[9px] font-bold text-muted-foreground uppercase tracking-wider">Verticals</span>
+            <span className="text-[14px] font-bold text-muted-foreground uppercase tracking-wider">Verticals</span>
           </div>
 
           {personas.map((p, i) => (
@@ -155,14 +155,14 @@ const AudienceSlide = () => (
                 <div className={`w-7 h-7 rounded-lg bg-${p.color}/10 flex items-center justify-center shrink-0`}>
                   <p.icon className={`w-3.5 h-3.5 text-${p.color}`} />
                 </div>
-                <span className="text-[11px] font-semibold text-foreground leading-tight">{p.title}</span>
+                <span className="text-[13px] font-semibold text-foreground leading-tight">{p.title}</span>
               </div>
-              <p className="text-[10px] text-muted-foreground leading-relaxed">{p.want}</p>
-              <p className="text-[10px] text-foreground/70 leading-relaxed">{p.why}</p>
-              <p className="text-[10px] text-primary/80 leading-relaxed">{p.monetize}</p>
+              <p className="text-[13px] text-muted-foreground leading-relaxed">{p.want}</p>
+              <p className="text-[13px] text-foreground leading-relaxed">{p.why}</p>
+              <p className="text-[13px] text-primary/80 leading-relaxed">{p.monetize}</p>
               <div className="flex flex-wrap gap-1">
                 {p.categories.split(", ").map(c => (
-                  <span key={c} className="text-[7px] px-1.5 py-0.5 rounded-full bg-muted/50 text-muted-foreground font-medium">{c}</span>
+                  <span key={c} className="text-[13px] px-1.5 py-0.5 rounded-full bg-muted/50 text-muted-foreground font-medium">{c}</span>
                 ))}
               </div>
             </div>
@@ -175,7 +175,7 @@ const AudienceSlide = () => (
         <div className="flex items-center justify-center gap-3">
           {["Discover", "Engage", "Subscribe", "Monetize"].map((step, i) => (
             <div key={step} className="flex items-center gap-3">
-              <div className="glass-card px-5 py-2 text-[11px] font-semibold text-foreground">{step}</div>
+              <div className="glass-card px-5 py-2 text-[13px] font-semibold text-foreground">{step}</div>
               {i < 3 && <span className="text-primary text-sm">→</span>}
             </div>
           ))}

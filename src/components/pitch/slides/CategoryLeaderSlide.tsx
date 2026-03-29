@@ -50,12 +50,12 @@ const CategoryLeaderSlide = () => (
         <div className="w-[580px] flex flex-col gap-4">
           {/* What Flipr controls */}
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">What Flipr.Media Controls</span>
+            <span className="text-[13px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">What Flipr.Media Controls</span>
             <div className="flex flex-wrap gap-2">
               {controls.map((c, i) => (
                 <div key={c.label} className="glass-card px-3 py-2 flex items-center gap-2 opacity-0 animate-fade-up" style={{ animationDelay: `${0.25 + i * 0.04}s` }}>
                   <c.icon className="w-3.5 h-3.5 text-primary" />
-                  <span className="text-[10px] font-semibold text-foreground">{c.label}</span>
+                  <span className="text-[13px] font-semibold text-foreground">{c.label}</span>
                 </div>
               ))}
             </div>
@@ -63,7 +63,7 @@ const CategoryLeaderSlide = () => (
 
           {/* Value Ladder */}
           <div className="flex-1 flex flex-col justify-center opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
-            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">Value Creation Ladder</span>
+            <span className="text-[13px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">Value Creation Ladder</span>
             <div className="flex flex-col gap-1.5">
               {ladder.map((step, i) => {
                 const width = 55 + i * 8;
@@ -73,13 +73,13 @@ const CategoryLeaderSlide = () => (
                       className={`h-10 rounded-lg bg-${step.color}/15 border border-${step.color}/20 flex items-center px-4 transition-all`}
                       style={{ width: `${width}%` }}
                     >
-                      <span className={`text-[11px] font-semibold text-${step.color}`}>{step.label}</span>
+                      <span className={`text-[13px] font-semibold text-${step.color}`}>{step.label}</span>
                     </div>
-                    {i < ladder.length - 1 && <ArrowUp className="w-3 h-3 text-muted-foreground/30 rotate-0 shrink-0" />}
+                    {i < ladder.length - 1 && <ArrowUp className="w-3 h-3 text-muted-foreground/80 rotate-0 shrink-0" />}
                     {i === ladder.length - 1 && (
                       <div className="glass-card px-2 py-0.5 border-accent/30">
                         <Star className="w-3 h-3 text-accent inline mr-1" />
-                        <span className="text-[8px] font-bold text-accent">HIGH VALUE</span>
+                        <span className="text-[13px] font-bold text-accent">HIGH VALUE</span>
                       </div>
                     )}
                   </div>
@@ -93,7 +93,7 @@ const CategoryLeaderSlide = () => (
         <div className="flex-1 flex flex-col gap-4 min-h-0">
           {/* Comparables */}
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
-            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">Comparable Category Leaders</span>
+            <span className="text-[13px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">Comparable Category Leaders</span>
             <div className="flex flex-col gap-2">
               {comparables.map((c, i) => (
                 <div key={c.name} className="glass-card px-4 py-2.5 flex items-center gap-3 opacity-0 animate-fade-up" style={{ animationDelay: `${0.6 + i * 0.05}s` }}>
@@ -102,10 +102,10 @@ const CategoryLeaderSlide = () => (
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <span className="text-[12px] font-bold text-foreground">{c.name}</span>
-                      <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-muted/40 text-muted-foreground font-medium">{c.niche}</span>
+                      <span className="text-[14px] font-bold text-foreground">{c.name}</span>
+                      <span className="text-[14px] px-1.5 py-0.5 rounded-full bg-muted/40 text-muted-foreground font-medium">{c.niche}</span>
                     </div>
-                    <span className="text-[10px] text-primary/80">{c.outcome}</span>
+                    <span className="text-[13px] text-primary/80">{c.outcome}</span>
                   </div>
                 </div>
               ))}
@@ -122,7 +122,7 @@ const CategoryLeaderSlide = () => (
               {["Strategic acquisition appeal", "Media + commerce + data multiples", "Defensible niche leadership", "Future optionality: sponsorship, intelligence, infrastructure"].map(d => (
                 <div key={d} className="flex items-center gap-1.5">
                   <div className="w-1 h-1 rounded-full bg-accent/50 shrink-0" />
-                  <span className="text-[10px] text-muted-foreground">{d}</span>
+                  <span className="text-[13px] text-muted-foreground">{d}</span>
                 </div>
               ))}
             </div>
@@ -130,7 +130,7 @@ const CategoryLeaderSlide = () => (
 
           {/* Whatnot reference */}
           <div className="glass-card p-4 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.9s' }}>
-            <p className="text-[11px] text-muted-foreground leading-relaxed italic">
+            <p className="text-[13px] text-muted-foreground leading-relaxed italic">
               "Whatnot's <span className="text-primary font-bold not-italic">$4.97B valuation</span> signals deep investor conviction in live commerce infrastructure. The media layer serving this ecosystem is still unclaimed."
             </p>
           </div>

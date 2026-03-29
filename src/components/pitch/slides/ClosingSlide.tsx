@@ -67,27 +67,27 @@ const ClosingSlide = () => (
 
       {/* Contact card */}
       <div className="glass-card-elevated px-14 py-7 text-center opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
-        <div className="text-[12px] font-semibold text-foreground mb-4 tracking-wide">Let's Build This Together</div>
+        <div className="text-[14px] font-semibold text-foreground mb-4 tracking-wide">Let's Build This Together</div>
         <div className="flex items-center gap-8">
           <div>
-            <div className="text-[9px] text-muted-foreground/40 font-mono-brand tracking-[0.1em] uppercase mb-0.5">Founder</div>
+            <div className="text-[14px] text-muted-foreground/70 font-mono-brand tracking-[0.1em] uppercase mb-0.5">Founder</div>
             <div className="text-sm font-semibold text-foreground">Brian Weiss</div>
           </div>
           <div className="w-px h-10 bg-border/20" />
           <div>
-            <div className="text-[9px] text-muted-foreground/40 font-mono-brand tracking-[0.1em] uppercase mb-0.5">Email</div>
+            <div className="text-[14px] text-muted-foreground/70 font-mono-brand tracking-[0.1em] uppercase mb-0.5">Email</div>
             <div className="text-sm font-semibold text-primary">brian@flipr.media</div>
           </div>
           <div className="w-px h-10 bg-border/20" />
           <div>
-            <div className="text-[9px] text-muted-foreground/40 font-mono-brand tracking-[0.1em] uppercase mb-0.5">Web</div>
+            <div className="text-[14px] text-muted-foreground/70 font-mono-brand tracking-[0.1em] uppercase mb-0.5">Web</div>
             <div className="text-sm font-semibold text-primary">flipr.media</div>
           </div>
         </div>
       </div>
 
       {/* Confidential */}
-      <div className="absolute bottom-10 text-[10px] text-muted-foreground/20 font-mono-brand tracking-[0.15em] opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
+      <div className="absolute bottom-10 text-[13px] text-muted-foreground/70 font-mono-brand tracking-[0.15em] opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
         CONFIDENTIAL — FLIPR.MEDIA © 2025
       </div>
     </div>

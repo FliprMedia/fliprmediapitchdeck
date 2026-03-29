@@ -37,7 +37,7 @@ const FirstOfKindSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">06 — FIRST-OF-ITS-KIND</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        This isn't another media site. <span className="font-display italic text-[50px] text-muted-foreground/60">It's a category-level infrastructure play.</span>
+        This isn't another media site. <span className="font-display italic text-[50px] text-muted-foreground/80">It's a category-level infrastructure play.</span>
       </h2>
       <p className="slide-subhead mb-8 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         No one else is building the editorial, discovery, and advertiser layer for live selling. Flipr.Media occupies uncontested space.
@@ -52,13 +52,13 @@ const FirstOfKindSlide = () => (
             <div className="grid grid-cols-4 gap-2.5">
               {existsToday.map((item, i) => (
                 <div key={item.label} className="glass-card p-3 text-center border-muted-foreground/10 opacity-0 animate-fade-up" style={{ animationDelay: `${0.25 + i * 0.04}s` }}>
-                  <item.icon className="w-5 h-5 text-muted-foreground/50 mx-auto mb-1.5" />
-                  <div className="text-[11px] font-semibold text-foreground/70">{item.label}</div>
-                  <div className="text-[9px] text-muted-foreground">{item.desc}</div>
+                  <item.icon className="w-5 h-5 text-muted-foreground/70 mx-auto mb-1.5" />
+                  <div className="text-[13px] font-semibold text-foreground">{item.label}</div>
+                  <div className="text-[14px] text-muted-foreground">{item.desc}</div>
                 </div>
               ))}
             </div>
-            <div className="text-center text-[10px] text-destructive/60 font-medium mt-2 italic">
+            <div className="text-center text-[13px] text-destructive/60 font-medium mt-2 italic">
               None cover, rank, or organize the live selling industry
             </div>
           </div>
@@ -92,8 +92,8 @@ const FirstOfKindSlide = () => (
                   <div className="w-[120px] h-[120px] rounded-full bg-primary/10 border-2 border-primary/40 flex items-center justify-center backdrop-blur-sm">
                     <div className="text-center">
                       <div className="text-xl font-black text-primary">Flipr</div>
-                      <div className="text-[10px] text-primary/70 font-medium">.Media</div>
-                      <div className="text-[7px] text-muted-foreground mt-0.5">Editorial • Discovery<br/>Advertiser Hub</div>
+                      <div className="text-[13px] text-primary/70 font-medium">.Media</div>
+                      <div className="text-[13px] text-muted-foreground mt-0.5">Editorial • Discovery<br/>Advertiser Hub</div>
                     </div>
                   </div>
                 </div>
@@ -113,7 +113,7 @@ const FirstOfKindSlide = () => (
                         transform: 'translate(-50%, -50%)',
                       }}
                     >
-                      <div className="glass-card px-3 py-1.5 text-[10px] font-semibold text-foreground/80 whitespace-nowrap">
+                      <div className="glass-card px-3 py-1.5 text-[13px] font-semibold text-foreground/95 whitespace-nowrap">
                         {node.label}
                       </div>
                     </div>
@@ -150,7 +150,7 @@ const FirstOfKindSlide = () => (
                 </div>
                 <div>
                   <h3 className="text-[13px] font-semibold text-foreground mb-0.5">{moat.title}</h3>
-                  <p className="text-[10px] text-muted-foreground leading-relaxed">{moat.desc}</p>
+                  <p className="text-[13px] text-muted-foreground leading-relaxed">{moat.desc}</p>
                 </div>
               </div>
             ))}

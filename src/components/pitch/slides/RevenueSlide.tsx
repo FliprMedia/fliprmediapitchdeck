@@ -63,7 +63,7 @@ const RevenueSlide = () => (
         <div className="flex-1 flex flex-col gap-4">
           {/* Scenario chart */}
           <div className="glass-card p-5 flex-1 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <div className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider mb-3">3-Year Revenue Scenarios ($K)</div>
+            <div className="text-[13px] font-semibold text-muted-foreground uppercase tracking-wider mb-3">3-Year Revenue Scenarios ($K)</div>
             <div className="h-[260px]">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={scenarioData} barCategoryGap="25%">
@@ -84,7 +84,7 @@ const RevenueSlide = () => (
               ].map(l => (
                 <div key={l.label} className="flex items-center gap-1.5">
                   <div className="w-3 h-3 rounded-sm" style={{ backgroundColor: l.color }} />
-                  <span className="text-[10px] text-muted-foreground">{l.label}</span>
+                  <span className="text-[13px] text-muted-foreground">{l.label}</span>
                 </div>
               ))}
             </div>
@@ -92,10 +92,10 @@ const RevenueSlide = () => (
 
           {/* Revenue streams */}
           <div className="glass-card p-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider block mb-2">Revenue Streams Modeled</span>
+            <span className="text-[13px] font-bold text-muted-foreground uppercase tracking-wider block mb-2">Revenue Streams Modeled</span>
             <div className="flex flex-wrap gap-1.5">
               {streams.map(s => (
-                <div key={s} className="px-2.5 py-1 rounded-full bg-muted/30 text-[9px] text-foreground/70 font-medium">{s}</div>
+                <div key={s} className="px-2.5 py-1 rounded-full bg-muted/30 text-[14px] text-foreground font-medium">{s}</div>
               ))}
             </div>
           </div>
@@ -111,10 +111,10 @@ const RevenueSlide = () => (
               { label: "Upside", yr3: "$3M+", color: "hsl(263 70% 58%)", desc: "Fast adoption, premium products" },
             ].map(s => (
               <div key={s.label} className="glass-card p-3 text-center">
-                <div className="text-[9px] font-semibold text-muted-foreground uppercase mb-1">{s.label}</div>
+                <div className="text-[14px] font-semibold text-muted-foreground uppercase mb-1">{s.label}</div>
                 <div className="text-2xl font-black mb-0.5" style={{ color: s.color }}>{s.yr3}</div>
-                <div className="text-[8px] text-muted-foreground">Year 3</div>
-                <div className="text-[8px] text-muted-foreground mt-1">{s.desc}</div>
+                <div className="text-[13px] text-muted-foreground">Year 3</div>
+                <div className="text-[13px] text-muted-foreground mt-1">{s.desc}</div>
               </div>
             ))}
           </div>
@@ -125,7 +125,7 @@ const RevenueSlide = () => (
               <Star className="w-4 h-4 text-primary" />
               <span className="text-xs font-bold text-foreground">Long-Term Vision</span>
             </div>
-            <p className="text-[11px] text-muted-foreground leading-relaxed">
+            <p className="text-[13px] text-muted-foreground leading-relaxed">
               "Flipr.Media is being built not merely as a publication, but as a <span className="text-primary font-semibold">category platform with future optionality</span> across media, sponsorship, intelligence, and industry infrastructure — compounding into recurring, high-margin revenue that commands premium multiples."
             </p>
           </div>
@@ -138,9 +138,9 @@ const RevenueSlide = () => (
               { label: "Commerce-Tech", range: "20–40x" },
             ].map(m => (
               <div key={m.label} className="glass-card p-3 text-center border-accent/10">
-                <div className="text-[9px] text-muted-foreground mb-0.5">{m.label}</div>
+                <div className="text-[14px] text-muted-foreground mb-0.5">{m.label}</div>
                 <div className="text-lg font-black text-accent">{m.range}</div>
-                <div className="text-[8px] text-muted-foreground">Revenue Multiple</div>
+                <div className="text-[13px] text-muted-foreground">Revenue Multiple</div>
               </div>
             ))}
           </div>
@@ -150,16 +150,16 @@ const RevenueSlide = () => (
       {/* Bottom: Strategic value drivers */}
       <div className="mt-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
         <div className="flex items-center gap-3">
-          <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider shrink-0">Strategic Value Drivers</span>
+          <span className="text-[13px] font-bold text-muted-foreground uppercase tracking-wider shrink-0">Strategic Value Drivers</span>
           <div className="h-px flex-1 bg-border/30" />
         </div>
         <div className="flex items-center justify-between mt-3">
           {valueDrivers.map((d, i) => (
             <div key={d.label} className="flex items-center gap-1.5">
-              {i > 0 && <ArrowRight className="w-3 h-3 text-muted-foreground/20 mr-2" />}
+              {i > 0 && <ArrowRight className="w-3 h-3 text-muted-foreground/70 mr-2" />}
               <div className="glass-card px-3 py-1.5 flex items-center gap-2">
                 <d.icon className="w-3.5 h-3.5 text-primary" />
-                <span className="text-[10px] font-semibold text-foreground">{d.label}</span>
+                <span className="text-[13px] font-semibold text-foreground">{d.label}</span>
               </div>
             </div>
           ))}

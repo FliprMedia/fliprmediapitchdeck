@@ -52,21 +52,21 @@ const MarketSlide = () => (
                     <div className="absolute top-5 text-center">
                       <div className={`text-xs font-mono tracking-widest ${layer.textColor} mb-1`}>{layer.label}</div>
                       <div className={`text-2xl font-black ${layer.textColor}`}>{layer.value}</div>
-                      <div className="text-[11px] text-muted-foreground mt-0.5 max-w-[200px]">{layer.title}</div>
+                      <div className="text-[13px] text-muted-foreground mt-0.5 max-w-[200px]">{layer.title}</div>
                     </div>
                   )}
                   {layer.label === "SAM" && (
                     <div className="absolute top-4 text-center">
                       <div className={`text-xs font-mono tracking-widest ${layer.textColor} mb-1`}>{layer.label}</div>
                       <div className={`text-xl font-black ${layer.textColor}`}>{layer.value}</div>
-                      <div className="text-[10px] text-muted-foreground mt-0.5 max-w-[160px]">{layer.title}</div>
+                      <div className="text-[13px] text-muted-foreground mt-0.5 max-w-[160px]">{layer.title}</div>
                     </div>
                   )}
                   {layer.label === "SOM" && (
                     <div className="text-center">
                       <div className={`text-xs font-mono tracking-widest ${layer.textColor} mb-1`}>{layer.label}</div>
                       <div className={`text-xl font-black ${layer.textColor}`}>{layer.value}</div>
-                      <div className="text-[9px] text-muted-foreground mt-0.5 max-w-[120px] leading-tight">{layer.title}</div>
+                      <div className="text-[14px] text-muted-foreground mt-0.5 max-w-[120px] leading-tight">{layer.title}</div>
                     </div>
                   )}
                 </div>

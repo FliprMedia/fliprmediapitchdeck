@@ -55,7 +55,7 @@ const ProductSlide = () => (
           <div>
             <div className="flex items-center gap-2 mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.25s' }}>
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-[10px] font-mono-brand text-primary tracking-[0.15em] uppercase">Operational</span>
+              <span className="text-[13px] font-mono-brand text-primary tracking-[0.15em] uppercase">Operational</span>
               <div className="h-px flex-1 bg-primary/10" />
             </div>
             <div className="grid grid-cols-3 gap-2">
@@ -64,9 +64,9 @@ const ProductSlide = () => (
                   style={{ animationDelay: `${0.3 + i * 0.04}s` }}>
                   <div className="flex items-center gap-1.5 mb-1">
                     <m.icon className="w-3.5 h-3.5 text-primary group-hover:scale-110 transition-transform" />
-                    <h3 className="text-[11px] font-bold text-foreground">{m.title}</h3>
+                    <h3 className="text-[13px] font-bold text-foreground">{m.title}</h3>
                   </div>
-                  <p className="text-[8px] text-muted-foreground leading-relaxed">{m.desc}</p>
+                  <p className="text-[13px] text-muted-foreground leading-relaxed">{m.desc}</p>
                 </div>
               ))}
             </div>
@@ -76,7 +76,7 @@ const ProductSlide = () => (
           <div>
             <div className="flex items-center gap-2 mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
               <div className="w-2 h-2 rounded-full bg-accent" />
-              <span className="text-[10px] font-mono-brand text-accent tracking-[0.15em] uppercase">Revenue Modules</span>
+              <span className="text-[13px] font-mono-brand text-accent tracking-[0.15em] uppercase">Revenue Modules</span>
               <div className="h-px flex-1 bg-accent/10" />
             </div>
             <div className="grid grid-cols-2 gap-2">
@@ -85,9 +85,9 @@ const ProductSlide = () => (
                   style={{ animationDelay: `${0.6 + i * 0.04}s` }}>
                   <div className="flex items-center gap-1.5 mb-1">
                     <m.icon className="w-3.5 h-3.5 text-accent group-hover:scale-110 transition-transform" />
-                    <h3 className="text-[11px] font-bold text-foreground">{m.title}</h3>
+                    <h3 className="text-[13px] font-bold text-foreground">{m.title}</h3>
                   </div>
-                  <p className="text-[8px] text-muted-foreground leading-relaxed">{m.desc}</p>
+                  <p className="text-[13px] text-muted-foreground leading-relaxed">{m.desc}</p>
                 </div>
               ))}
             </div>
@@ -100,10 +100,10 @@ const ProductSlide = () => (
             </div>
             <div>
               <div className="flex items-center gap-2 mb-0.5">
-                <span className="text-[10px] font-bold text-foreground">Capital-Efficient Build</span>
+                <span className="text-[13px] font-bold text-foreground">Capital-Efficient Build</span>
                 <Zap className="w-3 h-3 text-primary" />
               </div>
-              <p className="text-[8px] text-muted-foreground leading-relaxed">
+              <p className="text-[13px] text-muted-foreground leading-relaxed">
                 Built to this point with near-zero capital using AI-driven development. This round transitions from working prototype to fully operational, revenue-generating platform.
               </p>
             </div>

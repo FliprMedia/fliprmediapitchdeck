@@ -99,11 +99,11 @@ const BusinessModelSlide = () => (
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className={`text-[10px] font-mono text-${layer.color}/60`}>{layer.num}</span>
+                    <span className={`text-[13px] font-mono text-${layer.color}/60`}>{layer.num}</span>
                     <h3 className="text-[14px] font-bold text-foreground">{layer.title}</h3>
                     <div className="ml-auto flex items-center gap-1.5">
                       {layer.type.includes("Recurring") && <RefreshCw className="w-3 h-3 text-primary/50" />}
-                      <span className={`text-[8px] px-2 py-0.5 rounded-full bg-${layer.color}/10 text-${layer.color} font-semibold`}>
+                      <span className={`text-[13px] px-2 py-0.5 rounded-full bg-${layer.color}/10 text-${layer.color} font-semibold`}>
                         {layer.type}
                       </span>
                     </div>
@@ -112,7 +112,7 @@ const BusinessModelSlide = () => (
                     {layer.items.map(item => (
                       <div key={item} className="flex items-center gap-1.5">
                         <div className={`w-1 h-1 rounded-full bg-${layer.color}/40 shrink-0`} />
-                        <span className="text-[10px] text-muted-foreground">{item}</span>
+                        <span className="text-[13px] text-muted-foreground">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -124,10 +124,10 @@ const BusinessModelSlide = () => (
           {/* Margin arrow */}
           <div className="flex items-center gap-3 mt-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.55s', marginLeft: '30px' }}>
             <ArrowRight className="w-4 h-4 text-primary/40" />
-            <span className="text-[10px] text-muted-foreground">Increasing margin & defensibility</span>
+            <span className="text-[13px] text-muted-foreground">Increasing margin & defensibility</span>
             <ArrowRight className="w-4 h-4 text-primary/40" />
             <div className="glass-card px-3 py-1 border-accent/30">
-              <span className="text-[10px] font-bold text-accent flex items-center gap-1">
+              <span className="text-[13px] font-bold text-accent flex items-center gap-1">
                 <Zap className="w-3 h-3" /> High-Margin Future Upside
               </span>
             </div>
@@ -152,7 +152,7 @@ const BusinessModelSlide = () => (
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div className="text-center">
                   <div className="text-2xl font-black text-foreground">6</div>
-                  <div className="text-[9px] text-muted-foreground">Revenue<br/>Streams</div>
+                  <div className="text-[14px] text-muted-foreground">Revenue<br/>Streams</div>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ const BusinessModelSlide = () => (
               {revenueData.map(r => (
                 <div key={r.name} className="flex items-center gap-2">
                   <div className="w-2.5 h-2.5 rounded-sm shrink-0" style={{ backgroundColor: r.color }} />
-                  <span className="text-[10px] text-muted-foreground">{r.name} ({r.value}%)</span>
+                  <span className="text-[13px] text-muted-foreground">{r.name} ({r.value}%)</span>
                 </div>
               ))}
             </div>
@@ -170,13 +170,13 @@ const BusinessModelSlide = () => (
           <div className="grid grid-cols-2 gap-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
             <div className="glass-card p-3 text-center border-primary/15">
               <RefreshCw className="w-4 h-4 text-primary mx-auto mb-1" />
-              <div className="text-[11px] font-semibold text-foreground">Recurring</div>
-              <div className="text-[9px] text-muted-foreground">Ads, subscriptions,<br/>profiles, newsletters</div>
+              <div className="text-[13px] font-semibold text-foreground">Recurring</div>
+              <div className="text-[14px] text-muted-foreground">Ads, subscriptions,<br/>profiles, newsletters</div>
             </div>
             <div className="glass-card p-3 text-center border-accent/15">
               <Zap className="w-4 h-4 text-accent mx-auto mb-1" />
-              <div className="text-[11px] font-semibold text-foreground">High-Margin</div>
-              <div className="text-[9px] text-muted-foreground">Data products, intel,<br/>lead gen, events</div>
+              <div className="text-[13px] font-semibold text-foreground">High-Margin</div>
+              <div className="text-[14px] text-muted-foreground">Data products, intel,<br/>lead gen, events</div>
             </div>
           </div>
         </div>
