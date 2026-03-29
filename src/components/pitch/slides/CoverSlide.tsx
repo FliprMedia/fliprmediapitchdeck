@@ -15,62 +15,62 @@ const CoverSlide = () => (
     <div className="absolute inset-0 noise-overlay" />
 
     {/* Glow system */}
-    <div className="absolute top-[20%] left-[45%] -translate-x-1/2 w-[1200px] h-[700px] rounded-full bg-primary/[0.07] blur-[300px]" />
+    <div className="absolute top-[15%] left-1/2 -translate-x-1/2 w-[1400px] h-[800px] rounded-full bg-primary/[0.08] blur-[350px]" />
     <div className="absolute bottom-[-200px] left-[-100px] w-[700px] h-[700px] rounded-full bg-accent/[0.04] blur-[250px]" />
     <div className="absolute top-[-100px] right-[-50px] w-[500px] h-[500px] rounded-full bg-primary/[0.03] blur-[200px]" />
 
     {/* Accent line */}
     <div className="absolute top-0 left-[160px] w-px h-[500px] bg-gradient-to-b from-primary/15 via-primary/3 to-transparent" />
 
-    {/* Large glowing background logo — centered */}
-    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]">
-      <img src={fliprLogoDark} alt="" className="h-[800px] w-auto opacity-[0.12]" />
+    {/* Large glowing background logo — true center */}
+    <div className="absolute inset-0 flex items-center justify-center z-[1]">
+      <img src={fliprLogoDark} alt="" className="h-[850px] w-auto opacity-[0.10]" />
     </div>
 
     {/* Main content */}
-    <div className="relative z-10 flex flex-col justify-center h-full pl-24 pr-32 max-w-[1300px] pb-[85px]">
+    <div className="relative z-10 flex flex-col justify-center h-full pl-24 pr-24 max-w-[1400px] pb-[90px]">
       {/* Badge */}
-      <div className="mb-7 opacity-0 animate-fade-up">
-        <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-primary/20 bg-primary/[0.04] text-primary text-[13px] font-mono-brand tracking-[0.15em] uppercase">
-          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+      <div className="mb-5 opacity-0 animate-fade-up">
+        <span className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full border border-primary/25 bg-primary/[0.06] text-primary text-[15px] font-mono-brand tracking-[0.15em] uppercase font-semibold">
+          <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
           Investor Presentation — 2025
         </span>
       </div>
 
-      {/* Hero Logo — large and prominent */}
-      <div className="mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[260px] w-auto" />
+      {/* Hero Logo */}
+      <div className="mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        <img src={fliprLogoDark} alt="Flipr.Media" className="h-[320px] w-auto" />
       </div>
 
-      {/* Subheadline */}
-      <h1 className="text-[38px] font-bold leading-[1.2] mb-5 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
+      {/* Headline */}
+      <h1 className="text-[44px] font-extrabold leading-[1.15] mb-4 max-w-[950px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
         <span className="text-foreground">The media, discovery, and intelligence platform</span>{" "}
-        <span className="gradient-text font-display italic text-[40px]">for the $170B+ live commerce economy.</span>
+        <span className="gradient-text font-display italic text-[46px]">for the $170B+ live commerce economy.</span>
       </h1>
 
       {/* Support copy */}
-      <p className="text-[18px] text-foreground/80 leading-relaxed mb-8 max-w-[720px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
-        Live selling sits at the intersection of live commerce, social commerce, creator-led retail, and advertising. As the ecosystem matures, value will accrue to the trusted media and intelligence layer that shapes attention, rankings, and advertiser demand. We're building it.
+      <p className="text-[20px] text-foreground/85 leading-[1.6] mb-6 max-w-[780px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
+        Live selling sits at the intersection of live commerce, social commerce, creator-led retail, and advertising. Value will accrue to the trusted media and intelligence layer. We're building it.
       </p>
 
       {/* Raise pill + platform strip */}
       <div className="flex items-center gap-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.34s' }}>
-        <div className="glass-card-elevated px-7 py-4 flex items-center gap-5 animate-pulse-neon shrink-0">
-          <span className="text-primary font-mono-brand text-[14px] tracking-[0.2em]">RAISING</span>
-          <span className="text-[44px] font-black text-foreground tracking-tight stat-value">$500K</span>
-          <div className="h-10 w-px bg-border/30" />
+        <div className="glass-card-elevated px-8 py-5 flex items-center gap-6 animate-pulse-neon shrink-0">
+          <span className="text-primary font-mono-brand text-[15px] tracking-[0.2em] font-bold">RAISING</span>
+          <span className="text-[52px] font-black text-foreground tracking-tight stat-value">$500K</span>
+          <div className="h-12 w-px bg-border/40" />
           <div className="text-left">
-            <div className="text-[14px] text-muted-foreground/70">Instrument</div>
-            <div className="text-[15px] font-semibold text-foreground">Pre-Seed / SAFE</div>
+            <div className="text-[15px] text-muted-foreground font-medium">Instrument</div>
+            <div className="text-[17px] font-bold text-foreground">Pre-Seed / SAFE</div>
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-          <span className="text-[13px] text-muted-foreground/70 font-mono-brand tracking-[0.15em] uppercase mr-1">Covering</span>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <span className="text-[14px] text-muted-foreground font-mono-brand tracking-[0.15em] uppercase mr-1 font-semibold">Covering</span>
           {platforms.map((p, i) => (
-            <span key={p} className="flex items-center gap-2.5">
-              <span className="text-[13px] text-muted-foreground/80 font-medium">{p}</span>
-              {i < platforms.length - 1 && <span className="text-primary/20 text-[13px]">●</span>}
+            <span key={p} className="flex items-center gap-3">
+              <span className="text-[15px] text-foreground/70 font-medium">{p}</span>
+              {i < platforms.length - 1 && <span className="text-primary/30 text-[10px]">●</span>}
             </span>
           ))}
         </div>
@@ -80,14 +80,14 @@ const CoverSlide = () => (
     {/* Bottom stat strip */}
     <div className="absolute bottom-0 left-0 right-0 z-20">
       <div className="divider-glow" />
-      <div className="flex items-center justify-center bg-card/30 backdrop-blur-xl opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
+      <div className="flex items-center justify-center bg-card/40 backdrop-blur-xl opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
         {stats.map((s, i) => (
           <div key={s.label} className="flex items-center">
-            <div className="px-16 py-5 text-center">
-              <div className="text-[28px] font-black text-primary tracking-tight stat-value">{s.value}</div>
-              <div className="text-[14px] text-muted-foreground/80 mt-1 tracking-wide">{s.label}</div>
+            <div className="px-20 py-6 text-center">
+              <div className="text-[34px] font-black text-primary tracking-tight stat-value">{s.value}</div>
+              <div className="text-[15px] text-muted-foreground mt-1.5 tracking-wide font-medium">{s.label}</div>
             </div>
-            {i < stats.length - 1 && <div className="w-px h-10 bg-border/20" />}
+            {i < stats.length - 1 && <div className="w-px h-12 bg-border/25" />}
           </div>
         ))}
       </div>
