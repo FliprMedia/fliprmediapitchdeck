@@ -83,11 +83,11 @@ const TeamSlide = () => (
             </div>
           </div>
 
-          {/* Built with Lovable note */}
+          {/* Built with AI note */}
           <div className="glass-card p-4 border-accent/15 opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
             <div className="flex items-center gap-2 mb-1">
               <Zap className="w-4 h-4 text-accent" />
-              <span className="text-xs font-bold text-foreground">Built with Lovable</span>
+              <span className="text-xs font-bold text-foreground">Built with AI-Powered Tools</span>
             </div>
              <p className="text-[13px] text-muted-foreground leading-relaxed">
               Leveraged AI-powered development to build and launch a complete media platform solo — proving that
