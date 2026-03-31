@@ -6,40 +6,40 @@ const funds = [
   {
     icon: Code,
     category: "Product & Engineering",
-    pct: 30,
-    amount: 150000,
+    pct: 35,
+    amount: 70000,
     color: "hsl(145 100% 49%)",
     items: ["Site completion & UX polish", "Backend functionality & integrations", "Monetization flows", "Performance & database improvements"],
   },
   {
     icon: Megaphone,
     category: "Marketing & Audience Growth",
-    pct: 25,
-    amount: 125000,
+    pct: 20,
+    amount: 40000,
     color: "hsl(263 70% 58%)",
     items: ["Newsletter growth & distribution", "Paid acquisition experiments", "Social/video clips & SEO", "Creator collaborations"],
   },
   {
     icon: Handshake,
     category: "Sales / Partnerships / BD",
-    pct: 20,
-    amount: 100000,
+    pct: 15,
+    amount: 30000,
     color: "hsl(145 80% 35%)",
     items: ["Advertiser outreach & brand partnerships", "Platform relationships", "Sponsorship packaging", "Outbound systems"],
   },
   {
     icon: FileText,
     category: "Content & Operations",
-    pct: 15,
-    amount: 75000,
+    pct: 20,
+    amount: 40000,
     color: "hsl(263 50% 45%)",
     items: ["Editorial production & contributors", "Scheduling & workflows", "Content repurposing", "Operations support"],
   },
   {
     icon: Briefcase,
-    category: "Working Capital / Admin",
+    category: "Working Capital / Admin / Contingency",
     pct: 10,
-    amount: 50000,
+    amount: 20000,
     color: "hsl(240 10% 45%)",
     items: ["Legal, admin & tools", "Flexibility and runway buffer"],
   },
@@ -56,10 +56,10 @@ const UseOfFundsSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">14 — USE OF FUNDS</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <span className="text-primary neon-glow">$500K</span> buys 12–18 months of focused execution.
+        <span className="text-primary neon-glow">$200K</span> buys 9–12 months of lean, focused execution.
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Every dollar is mapped to a specific milestone: complete the platform, activate revenue, and prove the model before raising again.
+        Every dollar is mapped to a specific milestone: complete the platform, activate monetization, and validate the model with disciplined capital efficiency before raising again.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -77,7 +77,7 @@ const UseOfFundsSlide = () => (
             </ResponsiveContainer>
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="text-center">
-                <div className="text-3xl font-black text-primary">$500K</div>
+                <div className="text-3xl font-black text-primary">$200K</div>
                 <div className="text-[13px] text-muted-foreground">Total Raise</div>
               </div>
             </div>

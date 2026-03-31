@@ -51,7 +51,7 @@ const phases = [
     num: "04",
     icon: Rocket,
     timeline: "Scale",
-    badge: "12–18+ MONTHS",
+    badge: "9–12+ MONTHS",
     badgeColor: "accent",
     title: "Category Operating Layer",
     items: [

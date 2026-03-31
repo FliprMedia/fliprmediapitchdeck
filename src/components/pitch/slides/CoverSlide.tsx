@@ -57,7 +57,7 @@ const CoverSlide = () => (
       <div className="flex items-center gap-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.34s' }}>
         <div className="glass-card-elevated px-8 py-5 flex items-center gap-6 animate-pulse-neon shrink-0">
           <span className="text-primary font-mono-brand text-[15px] tracking-[0.2em] font-bold">RAISING</span>
-          <span className="text-[52px] font-black text-foreground tracking-tight stat-value">$500K</span>
+          <span className="text-[52px] font-black text-foreground tracking-tight stat-value">$200K</span>
           <div className="h-12 w-px bg-border/40" />
           <div className="text-left">
             <div className="text-[15px] text-muted-foreground font-medium">Instrument</div>

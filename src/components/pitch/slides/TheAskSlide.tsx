@@ -2,12 +2,12 @@ import SlideLayout from "../SlideLayout";
 import { Rocket, Globe, Megaphone, BarChart3, Users, TrendingUp, Mail, CheckCircle } from "lucide-react";
 
 const unlocks = [
-  { icon: Globe, label: "Fully operational platform with monetization" },
-  { icon: Megaphone, label: "Active advertiser and sponsor revenue" },
-  { icon: BarChart3, label: "Consistent editorial cadence at scale" },
-  { icon: Users, label: "Outbound sales motion for brands" },
-  { icon: TrendingUp, label: "Measurable audience and subscriber growth" },
-  { icon: Rocket, label: "Clear metrics for a Series A conversation" },
+  { icon: Globe, label: "Core site fully operational with monetization paths" },
+  { icon: Megaphone, label: "Stronger content cadence and newsletter systems" },
+  { icon: BarChart3, label: "Early advertiser outreach and sponsorship sales" },
+  { icon: Users, label: "Validated audience and revenue traction" },
+  { icon: TrendingUp, label: "Improved UX, backend flows, and performance" },
+  { icon: Rocket, label: "Investable foundation for a follow-on round" },
 ];
 
 const idealInvestors = [
@@ -25,11 +25,11 @@ const TheAskSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">17 — THE ASK</div>
       <h2 className="text-[38px] font-extrabold leading-[1.15] mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <span className="text-primary neon-glow">$500K</span> to own the media layer{" "}
+        <span className="text-primary neon-glow">$200K</span> to own the media layer{" "}
         <span className="font-display italic text-[40px]">of a $170B+ market.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Complete the platform. Activate revenue. Prove the model. Position for a strong Series A.
+        A disciplined pre-seed round to complete the platform, activate revenue, and prove the model with capital efficiency.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -39,7 +39,7 @@ const TheAskSlide = () => (
           <div className="glass-card-elevated p-7 opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
             <div className="grid grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-[44px] font-black text-primary stat-value">$500K</div>
+                <div className="text-[44px] font-black text-primary stat-value">$200K</div>
                 <div className="text-[13px] text-muted-foreground/70 font-mono-brand tracking-[0.1em] uppercase mt-1">Raise Amount</div>
               </div>
               <div>
@@ -47,7 +47,7 @@ const TheAskSlide = () => (
                 <div className="text-[13px] text-muted-foreground/70 font-mono-brand tracking-[0.1em] uppercase mt-1">Instrument</div>
               </div>
               <div>
-                <div className="text-[44px] font-black text-accent stat-value">12–18</div>
+                <div className="text-[44px] font-black text-accent stat-value">9–12</div>
                 <div className="text-[13px] text-muted-foreground/70 font-mono-brand tracking-[0.1em] uppercase mt-1">Months Runway</div>
               </div>
             </div>
@@ -90,8 +90,8 @@ const TheAskSlide = () => (
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-3">Join the Round</h3>
             <p className="text-[14px] text-muted-foreground leading-relaxed max-w-[340px] mb-6">
-              First-mover position in the media layer of a $170B+ market.
-              Early investors are buying category ownership at pre-revenue pricing.
+              A disciplined, low-risk entry point into the media layer of a $170B+ market.
+              Founder-led, capital-efficient execution before a larger scale-up round.
             </p>
             <div className="divider-glow w-full mb-5" />
             <div className="text-[13px] text-muted-foreground/70 mb-1 font-mono-brand tracking-[0.1em] uppercase">Invest in the future of live commerce media</div>
