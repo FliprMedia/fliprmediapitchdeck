@@ -25,11 +25,11 @@ const TheAskSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">17 — THE ASK</div>
       <h2 className="text-[38px] font-extrabold leading-[1.15] mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <span className="text-primary neon-glow">$500K</span> to own the media layer{" "}
+        <span className="text-primary neon-glow">$200K</span> to own the media layer{" "}
         <span className="font-display italic text-[40px]">of a $170B+ market.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Complete the platform. Activate revenue. Prove the model. Position for a strong Series A.
+        A disciplined pre-seed round to complete the platform, activate revenue, and prove the model with capital efficiency.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
