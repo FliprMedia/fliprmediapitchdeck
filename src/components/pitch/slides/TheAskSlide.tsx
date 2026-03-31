@@ -88,10 +88,10 @@ const TheAskSlide = () => (
             <div className="w-20 h-20 rounded-full bg-primary/10 border-2 border-primary/30 flex items-center justify-center mb-5">
               <Rocket className="w-10 h-10 text-primary" />
             </div>
-            <h3 className="text-2xl font-bold text-foreground mb-3">Join the Round</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-3">Smart First Check</h3>
             <p className="text-[14px] text-muted-foreground leading-relaxed max-w-[340px] mb-6">
-              A disciplined, low-risk entry point into the media layer of a $170B+ market.
-              Founder-led, capital-efficient execution before a larger scale-up round.
+              Big market. Lean raise. Fast execution. Strong validation path.
+              A lower-risk entry point with clear follow-on upside as traction scales.
             </p>
             <div className="divider-glow w-full mb-5" />
             <div className="text-[13px] text-muted-foreground/70 mb-1 font-mono-brand tracking-[0.1em] uppercase">Invest in the future of live commerce media</div>

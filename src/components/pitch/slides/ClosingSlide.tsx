@@ -62,7 +62,7 @@ const ClosingSlide = () => (
 
       {/* Closing copy */}
       <p className="text-[17px] text-muted-foreground text-center max-w-[800px] leading-[1.7] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
-        Flipr.Media sits at the intersection of live commerce, social commerce, creator-led retail, and advertising. As the ecosystem matures, value accrues to the layer that shapes attention, rankings, and advertiser demand. That layer is <span className="text-primary font-semibold">ours to own</span>.
+        Big market. Focused raise. Fast execution. Flipr.Media is raising $200K to prove the model, validate demand, and build an investable foundation — with clear follow-on upside as the <span className="text-primary font-semibold">$170B+ live commerce economy</span> keeps accelerating.
       </p>
 
       {/* Contact card */}

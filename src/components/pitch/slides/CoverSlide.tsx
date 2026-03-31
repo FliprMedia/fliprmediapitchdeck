@@ -50,7 +50,7 @@ const CoverSlide = () => (
 
       {/* Support copy */}
       <p className="text-[20px] text-foreground/85 leading-[1.6] mb-6 max-w-[780px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
-        Live selling sits at the intersection of live commerce, social commerce, creator-led retail, and advertising. Value will accrue to the trusted media and intelligence layer. We're building it.
+        A focused $200K pre-seed to complete the platform, activate monetization, and validate category demand — with founder-led execution and disciplined capital efficiency.
       </p>
 
       {/* Raise pill + platform strip */}
