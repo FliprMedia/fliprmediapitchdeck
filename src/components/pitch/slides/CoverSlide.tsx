@@ -31,8 +31,8 @@ const CoverSlide = () => (
     <div className="relative z-10 flex flex-col justify-center h-full pl-24 pr-24 max-w-[1400px] pb-[90px]">
       {/* Badge */}
       <div className="mb-5 opacity-0 animate-fade-up">
-        <span className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full border border-primary/25 bg-primary/[0.06] text-primary text-[15px] font-mono-brand tracking-[0.15em] uppercase font-semibold">
-          <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+        <span className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-primary/25 bg-primary/[0.06] text-primary text-[16px] font-mono-brand tracking-[0.15em] uppercase font-semibold">
+          <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" />
           Investor Presentation — 2025
         </span>
       </div>
@@ -43,33 +43,33 @@ const CoverSlide = () => (
       </div>
 
       {/* Headline */}
-      <h1 className="text-[44px] font-extrabold leading-[1.15] mb-4 max-w-[950px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
+      <h1 className="text-[48px] font-extrabold leading-[1.15] mb-4 max-w-[950px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
         <span className="text-foreground">The media, discovery, and intelligence platform</span>{" "}
-        <span className="gradient-text font-display italic text-[46px]">for the $170B+ live commerce economy.</span>
+        <span className="gradient-text font-display italic text-[50px]">for the $170B+ live commerce economy.</span>
       </h1>
 
       {/* Support copy */}
-      <p className="text-[20px] text-foreground/85 leading-[1.6] mb-6 max-w-[780px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
+      <p className="text-[22px] text-foreground/90 leading-[1.6] mb-6 max-w-[780px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
         A focused $200K pre-seed to complete the platform, activate monetization, and validate category demand — with founder-led execution and disciplined capital efficiency.
       </p>
 
       {/* Raise pill + platform strip */}
       <div className="flex items-center gap-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.34s' }}>
         <div className="glass-card-elevated px-8 py-5 flex items-center gap-6 animate-pulse-neon shrink-0">
-          <span className="text-primary font-mono-brand text-[15px] tracking-[0.2em] font-bold">RAISING</span>
-          <span className="text-[52px] font-black text-foreground tracking-tight stat-value">$200K</span>
+          <span className="text-primary font-mono-brand text-[16px] tracking-[0.2em] font-bold">RAISING</span>
+          <span className="text-[56px] font-black text-foreground tracking-tight stat-value">$200K</span>
           <div className="h-12 w-px bg-border/40" />
           <div className="text-left">
-            <div className="text-[15px] text-muted-foreground font-medium">Instrument</div>
-            <div className="text-[17px] font-bold text-foreground">Pre-Seed / SAFE</div>
+            <div className="text-[16px] text-muted-foreground font-medium">Instrument</div>
+            <div className="text-[18px] font-bold text-foreground">Pre-Seed / SAFE</div>
           </div>
         </div>
 
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <span className="text-[14px] text-muted-foreground font-mono-brand tracking-[0.15em] uppercase mr-1 font-semibold">Covering</span>
+          <span className="text-[15px] text-muted-foreground font-mono-brand tracking-[0.15em] uppercase mr-1 font-semibold">Covering</span>
           {platforms.map((p, i) => (
             <span key={p} className="flex items-center gap-3">
-              <span className="text-[15px] text-foreground/70 font-medium">{p}</span>
+              <span className="text-[16px] text-foreground/80 font-medium">{p}</span>
               {i < platforms.length - 1 && <span className="text-primary/30 text-[10px]">●</span>}
             </span>
           ))}
@@ -84,8 +84,8 @@ const CoverSlide = () => (
         {stats.map((s, i) => (
           <div key={s.label} className="flex items-center">
             <div className="px-20 py-6 text-center">
-              <div className="text-[34px] font-black text-primary tracking-tight stat-value">{s.value}</div>
-              <div className="text-[15px] text-muted-foreground mt-1.5 tracking-wide font-medium">{s.label}</div>
+              <div className="text-[36px] font-black text-primary tracking-tight stat-value">{s.value}</div>
+              <div className="text-[16px] text-muted-foreground mt-1.5 tracking-wide font-medium">{s.label}</div>
             </div>
             {i < stats.length - 1 && <div className="w-px h-12 bg-border/25" />}
           </div>
