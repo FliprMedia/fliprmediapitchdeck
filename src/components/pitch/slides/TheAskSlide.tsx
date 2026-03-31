@@ -90,8 +90,8 @@ const TheAskSlide = () => (
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-3">Join the Round</h3>
             <p className="text-[14px] text-muted-foreground leading-relaxed max-w-[340px] mb-6">
-              First-mover position in the media layer of a $170B+ market.
-              Early investors are buying category ownership at pre-revenue pricing.
+              A disciplined, low-risk entry point into the media layer of a $170B+ market.
+              Founder-led, capital-efficient execution before a larger scale-up round.
             </p>
             <div className="divider-glow w-full mb-5" />
             <div className="text-[13px] text-muted-foreground/70 mb-1 font-mono-brand tracking-[0.1em] uppercase">Invest in the future of live commerce media</div>
