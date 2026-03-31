@@ -2,12 +2,12 @@ import SlideLayout from "../SlideLayout";
 import { Rocket, Globe, Megaphone, BarChart3, Users, TrendingUp, Mail, CheckCircle } from "lucide-react";
 
 const unlocks = [
-  { icon: Globe, label: "Fully operational platform with monetization" },
-  { icon: Megaphone, label: "Active advertiser and sponsor revenue" },
-  { icon: BarChart3, label: "Consistent editorial cadence at scale" },
-  { icon: Users, label: "Outbound sales motion for brands" },
-  { icon: TrendingUp, label: "Measurable audience and subscriber growth" },
-  { icon: Rocket, label: "Clear metrics for a Series A conversation" },
+  { icon: Globe, label: "Core site fully operational with monetization paths" },
+  { icon: Megaphone, label: "Stronger content cadence and newsletter systems" },
+  { icon: BarChart3, label: "Early advertiser outreach and sponsorship sales" },
+  { icon: Users, label: "Validated audience and revenue traction" },
+  { icon: TrendingUp, label: "Improved UX, backend flows, and performance" },
+  { icon: Rocket, label: "Investable foundation for a follow-on round" },
 ];
 
 const idealInvestors = [
