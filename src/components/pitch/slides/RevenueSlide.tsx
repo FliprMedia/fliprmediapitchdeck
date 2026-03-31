@@ -5,21 +5,21 @@ import { TrendingUp, Award, Users, Database, RefreshCw, Megaphone, ArrowRight, S
 const scenarioData = [
   {
     year: "Year 1",
-    conservative: 80,
-    base: 150,
-    upside: 250,
+    conservative: 40,
+    base: 80,
+    upside: 150,
   },
   {
     year: "Year 2",
-    conservative: 300,
-    base: 600,
-    upside: 1000,
+    conservative: 180,
+    base: 400,
+    upside: 800,
   },
   {
     year: "Year 3",
-    conservative: 700,
-    base: 1500,
-    upside: 3000,
+    conservative: 500,
+    base: 1200,
+    upside: 2500,
   },
 ];
 
@@ -106,9 +106,9 @@ const RevenueSlide = () => (
           {/* Scenario summary cards */}
           <div className="grid grid-cols-3 gap-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
             {[
-              { label: "Conservative", yr3: "$700K", color: "hsl(240 10% 40%)", desc: "Organic growth, limited sales" },
-              { label: "Base", yr3: "$1.5M", color: "hsl(145 100% 49%)", desc: "Active sales, strong content" },
-              { label: "Upside", yr3: "$3M+", color: "hsl(263 70% 58%)", desc: "Fast adoption, premium products" },
+              { label: "Conservative", yr3: "$500K", color: "hsl(240 10% 40%)", desc: "Organic growth, limited sales" },
+              { label: "Base", yr3: "$1.2M", color: "hsl(145 100% 49%)", desc: "Active sales, strong content" },
+              { label: "Upside", yr3: "$2.5M+", color: "hsl(263 70% 58%)", desc: "Fast adoption, premium products" },
             ].map(s => (
               <div key={s.label} className="glass-card p-3 text-center">
                 <div className="text-[14px] font-semibold text-muted-foreground uppercase mb-1">{s.label}</div>

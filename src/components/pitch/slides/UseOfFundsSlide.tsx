@@ -56,10 +56,10 @@ const UseOfFundsSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">14 — USE OF FUNDS</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <span className="text-primary neon-glow">$200K</span> buys 9–12 months of lean, focused execution.
+        <span className="text-primary neon-glow">$200K</span> — intentionally lean, strategically allocated.
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Every dollar is mapped to a specific milestone: complete the platform, activate monetization, and validate the model with disciplined capital efficiency before raising again.
+        Founder-led execution. Every dollar mapped to a validation milestone. Build the core, prove demand, then raise from a position of strength.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
