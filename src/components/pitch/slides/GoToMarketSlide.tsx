@@ -69,7 +69,7 @@ const GoToMarketSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">09 — GO-TO-MARKET</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Content builds authority. Authority builds <span className="font-display italic text-[50px] text-primary">a revenue engine.</span>
+        Content builds authority. Authority builds <span className="font-display italic text-[54px] text-primary">a revenue engine.</span>
       </h2>
       <p className="slide-subhead mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Three phases. Each compounds into the next. By month 9, multiple revenue streams are active.
@@ -78,9 +78,8 @@ const GoToMarketSlide = () => (
       <div className="flex flex-1 gap-7 min-h-0">
         {/* Left: Flywheel + Channels */}
         <div className="w-[520px] flex flex-col gap-5">
-          {/* Flywheel */}
           <div className="glass-card p-5 opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
-            <div className="text-[13px] font-semibold text-muted-foreground uppercase tracking-wider mb-3">Growth Flywheel</div>
+            <div className="text-[15px] font-semibold text-muted-foreground uppercase tracking-wider mb-3">Growth Flywheel</div>
             <div className="flex items-center justify-center gap-1">
               {flywheelSteps.map((step, i) => (
                 <div key={step.label} className="flex items-center gap-1">
@@ -88,51 +87,48 @@ const GoToMarketSlide = () => (
                     <div className={`w-14 h-14 rounded-full bg-${step.color}/10 border border-${step.color}/30 flex items-center justify-center`}>
                       <step.icon className={`w-5 h-5 text-${step.color}`} />
                     </div>
-                    <span className={`text-[13px] font-semibold text-${step.color}`}>{step.label}</span>
+                    <span className={`text-[14px] font-semibold text-${step.color}`}>{step.label}</span>
                   </div>
                   {i < flywheelSteps.length - 1 && (
                     <ArrowRight className="w-4 h-4 text-muted-foreground/80 mx-0.5 mb-5" />
                   )}
                 </div>
               ))}
-              {/* Loop back arrow */}
               <div className="flex items-center gap-1">
                 <ArrowRight className="w-4 h-4 text-primary/30 mx-0.5 mb-5" />
                 <div className="flex flex-col items-center gap-1.5">
                   <div className="w-14 h-14 rounded-full bg-primary/15 border-2 border-primary/40 flex items-center justify-center">
                     <RefreshCw className="w-5 h-5 text-primary" />
                   </div>
-                  <span className="text-[13px] font-bold text-primary">Repeat</span>
+                  <span className="text-[14px] font-bold text-primary">Repeat</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Channels */}
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
-            <div className="text-[13px] font-semibold text-muted-foreground uppercase tracking-wider mb-3">Acquisition Channels</div>
+            <div className="text-[15px] font-semibold text-muted-foreground uppercase tracking-wider mb-3">Acquisition Channels</div>
             <div className="flex flex-wrap gap-2">
               {channels.map((ch, i) => (
                 <div
                   key={ch.label}
-                  className="glass-card px-3 py-2 flex items-center gap-2 hover:border-primary/30 transition-colors opacity-0 animate-fade-up"
+                  className="glass-card px-3.5 py-2.5 flex items-center gap-2 hover:border-primary/30 transition-colors opacity-0 animate-fade-up"
                   style={{ animationDelay: `${0.4 + i * 0.04}s` }}
                 >
-                  <ch.icon className="w-3.5 h-3.5 text-primary" />
-                  <span className="text-[13px] font-semibold text-foreground">{ch.label}</span>
+                  <ch.icon className="w-4 h-4 text-primary" />
+                  <span className="text-[15px] font-semibold text-foreground">{ch.label}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Community flywheel note */}
           <div className="glass-card p-4 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
             <div className="flex items-center gap-2 mb-1">
               <Rocket className="w-4 h-4 text-primary" />
-              <span className="text-xs font-bold text-foreground">Built-In Viral Loop</span>
+              <span className="text-[15px] font-bold text-foreground">Built-In Viral Loop</span>
             </div>
-            <p className="text-[13px] text-muted-foreground leading-relaxed">
-              Sellers share their Flipr coverage → new sellers want to be featured → content grows → audience grows → advertisers pay for access. The flywheel is self-reinforcing.
+            <p className="text-[15px] text-muted-foreground leading-relaxed">
+              Sellers share their Flipr coverage → new sellers want to be featured → content grows → audience grows → advertisers pay for access.
             </p>
           </div>
         </div>
@@ -146,17 +142,17 @@ const GoToMarketSlide = () => (
               style={{ animationDelay: `${0.25 + i * 0.1}s` }}
             >
               <div className="flex items-center gap-2 mb-3">
-                <span className={`text-[13px] font-mono text-${phase.color}/60`}>{phase.num}</span>
-                <h3 className="text-[15px] font-bold text-foreground">{phase.title}</h3>
-                <span className={`ml-auto text-[14px] px-2 py-0.5 rounded-full bg-${phase.color}/10 text-${phase.color} font-semibold`}>
+                <span className={`text-[15px] font-mono text-${phase.color}/70`}>{phase.num}</span>
+                <h3 className="text-[18px] font-bold text-foreground">{phase.title}</h3>
+                <span className={`ml-auto text-[15px] px-2.5 py-0.5 rounded-full bg-${phase.color}/10 text-${phase.color} font-semibold`}>
                   {phase.timeline}
                 </span>
               </div>
-              <div className="flex flex-col gap-1.5 flex-1">
+              <div className="flex flex-col gap-2 flex-1">
                 {phase.items.map(item => (
-                  <div key={item} className="flex items-center gap-2">
+                  <div key={item} className="flex items-center gap-2.5">
                     <div className={`w-1.5 h-1.5 rounded-full bg-${phase.color}/40 shrink-0`} />
-                    <span className="text-[13px] text-muted-foreground">{item}</span>
+                    <span className="text-[15px] text-muted-foreground">{item}</span>
                   </div>
                 ))}
               </div>

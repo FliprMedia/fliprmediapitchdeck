@@ -75,10 +75,10 @@ const BusinessModelSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">08 — BUSINESS MODEL</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Four revenue layers. <span className="font-display italic text-[50px] text-primary">Increasing margin at each level.</span>
+        Four revenue layers. <span className="font-display italic text-[54px] text-primary">Increasing margin at each level.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Starts with proven media economics. Scales into high-margin data and intelligence products — the same playbook as PitchBook and The Information.
+        Starts with proven media economics. Scales into high-margin data and intelligence products.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -94,25 +94,25 @@ const BusinessModelSlide = () => (
               }}
             >
               <div className="flex items-start gap-3">
-                <div className={`w-9 h-9 rounded-lg bg-${layer.color}/10 flex items-center justify-center shrink-0`}>
-                  <layer.icon className={`w-4.5 h-4.5 text-${layer.color}`} />
+                <div className={`w-10 h-10 rounded-lg bg-${layer.color}/10 flex items-center justify-center shrink-0`}>
+                  <layer.icon className={`w-5 h-5 text-${layer.color}`} />
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className={`text-[13px] font-mono text-${layer.color}/60`}>{layer.num}</span>
-                    <h3 className="text-[14px] font-bold text-foreground">{layer.title}</h3>
+                    <span className={`text-[14px] font-mono text-${layer.color}/70`}>{layer.num}</span>
+                    <h3 className="text-[16px] font-bold text-foreground">{layer.title}</h3>
                     <div className="ml-auto flex items-center gap-1.5">
-                      {layer.type.includes("Recurring") && <RefreshCw className="w-3 h-3 text-primary/50" />}
-                      <span className={`text-[13px] px-2 py-0.5 rounded-full bg-${layer.color}/10 text-${layer.color} font-semibold`}>
+                      {layer.type.includes("Recurring") && <RefreshCw className="w-3.5 h-3.5 text-primary/50" />}
+                      <span className={`text-[14px] px-2.5 py-0.5 rounded-full bg-${layer.color}/10 text-${layer.color} font-semibold`}>
                         {layer.type}
                       </span>
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-x-4 gap-y-0.5">
+                  <div className="grid grid-cols-2 gap-x-4 gap-y-1">
                     {layer.items.map(item => (
-                      <div key={item} className="flex items-center gap-1.5">
-                        <div className={`w-1 h-1 rounded-full bg-${layer.color}/40 shrink-0`} />
-                        <span className="text-[13px] text-muted-foreground">{item}</span>
+                      <div key={item} className="flex items-center gap-2">
+                        <div className={`w-1.5 h-1.5 rounded-full bg-${layer.color}/40 shrink-0`} />
+                        <span className="text-[15px] text-muted-foreground">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -121,24 +121,22 @@ const BusinessModelSlide = () => (
             </div>
           ))}
 
-          {/* Margin arrow */}
           <div className="flex items-center gap-3 mt-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.55s', marginLeft: '30px' }}>
             <ArrowRight className="w-4 h-4 text-primary/40" />
-            <span className="text-[13px] text-muted-foreground">Increasing margin & defensibility</span>
+            <span className="text-[15px] text-muted-foreground font-medium">Increasing margin & defensibility</span>
             <ArrowRight className="w-4 h-4 text-primary/40" />
-            <div className="glass-card px-3 py-1 border-accent/30">
-              <span className="text-[13px] font-bold text-accent flex items-center gap-1">
-                <Zap className="w-3 h-3" /> High-Margin Future Upside
+            <div className="glass-card px-3 py-1.5 border-accent/30">
+              <span className="text-[15px] font-bold text-accent flex items-center gap-1">
+                <Zap className="w-3.5 h-3.5" /> High-Margin Future Upside
               </span>
             </div>
           </div>
         </div>
 
-        {/* Right: Donut chart + revenue type breakdown */}
+        {/* Right: Donut chart */}
         <div className="w-[440px] flex flex-col gap-4">
-          {/* Donut */}
           <div className="glass-card p-5 flex-1 opacity-0 animate-scale-in" style={{ animationDelay: '0.3s' }}>
-            <div className="text-xs text-muted-foreground font-medium mb-2 text-center">Projected Revenue Mix — Year 3</div>
+            <div className="text-[14px] text-muted-foreground font-semibold mb-2 text-center">Projected Revenue Mix — Year 3</div>
             <div className="h-[240px] relative">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
@@ -151,31 +149,30 @@ const BusinessModelSlide = () => (
               </ResponsiveContainer>
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div className="text-center">
-                  <div className="text-2xl font-black text-foreground">6</div>
-                  <div className="text-[14px] text-muted-foreground">Revenue<br/>Streams</div>
+                  <div className="text-[26px] font-black text-foreground">6</div>
+                  <div className="text-[15px] text-muted-foreground">Revenue<br/>Streams</div>
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-1.5 mt-2">
+            <div className="grid grid-cols-2 gap-2 mt-2">
               {revenueData.map(r => (
                 <div key={r.name} className="flex items-center gap-2">
-                  <div className="w-2.5 h-2.5 rounded-sm shrink-0" style={{ backgroundColor: r.color }} />
-                  <span className="text-[13px] text-muted-foreground">{r.name} ({r.value}%)</span>
+                  <div className="w-3 h-3 rounded-sm shrink-0" style={{ backgroundColor: r.color }} />
+                  <span className="text-[14px] text-muted-foreground font-medium">{r.name} ({r.value}%)</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Revenue type cards */}
           <div className="grid grid-cols-2 gap-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
-            <div className="glass-card p-3 text-center border-primary/15">
-              <RefreshCw className="w-4 h-4 text-primary mx-auto mb-1" />
-              <div className="text-[13px] font-semibold text-foreground">Recurring</div>
+            <div className="glass-card p-3.5 text-center border-primary/15">
+              <RefreshCw className="w-4.5 h-4.5 text-primary mx-auto mb-1" />
+              <div className="text-[15px] font-semibold text-foreground">Recurring</div>
               <div className="text-[14px] text-muted-foreground">Ads, subscriptions,<br/>profiles, newsletters</div>
             </div>
-            <div className="glass-card p-3 text-center border-accent/15">
-              <Zap className="w-4 h-4 text-accent mx-auto mb-1" />
-              <div className="text-[13px] font-semibold text-foreground">High-Margin</div>
+            <div className="glass-card p-3.5 text-center border-accent/15">
+              <Zap className="w-4.5 h-4.5 text-accent mx-auto mb-1" />
+              <div className="text-[15px] font-semibold text-foreground">High-Margin</div>
               <div className="text-[14px] text-muted-foreground">Data products, intel,<br/>lead gen, events</div>
             </div>
           </div>
