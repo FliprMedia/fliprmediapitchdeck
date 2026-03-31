@@ -60,7 +60,7 @@ const TractionSlide = () => (
               <Code className="w-3.5 h-3.5 text-primary" />
               <span className="text-[13px] font-bold text-foreground">Built With Minimal Capital</span>
               <div className="ml-auto glass-card px-2 py-0.5 border-primary/20">
-                <span className="text-[13px] font-bold text-primary">LOVABLE-POWERED</span>
+                <span className="text-[13px] font-bold text-primary">BOOTSTRAP-POWERED</span>
               </div>
             </div>
             <div className="grid grid-cols-3 gap-1.5">
