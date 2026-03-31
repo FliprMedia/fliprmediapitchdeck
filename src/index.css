@@ -128,16 +128,16 @@
   }
 
   .slide-label {
-    @apply font-mono-brand text-base tracking-[0.2em] uppercase font-semibold;
+    @apply font-mono-brand text-lg tracking-[0.2em] uppercase font-semibold;
     color: hsl(var(--primary));
   }
 
   .slide-headline {
-    @apply text-[56px] font-extrabold leading-[1.08] tracking-tight;
+    @apply text-[60px] font-extrabold leading-[1.08] tracking-tight;
   }
 
   .slide-subhead {
-    @apply text-[22px] leading-relaxed;
+    @apply text-[24px] leading-relaxed font-medium;
     color: hsl(var(--muted-foreground));
   }
 
