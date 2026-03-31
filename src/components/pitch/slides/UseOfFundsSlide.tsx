@@ -56,10 +56,10 @@ const UseOfFundsSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">14 — USE OF FUNDS</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <span className="text-primary neon-glow">$500K</span> buys 12–18 months of focused execution.
+        <span className="text-primary neon-glow">$200K</span> buys 9–12 months of lean, focused execution.
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Every dollar is mapped to a specific milestone: complete the platform, activate revenue, and prove the model before raising again.
+        Every dollar is mapped to a specific milestone: complete the platform, activate monetization, and validate the model with disciplined capital efficiency before raising again.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
