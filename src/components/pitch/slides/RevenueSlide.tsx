@@ -5,21 +5,21 @@ import { TrendingUp, Award, Users, Database, RefreshCw, Megaphone, ArrowRight, S
 const scenarioData = [
   {
     year: "Year 1",
-    conservative: 80,
-    base: 150,
-    upside: 250,
+    conservative: 40,
+    base: 80,
+    upside: 150,
   },
   {
     year: "Year 2",
-    conservative: 300,
-    base: 600,
-    upside: 1000,
+    conservative: 180,
+    base: 400,
+    upside: 800,
   },
   {
     year: "Year 3",
-    conservative: 700,
-    base: 1500,
-    upside: 3000,
+    conservative: 500,
+    base: 1200,
+    upside: 2500,
   },
 ];
 
