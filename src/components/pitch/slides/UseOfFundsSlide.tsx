@@ -65,7 +65,7 @@ const UseOfFundsSlide = () => (
       <div className="flex flex-1 gap-7 min-h-0">
         {/* Left: Donut */}
         <div className="w-[420px] flex flex-col items-center justify-center opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
-          <div className="relative w-full h-[340px]">
+          <div className="relative w-full h-[320px]">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie data={chartData} cx="50%" cy="50%" innerRadius={85} outerRadius={140} paddingAngle={3} dataKey="value">
@@ -77,19 +77,19 @@ const UseOfFundsSlide = () => (
             </ResponsiveContainer>
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="text-center">
-                <div className="text-3xl font-black text-primary">$200K</div>
-                <div className="text-[13px] text-muted-foreground">Total Raise</div>
+                <div className="text-[28px] font-black text-primary">$200K</div>
+                <div className="text-[15px] text-muted-foreground font-medium">Total Raise</div>
               </div>
             </div>
           </div>
           {/* Legend */}
-          <div className="flex flex-col gap-1.5 w-full mt-2">
+          <div className="flex flex-col gap-2 w-full mt-2">
             {funds.map(f => (
               <div key={f.category} className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-sm shrink-0" style={{ backgroundColor: f.color }} />
-                <span className="text-[13px] text-muted-foreground flex-1">{f.category}</span>
-                <span className="text-[13px] font-bold text-foreground">{f.pct}%</span>
-                <span className="text-[13px] text-muted-foreground">${(f.amount / 1000).toFixed(0)}K</span>
+                <div className="w-3.5 h-3.5 rounded-sm shrink-0" style={{ backgroundColor: f.color }} />
+                <span className="text-[15px] text-muted-foreground flex-1">{f.category}</span>
+                <span className="text-[15px] font-bold text-foreground">{f.pct}%</span>
+                <span className="text-[15px] text-muted-foreground">${(f.amount / 1000).toFixed(0)}K</span>
               </div>
             ))}
           </div>
@@ -100,22 +100,22 @@ const UseOfFundsSlide = () => (
           {funds.map((f, i) => (
             <div
               key={f.category}
-              className="glass-card p-4 flex items-start gap-3 opacity-0 animate-fade-up hover:border-primary/20 transition-colors"
+              className="glass-card p-4 flex items-start gap-3.5 opacity-0 animate-fade-up hover:border-primary/20 transition-colors"
               style={{ animationDelay: `${0.3 + i * 0.07}s` }}
             >
-              <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: `${f.color.replace(')', ' / 0.15)')}` }}>
-                <f.icon className="w-4.5 h-4.5" style={{ color: f.color.replace(' / 0.15)', ')') }} />
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: `${f.color.replace(')', ' / 0.15)')}` }}>
+                <f.icon className="w-5 h-5" style={{ color: f.color.replace(' / 0.15)', ')') }} />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <h3 className="text-[13px] font-bold text-foreground">{f.category}</h3>
-                  <span className="ml-auto text-[13px] font-bold" style={{ color: f.color }}>{f.pct}% — ${(f.amount / 1000).toFixed(0)}K</span>
+                  <h3 className="text-[15px] font-bold text-foreground">{f.category}</h3>
+                  <span className="ml-auto text-[15px] font-bold" style={{ color: f.color }}>{f.pct}% — ${(f.amount / 1000).toFixed(0)}K</span>
                 </div>
-                <div className="grid grid-cols-2 gap-x-3 gap-y-0.5">
+                <div className="grid grid-cols-2 gap-x-3 gap-y-1">
                   {f.items.map(item => (
-                    <div key={item} className="flex items-center gap-1.5">
-                      <div className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: f.color }} />
-                      <span className="text-[13px] text-muted-foreground">{item}</span>
+                    <div key={item} className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: f.color }} />
+                      <span className="text-[15px] text-muted-foreground">{item}</span>
                     </div>
                   ))}
                 </div>
