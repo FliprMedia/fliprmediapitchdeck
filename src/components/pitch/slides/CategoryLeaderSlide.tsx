@@ -37,22 +37,22 @@ const CategoryLeaderSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">13 — CATEGORY LEADERSHIP</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Own the attention. Own the data. <span className="font-display italic text-[54px] text-primary">Own the category economics.</span>
+        Own the attention. Own the data. <span className="font-display italic text-[58px] text-primary">Own the category economics.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Value accrues to the trusted media, discovery, and intelligence layers that shape attention and advertiser demand.
+        Value accrues to the trusted media, discovery, and intelligence layers that shape attention.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
-        {/* Left: Controls + Ladder */}
+        {/* Left */}
         <div className="w-[580px] flex flex-col gap-4">
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <span className="text-[15px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">What Flipr.Media Controls</span>
-            <div className="flex flex-wrap gap-2.5">
+            <span className="text-[17px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">What Flipr.Media Controls</span>
+            <div className="flex flex-wrap gap-3">
               {controls.map((c, i) => (
-                <div key={c.label} className="glass-card px-3.5 py-2.5 flex items-center gap-2 opacity-0 animate-fade-up" style={{ animationDelay: `${0.25 + i * 0.04}s` }}>
-                  <c.icon className="w-4 h-4 text-primary" />
-                  <span className="text-[15px] font-semibold text-foreground">{c.label}</span>
+                <div key={c.label} className="glass-card px-4 py-3 flex items-center gap-2.5 opacity-0 animate-fade-up" style={{ animationDelay: `${0.25 + i * 0.04}s` }}>
+                  <c.icon className="w-5 h-5 text-primary" />
+                  <span className="text-[17px] font-semibold text-foreground">{c.label}</span>
                 </div>
               ))}
             </div>
@@ -60,23 +60,22 @@ const CategoryLeaderSlide = () => (
 
           {/* Value Ladder */}
           <div className="flex-1 flex flex-col justify-center opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
-            <span className="text-[15px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">Value Creation Ladder</span>
-            <div className="flex flex-col gap-2">
+            <span className="text-[17px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">Value Creation Ladder</span>
+            <div className="flex flex-col gap-2.5">
               {ladder.map((step, i) => {
                 const width = 55 + i * 8;
                 return (
                   <div key={step.label} className="flex items-center gap-3">
                     <div
-                      className={`h-11 rounded-lg bg-${step.color}/15 border border-${step.color}/20 flex items-center px-4 transition-all`}
+                      className={`h-12 rounded-lg bg-${step.color}/15 border border-${step.color}/20 flex items-center px-5`}
                       style={{ width: `${width}%` }}
                     >
-                      <span className={`text-[15px] font-semibold text-${step.color}`}>{step.label}</span>
+                      <span className={`text-[17px] font-semibold text-${step.color}`}>{step.label}</span>
                     </div>
-                    {i < ladder.length - 1 && <ArrowUp className="w-3.5 h-3.5 text-muted-foreground/80 rotate-0 shrink-0" />}
                     {i === ladder.length - 1 && (
-                      <div className="glass-card px-2.5 py-1 border-accent/30">
-                        <Star className="w-3.5 h-3.5 text-accent inline mr-1" />
-                        <span className="text-[14px] font-bold text-accent">HIGH VALUE</span>
+                      <div className="glass-card px-3 py-1.5 border-accent/30">
+                        <Star className="w-4 h-4 text-accent inline mr-1" />
+                        <span className="text-[15px] font-bold text-accent">HIGH VALUE</span>
                       </div>
                     )}
                   </div>
@@ -89,42 +88,42 @@ const CategoryLeaderSlide = () => (
         {/* Right: Comparables */}
         <div className="flex-1 flex flex-col gap-4 min-h-0">
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
-            <span className="text-[15px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">Comparable Category Leaders</span>
-            <div className="flex flex-col gap-2.5">
+            <span className="text-[17px] font-bold text-muted-foreground uppercase tracking-wider mb-3 block">Comparable Category Leaders</span>
+            <div className="flex flex-col gap-3">
               {comparables.map((c, i) => (
-                <div key={c.name} className="glass-card px-4 py-3 flex items-center gap-3.5 opacity-0 animate-fade-up" style={{ animationDelay: `${0.6 + i * 0.05}s` }}>
-                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                    <TrendingUp className="w-4 h-4 text-primary" />
+                <div key={c.name} className="glass-card px-5 py-4 flex items-center gap-4 opacity-0 animate-fade-up" style={{ animationDelay: `${0.6 + i * 0.05}s` }}>
+                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <TrendingUp className="w-4.5 h-4.5 text-primary" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2">
-                      <span className="text-[16px] font-bold text-foreground">{c.name}</span>
-                      <span className="text-[14px] px-2 py-0.5 rounded-full bg-muted/40 text-muted-foreground font-medium">{c.niche}</span>
+                    <div className="flex items-center gap-2.5">
+                      <span className="text-[18px] font-bold text-foreground">{c.name}</span>
+                      <span className="text-[15px] px-2.5 py-0.5 rounded-full bg-muted/40 text-muted-foreground font-medium">{c.niche}</span>
                     </div>
-                    <span className="text-[15px] text-primary/90">{c.outcome}</span>
+                    <span className="text-[17px] text-primary/90">{c.outcome}</span>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="glass-card p-4 border-accent/15 opacity-0 animate-fade-up" style={{ animationDelay: '0.85s' }}>
+          <div className="glass-card p-5 border-accent/15 opacity-0 animate-fade-up" style={{ animationDelay: '0.85s' }}>
             <div className="flex items-center gap-2 mb-2">
-              <Star className="w-4 h-4 text-accent" />
-              <span className="text-[15px] font-bold text-foreground">Strategic Value Drivers</span>
+              <Star className="w-5 h-5 text-accent" />
+              <span className="text-[17px] font-bold text-foreground">Strategic Value Drivers</span>
             </div>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-1.5">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-2">
               {["Strategic acquisition appeal", "Media + commerce + data multiples", "Defensible niche leadership", "Future optionality: sponsorship, intelligence, infrastructure"].map(d => (
-                <div key={d} className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-accent/50 shrink-0" />
-                  <span className="text-[15px] text-muted-foreground">{d}</span>
+                <div key={d} className="flex items-center gap-2.5">
+                  <div className="w-2 h-2 rounded-full bg-accent/50 shrink-0" />
+                  <span className="text-[16px] text-muted-foreground">{d}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="glass-card p-4 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.9s' }}>
-            <p className="text-[15px] text-muted-foreground leading-relaxed italic">
+          <div className="glass-card p-5 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.9s' }}>
+            <p className="text-[17px] text-muted-foreground leading-relaxed italic">
               "Whatnot's <span className="text-primary font-bold not-italic">$4.97B valuation</span> signals deep investor conviction in live commerce infrastructure. The media layer serving this ecosystem is still unclaimed."
             </p>
           </div>

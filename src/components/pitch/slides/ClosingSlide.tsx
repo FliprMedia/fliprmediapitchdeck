@@ -8,12 +8,10 @@ const ClosingSlide = () => (
     <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
     <div className="absolute inset-0 noise-overlay" />
 
-    {/* Rich glow system */}
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1400px] h-[1400px] rounded-full bg-primary/[0.04] blur-[250px]" />
     <div className="absolute top-[100px] right-[200px] w-[400px] h-[400px] rounded-full bg-accent/[0.035] blur-[150px]" />
     <div className="absolute bottom-[100px] left-[200px] w-[300px] h-[300px] rounded-full bg-primary/[0.03] blur-[120px]" />
 
-    {/* Architectural grid */}
     <div className="absolute inset-0 opacity-[0.015]" style={{
       backgroundImage: `
         linear-gradient(hsl(var(--primary) / 0.4) 1px, transparent 1px),
@@ -40,48 +38,42 @@ const ClosingSlide = () => (
     <div className="relative z-10 flex flex-col items-center justify-center h-full px-20">
       <div className="slide-label mb-10 opacity-0 animate-fade-up">18 — CLOSING VISION</div>
 
-      {/* Logo */}
       <div className="mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
         <img src={fliprLogoDark} alt="Flipr.Media" className="h-[140px] w-auto" />
       </div>
 
-      {/* Headline */}
-      <h2 className="text-[38px] font-bold text-center text-foreground mb-4 max-w-[900px] opacity-0 animate-fade-up leading-[1.2]" style={{ animationDelay: '0.2s' }}>
+      <h2 className="text-[42px] font-bold text-center text-foreground mb-4 max-w-[900px] opacity-0 animate-fade-up leading-[1.2]" style={{ animationDelay: '0.2s' }}>
         Every maturing ecosystem needs a trusted{" "}
-        <span className="font-display italic text-primary text-[40px]">media, discovery, and intelligence layer.</span>
+        <span className="font-display italic text-primary text-[44px]">media, discovery, and intelligence layer.</span>
       </h2>
 
-      {/* Divider */}
       <div className="w-48 divider-glow mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }} />
 
-      {/* Closing copy */}
-      <p className="text-[20px] text-muted-foreground text-center max-w-[800px] leading-[1.7] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
+      <p className="text-[22px] text-muted-foreground text-center max-w-[800px] leading-[1.7] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
         Big market. Focused raise. Fast execution. Flipr.Media is raising $200K to prove the model, validate demand, and build an investable foundation — with clear follow-on upside as the <span className="text-primary font-semibold">$170B+ live commerce economy</span> keeps accelerating.
       </p>
 
-      {/* Contact card */}
       <div className="glass-card-elevated px-14 py-7 text-center opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
-        <div className="text-[16px] font-semibold text-foreground mb-4 tracking-wide">Let's Build This Together</div>
+        <div className="text-[18px] font-semibold text-foreground mb-4 tracking-wide">Let's Build This Together</div>
         <div className="flex items-center gap-8">
           <div>
-            <div className="text-[14px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mb-0.5">Founder</div>
-            <div className="text-[16px] font-semibold text-foreground">Brian Weiss</div>
+            <div className="text-[15px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mb-0.5">Founder</div>
+            <div className="text-[18px] font-semibold text-foreground">Brian Weiss</div>
           </div>
           <div className="w-px h-10 bg-border/20" />
           <div>
-            <div className="text-[14px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mb-0.5">Email</div>
-            <div className="text-[16px] font-semibold text-primary">brian@flipr.media</div>
+            <div className="text-[15px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mb-0.5">Email</div>
+            <div className="text-[18px] font-semibold text-primary">brian@flipr.media</div>
           </div>
           <div className="w-px h-10 bg-border/20" />
           <div>
-            <div className="text-[14px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mb-0.5">Web</div>
-            <div className="text-[16px] font-semibold text-primary">flipr.media</div>
+            <div className="text-[15px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mb-0.5">Web</div>
+            <div className="text-[18px] font-semibold text-primary">flipr.media</div>
           </div>
         </div>
       </div>
 
-      {/* Confidential */}
-      <div className="absolute bottom-10 text-[14px] text-muted-foreground font-mono-brand tracking-[0.15em] opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
+      <div className="absolute bottom-10 text-[15px] text-muted-foreground font-mono-brand tracking-[0.15em] opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
         CONFIDENTIAL — FLIPR.MEDIA © 2025
       </div>
     </div>

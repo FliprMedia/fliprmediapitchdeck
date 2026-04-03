@@ -20,12 +20,12 @@ const ecosystemNodes = [
 ];
 
 const moats = [
-  { icon: Target, title: "First-Mover Advantage", desc: "No incumbent — the category is ours to define and own" },
-  { icon: Users, title: "Audience Aggregation", desc: "Consolidating fragmented attention into one monetizable destination" },
-  { icon: Award, title: "Editorial Brand Equity", desc: "Trust and credibility compound — hard for late entrants to replicate" },
-  { icon: BarChart3, title: "Proprietary Data Moat", desc: "Seller rankings, performance indexes, and category benchmarks" },
-  { icon: Megaphone, title: "Advertiser Lock-In", desc: "Direct brand relationships — once established, switching costs are high" },
-  { icon: Database, title: "Data Products & Lead Gen", desc: "High-margin intelligence layer that gets more valuable with scale" },
+  { icon: Target, title: "First-Mover Advantage", desc: "No incumbent — the category is ours to define" },
+  { icon: Users, title: "Audience Aggregation", desc: "Consolidating fragmented attention into one destination" },
+  { icon: Award, title: "Editorial Brand Equity", desc: "Trust compounds — hard for late entrants to replicate" },
+  { icon: BarChart3, title: "Proprietary Data Moat", desc: "Rankings, performance indexes, and benchmarks" },
+  { icon: Megaphone, title: "Advertiser Lock-In", desc: "Direct brand relationships with high switching costs" },
+  { icon: Database, title: "Data Products & Lead Gen", desc: "High-margin intelligence that scales with audience" },
 ];
 
 const FirstOfKindSlide = () => (
@@ -37,27 +37,27 @@ const FirstOfKindSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">06 — FIRST-OF-ITS-KIND</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        This isn't another media site. <span className="font-display italic text-[54px] text-muted-foreground/90">It's a category-level infrastructure play.</span>
+        Not another media site. <span className="font-display italic text-[58px] text-muted-foreground/90">A category-level infrastructure play.</span>
       </h2>
       <p className="slide-subhead mb-8 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         No one else is building the editorial, discovery, and advertiser layer for live selling.
       </p>
 
       <div className="flex flex-1 gap-8 min-h-0">
-        {/* Left: What exists + Ecosystem map */}
+        {/* Left */}
         <div className="w-[680px] flex flex-col gap-5">
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <span className="text-[14px] font-semibold text-muted-foreground uppercase tracking-wide mb-3 block">What exists today</span>
-            <div className="grid grid-cols-4 gap-2.5">
+            <span className="text-[16px] font-semibold text-muted-foreground uppercase tracking-wide mb-3 block">What exists today</span>
+            <div className="grid grid-cols-4 gap-3">
               {existsToday.map((item, i) => (
-                <div key={item.label} className="glass-card p-3.5 text-center border-muted-foreground/10 opacity-0 animate-fade-up" style={{ animationDelay: `${0.25 + i * 0.04}s` }}>
-                  <item.icon className="w-5 h-5 text-muted-foreground/70 mx-auto mb-1.5" />
-                  <div className="text-[15px] font-semibold text-foreground">{item.label}</div>
-                  <div className="text-[14px] text-muted-foreground">{item.desc}</div>
+                <div key={item.label} className="glass-card p-4 text-center border-muted-foreground/10 opacity-0 animate-fade-up" style={{ animationDelay: `${0.25 + i * 0.04}s` }}>
+                  <item.icon className="w-6 h-6 text-muted-foreground/70 mx-auto mb-2" />
+                  <div className="text-[17px] font-semibold text-foreground">{item.label}</div>
+                  <div className="text-[15px] text-muted-foreground">{item.desc}</div>
                 </div>
               ))}
             </div>
-            <div className="text-center text-[15px] text-destructive/70 font-medium mt-2 italic">
+            <div className="text-center text-[17px] text-destructive/80 font-medium mt-2.5 italic">
               None cover, rank, or organize the live selling industry
             </div>
           </div>
@@ -81,9 +81,8 @@ const FirstOfKindSlide = () => (
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                   <div className="w-[120px] h-[120px] rounded-full bg-primary/10 border-2 border-primary/40 flex items-center justify-center backdrop-blur-sm">
                     <div className="text-center">
-                      <div className="text-[22px] font-black text-primary">Flipr</div>
-                      <div className="text-[14px] text-primary/70 font-medium">.Media</div>
-                      <div className="text-[12px] text-muted-foreground mt-0.5">Editorial • Discovery<br/>Advertiser Hub</div>
+                      <div className="text-[24px] font-black text-primary">Flipr</div>
+                      <div className="text-[16px] text-primary/70 font-medium">.Media</div>
                     </div>
                   </div>
                 </div>
@@ -95,7 +94,7 @@ const FirstOfKindSlide = () => (
                   return (
                     <div key={node.label} className="absolute z-10"
                       style={{ left: `${x}px`, top: `${y}px`, transform: 'translate(-50%, -50%)' }}>
-                      <div className="glass-card px-3 py-1.5 text-[15px] font-semibold text-foreground whitespace-nowrap">
+                      <div className="glass-card px-3.5 py-2 text-[16px] font-semibold text-foreground whitespace-nowrap">
                         {node.label}
                       </div>
                     </div>
@@ -105,33 +104,33 @@ const FirstOfKindSlide = () => (
             </div>
           </div>
 
-          <div className="glass-card p-4 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
-            <p className="text-[16px] text-foreground font-medium text-center leading-relaxed">
+          <div className="glass-card p-5 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
+            <p className="text-[18px] text-foreground font-medium text-center leading-relaxed">
               "Flipr.Media sits above the platforms as the category's <span className="text-primary font-bold">editorial layer, discovery engine, and advertiser gateway</span>."
             </p>
           </div>
         </div>
 
-        {/* Right: Why this is defensible */}
+        {/* Right: Why defensible */}
         <div className="flex-1 flex flex-col min-h-0">
           <div className="flex items-center gap-2 mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
-            <Shield className="w-5 h-5 text-primary" />
-            <span className="text-[18px] font-bold text-foreground">Why This Is Defensible</span>
+            <Shield className="w-6 h-6 text-primary" />
+            <span className="text-[20px] font-bold text-foreground">Why This Is Defensible</span>
             <div className="h-px flex-1 bg-primary/15" />
           </div>
           <div className="flex flex-col gap-3 flex-1">
             {moats.map((moat, i) => (
               <div
                 key={moat.title}
-                className="glass-card p-4 flex items-start gap-3.5 opacity-0 animate-fade-up hover:border-primary/30 transition-colors"
+                className="glass-card p-5 flex items-start gap-4 opacity-0 animate-fade-up hover:border-primary/30 transition-colors"
                 style={{ animationDelay: `${0.6 + i * 0.06}s` }}
               >
-                <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                  <moat.icon className="w-4.5 h-4.5 text-primary" />
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <moat.icon className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-[16px] font-bold text-foreground mb-0.5">{moat.title}</h3>
-                  <p className="text-[15px] text-muted-foreground leading-relaxed">{moat.desc}</p>
+                  <h3 className="text-[18px] font-bold text-foreground mb-0.5">{moat.title}</h3>
+                  <p className="text-[17px] text-muted-foreground leading-relaxed">{moat.desc}</p>
                 </div>
               </div>
             ))}

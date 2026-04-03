@@ -12,7 +12,7 @@ const unlocks = [
 
 const idealInvestors = [
   "Angel Investors", "Strategic Media", "Commerce-Tech", "Creator Economy",
-  "Marketplaces", "Ad-Tech", "Future of Commerce",
+  "Marketplaces", "Ad-Tech",
 ];
 
 const TheAskSlide = () => (
@@ -24,12 +24,12 @@ const TheAskSlide = () => (
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">17 — THE ASK</div>
-      <h2 className="text-[42px] font-extrabold leading-[1.15] mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+      <h2 className="text-[48px] font-extrabold leading-[1.15] mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
         A focused <span className="text-primary neon-glow">$200K</span> to prove the model{" "}
-        <span className="font-display italic text-[44px]">in a $170B+ market.</span>
+        <span className="font-display italic text-[50px]">in a $170B+ market.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        A disciplined pre-seed round to complete the platform, activate revenue, and prove the model with capital efficiency.
+        A disciplined pre-seed round to complete the platform, activate revenue, and prove the model.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -39,16 +39,16 @@ const TheAskSlide = () => (
           <div className="glass-card-elevated p-7 opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
             <div className="grid grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-[48px] font-black text-primary stat-value">$200K</div>
-                <div className="text-[15px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Raise Amount</div>
+                <div className="text-[52px] font-black text-primary stat-value">$200K</div>
+                <div className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Raise Amount</div>
               </div>
               <div>
-                <div className="text-[48px] font-black text-foreground stat-value">SAFE</div>
-                <div className="text-[15px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Instrument</div>
+                <div className="text-[52px] font-black text-foreground stat-value">SAFE</div>
+                <div className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Instrument</div>
               </div>
               <div>
-                <div className="text-[48px] font-black text-accent stat-value">9–12</div>
-                <div className="text-[15px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Months Runway</div>
+                <div className="text-[52px] font-black text-accent stat-value">9–12</div>
+                <div className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Months Runway</div>
               </div>
             </div>
           </div>
@@ -56,16 +56,16 @@ const TheAskSlide = () => (
           {/* Unlocks */}
           <div className="glass-card p-5 flex-1 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
             <div className="flex items-center gap-2 mb-4">
-              <CheckCircle className="w-5 h-5 text-primary" />
-              <span className="text-[16px] font-bold text-foreground">What This Round Unlocks</span>
+              <CheckCircle className="w-6 h-6 text-primary" />
+              <span className="text-[18px] font-bold text-foreground">What This Round Unlocks</span>
             </div>
-            <div className="grid grid-cols-2 gap-3.5">
+            <div className="grid grid-cols-2 gap-4">
               {unlocks.map((u, i) => (
                 <div key={u.label} className="flex items-center gap-3 opacity-0 animate-fade-up" style={{ animationDelay: `${0.4 + i * 0.05}s` }}>
-                  <div className="w-9 h-9 rounded-xl bg-primary/8 border border-primary/12 flex items-center justify-center shrink-0">
-                    <u.icon className="w-4.5 h-4.5 text-primary" />
+                  <div className="w-10 h-10 rounded-xl bg-primary/8 border border-primary/12 flex items-center justify-center shrink-0">
+                    <u.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <span className="text-[15px] text-foreground font-medium leading-tight">{u.label}</span>
+                  <span className="text-[17px] text-foreground font-medium leading-tight">{u.label}</span>
                 </div>
               ))}
             </div>
@@ -73,45 +73,45 @@ const TheAskSlide = () => (
 
           {/* Investors */}
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
-            <span className="text-[14px] font-mono-brand text-muted-foreground tracking-[0.15em] uppercase block mb-2">Ideal Investors</span>
-            <div className="flex flex-wrap gap-2">
+            <span className="text-[16px] font-mono-brand text-muted-foreground tracking-[0.15em] uppercase block mb-2">Ideal Investors</span>
+            <div className="flex flex-wrap gap-2.5">
               {idealInvestors.map(inv => (
-                <div key={inv} className="glass-card px-3.5 py-2 text-[15px] font-semibold text-foreground">{inv}</div>
+                <div key={inv} className="glass-card px-4 py-2.5 text-[17px] font-semibold text-foreground">{inv}</div>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Right: CTA + Contact */}
+        {/* Right: CTA */}
         <div className="w-[460px] flex flex-col gap-4">
           <div className="glass-card-elevated p-10 flex-1 flex flex-col items-center justify-center text-center opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
             <div className="w-20 h-20 rounded-full bg-primary/10 border-2 border-primary/30 flex items-center justify-center mb-5">
               <Rocket className="w-10 h-10 text-primary" />
             </div>
-            <h3 className="text-[24px] font-bold text-foreground mb-3">Smart First Check</h3>
-            <p className="text-[16px] text-muted-foreground leading-relaxed max-w-[340px] mb-6">
+            <h3 className="text-[26px] font-bold text-foreground mb-3">Smart First Check</h3>
+            <p className="text-[18px] text-muted-foreground leading-relaxed max-w-[340px] mb-6">
               Big market. Lean raise. Fast execution. Strong validation path.
-              A lower-risk entry point with clear follow-on upside as traction scales.
+              A lower-risk entry point with clear follow-on upside.
             </p>
             <div className="divider-glow w-full mb-5" />
-            <div className="text-[14px] text-muted-foreground mb-1 font-mono-brand tracking-[0.1em] uppercase">Invest in the future of live commerce media</div>
-            <div className="text-[24px] font-black text-primary">Flipr.Media</div>
+            <div className="text-[16px] text-muted-foreground mb-1 font-mono-brand tracking-[0.1em] uppercase">Invest in live commerce media</div>
+            <div className="text-[28px] font-black text-primary">Flipr.Media</div>
           </div>
 
           <div className="glass-card p-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.65s' }}>
-            <div className="flex items-center gap-2 mb-3">
-              <Mail className="w-4.5 h-4.5 text-primary" />
-              <span className="text-[15px] font-bold text-foreground">Founder Contact</span>
+            <div className="flex items-center gap-2.5 mb-3">
+              <Mail className="w-5 h-5 text-primary" />
+              <span className="text-[17px] font-bold text-foreground">Founder Contact</span>
             </div>
-            <div className="space-y-2.5">
+            <div className="space-y-3">
               {[
                 { label: "Name", value: "Brian Weiss", color: "text-foreground" },
                 { label: "Email", value: "brian@flipr.media", color: "text-primary" },
                 { label: "Web", value: "flipr.media", color: "text-primary" },
               ].map(item => (
                 <div key={item.label} className="flex items-center gap-3">
-                  <span className="text-[15px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase w-14">{item.label}</span>
-                  <span className={`text-[16px] font-medium ${item.color}`}>{item.value}</span>
+                  <span className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase w-14">{item.label}</span>
+                  <span className={`text-[18px] font-medium ${item.color}`}>{item.value}</span>
                 </div>
               ))}
             </div>

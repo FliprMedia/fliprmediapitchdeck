@@ -44,8 +44,6 @@ const gapItems = [
   { icon: Megaphone, label: "No Ad Layer" },
   { icon: AlertTriangle, label: "No Coverage" },
   { icon: ShieldQuestion, label: "No Trust Layer" },
-  { icon: Radio, label: "No Show Index" },
-  { icon: Layers, label: "No Central Hub" },
 ];
 
 const ProblemSlide = () => (
@@ -53,7 +51,6 @@ const ProblemSlide = () => (
     <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
     <div className="absolute inset-0 noise-overlay" />
 
-    {/* Fragmentation visual — disconnected circles */}
     <svg className="absolute inset-0 w-full h-full opacity-[0.04]" viewBox="0 0 1920 1080">
       {[
         { cx: 200, cy: 200, r: 60 }, { cx: 500, cy: 120, r: 70 }, { cx: 850, cy: 180, r: 55 },
@@ -64,58 +61,53 @@ const ProblemSlide = () => (
           <circle cx={c.cx} cy={c.cy} r={c.r} fill="none" stroke="hsl(var(--muted-foreground))" strokeWidth="1" strokeDasharray="4 6" />
         </g>
       ))}
-      <line x1="260" y1="200" x2="430" y2="140" stroke="hsl(var(--destructive))" strokeWidth="0.5" strokeDasharray="8 12" opacity="0.5" />
-      <line x1="570" y1="130" x2="795" y2="175" stroke="hsl(var(--destructive))" strokeWidth="0.5" strokeDasharray="8 12" opacity="0.4" />
-      <line x1="905" y1="180" x2="1135" y2="115" stroke="hsl(var(--destructive))" strokeWidth="0.5" strokeDasharray="8 12" opacity="0.3" />
     </svg>
 
     <div className="absolute top-[-100px] right-[-50px] w-[700px] h-[700px] bg-destructive/[0.04] rounded-full blur-[180px]" />
     <div className="absolute bottom-[-100px] left-[200px] w-[500px] h-[500px] bg-primary/[0.03] rounded-full blur-[150px]" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-16">
-      {/* Header */}
       <div className="mb-6">
         <div className="slide-label mb-4 opacity-0 animate-fade-up">02 — THE PROBLEM</div>
         <h2 className="slide-headline mb-4 opacity-0 animate-fade-up max-w-[1100px]" style={{ animationDelay: '0.1s' }}>
           A $170B market with zero{" "}
-          <span className="font-display italic text-[54px] text-primary">media infrastructure.</span>
+          <span className="font-display italic text-[58px] text-primary">media infrastructure.</span>
         </h2>
         <p className="slide-subhead max-w-[850px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-          Live commerce generates billions in GMV across 7+ platforms — yet no one covers it, ranks it, or monetizes the attention around it.
+          Live commerce generates billions in GMV — yet no one covers it, ranks it, or monetizes the attention.
         </p>
       </div>
 
-      {/* Gap strip — visual chips */}
-      <div className="flex items-center gap-2.5 mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+      {/* Gap strip */}
+      <div className="flex items-center gap-3 mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
         {gapItems.map((item) => (
-          <div key={item.label} className="glass-card px-4 py-2.5 flex items-center gap-2.5">
-            <item.icon className="w-4 h-4 text-destructive/70" />
-            <span className="text-[15px] text-muted-foreground font-semibold whitespace-nowrap">{item.label}</span>
+          <div key={item.label} className="glass-card px-5 py-3 flex items-center gap-3">
+            <item.icon className="w-5 h-5 text-destructive/80" />
+            <span className="text-[17px] text-foreground font-semibold whitespace-nowrap">{item.label}</span>
           </div>
         ))}
       </div>
 
-      {/* Main: 3 pain cards + comparison */}
+      {/* Pain cards + comparison */}
       <div className="flex-1 flex gap-5 min-h-0">
         {painCards.map((card, i) => (
           <div
             key={card.title}
-            className={`flex-1 glass-card p-6 flex flex-col opacity-0 animate-fade-up group relative overflow-hidden`}
+            className="flex-1 glass-card p-7 flex flex-col opacity-0 animate-fade-up relative overflow-hidden"
             style={{ animationDelay: `${0.25 + i * 0.08}s` }}
           >
-            {/* Top accent */}
             <div className={`absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-${card.color}/40 via-${card.color}/20 to-transparent`} />
             <div className="flex items-center gap-3 mb-4">
-              <div className={`w-11 h-11 rounded-xl bg-${card.color}/10 flex items-center justify-center border border-${card.color}/15`}>
-                <card.icon className={`w-5 h-5 text-${card.color}`} />
+              <div className={`w-12 h-12 rounded-xl bg-${card.color}/10 flex items-center justify-center border border-${card.color}/15`}>
+                <card.icon className={`w-6 h-6 text-${card.color}`} />
               </div>
-              <h3 className="text-[20px] font-bold text-foreground">{card.title}</h3>
+              <h3 className="text-[22px] font-bold text-foreground">{card.title}</h3>
             </div>
-            <div className="space-y-3 flex-1">
+            <div className="space-y-3.5 flex-1">
               {card.pains.map((pain, j) => (
-                <div key={j} className="flex items-start gap-2.5">
-                  <div className="w-1.5 h-1.5 rounded-full bg-destructive/50 mt-2.5 shrink-0" />
-                  <p className="text-[15px] text-muted-foreground leading-relaxed">{pain}</p>
+                <div key={j} className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-destructive/50 mt-2.5 shrink-0" />
+                  <p className="text-[17px] text-muted-foreground leading-relaxed">{pain}</p>
                 </div>
               ))}
             </div>
@@ -123,30 +115,30 @@ const ProblemSlide = () => (
         ))}
 
         {/* Split comparison */}
-        <div className="w-[340px] shrink-0 flex flex-col gap-3">
-          <div className="flex-1 glass-card p-5 relative overflow-hidden opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
+        <div className="w-[360px] shrink-0 flex flex-col gap-3">
+          <div className="flex-1 glass-card p-6 relative overflow-hidden opacity-0 animate-fade-up" style={{ animationDelay: '0.5s' }}>
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-destructive/50 to-destructive/10" />
-            <div className="text-[14px] font-mono-brand text-destructive/80 tracking-[0.2em] mb-2">TODAY</div>
-            <h4 className="text-[18px] font-bold text-foreground mb-3">Fragmented & Invisible</h4>
-            <div className="space-y-2.5">
-              {["Industry conversation stuck in Reddit & Discord", "No centralized discovery or data", "No ad infrastructure for advertisers", "No editorial authority or trust layer"].map((t, i) => (
-                <div key={i} className="flex items-center gap-2.5 text-[15px] text-muted-foreground">
-                  <span className="text-destructive/70 text-[14px]">✕</span> {t}
+            <div className="text-[16px] font-mono-brand text-destructive/80 tracking-[0.2em] mb-2">TODAY</div>
+            <h4 className="text-[20px] font-bold text-foreground mb-3">Fragmented & Invisible</h4>
+            <div className="space-y-3">
+              {["Industry stuck in Reddit & Discord", "No centralized discovery or data", "No ad infrastructure for advertisers", "No editorial authority or trust layer"].map((t, i) => (
+                <div key={i} className="flex items-center gap-3 text-[17px] text-muted-foreground">
+                  <span className="text-destructive/70 text-[16px]">✕</span> {t}
                 </div>
               ))}
             </div>
           </div>
           <div className="flex justify-center opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
-            <ArrowRight className="w-4 h-4 text-primary/40 rotate-90" />
+            <ArrowRight className="w-5 h-5 text-primary/40 rotate-90" />
           </div>
-          <div className="flex-1 glass-card p-5 relative overflow-hidden opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
+          <div className="flex-1 glass-card p-6 relative overflow-hidden opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/50 to-primary/10" />
-            <div className="text-[14px] font-mono-brand text-primary tracking-[0.2em] mb-2">WITH FLIPR.MEDIA</div>
-            <h4 className="text-[18px] font-bold text-foreground mb-3">Centralized & Powerful</h4>
-            <div className="space-y-2.5">
+            <div className="text-[16px] font-mono-brand text-primary tracking-[0.2em] mb-2">WITH FLIPR.MEDIA</div>
+            <h4 className="text-[20px] font-bold text-foreground mb-3">Centralized & Powerful</h4>
+            <div className="space-y-3">
               {["One media hub for the industry", "Discovery, rankings & intel", "Built-in ad & sponsorship layer", "Trusted editorial brand"].map((t, i) => (
-                <div key={i} className="flex items-center gap-2.5 text-[15px] text-muted-foreground">
-                  <span className="text-primary text-[14px]">✓</span> {t}
+                <div key={i} className="flex items-center gap-3 text-[17px] text-muted-foreground">
+                  <span className="text-primary text-[16px]">✓</span> {t}
                 </div>
               ))}
             </div>
