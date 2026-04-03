@@ -9,15 +9,15 @@ const funds = [
     pct: 35,
     amount: 70000,
     color: "hsl(145 100% 49%)",
-    items: ["Site completion & UX polish", "Backend functionality & integrations", "Monetization flows", "Performance & database improvements"],
+    items: ["Site completion & UX polish", "Backend & integrations", "Monetization flows", "Performance improvements"],
   },
   {
     icon: Megaphone,
-    category: "Marketing & Audience Growth",
+    category: "Marketing & Growth",
     pct: 20,
     amount: 40000,
     color: "hsl(263 70% 58%)",
-    items: ["Newsletter growth & distribution", "Paid acquisition experiments", "Social/video clips & SEO", "Creator collaborations"],
+    items: ["Newsletter growth", "Paid acquisition experiments", "Social/video & SEO", "Creator collaborations"],
   },
   {
     icon: Handshake,
@@ -25,7 +25,7 @@ const funds = [
     pct: 15,
     amount: 30000,
     color: "hsl(145 80% 35%)",
-    items: ["Advertiser outreach & brand partnerships", "Platform relationships", "Sponsorship packaging", "Outbound systems"],
+    items: ["Advertiser outreach", "Platform relationships", "Sponsorship packaging", "Outbound systems"],
   },
   {
     icon: FileText,
@@ -33,15 +33,15 @@ const funds = [
     pct: 20,
     amount: 40000,
     color: "hsl(263 50% 45%)",
-    items: ["Editorial production & contributors", "Scheduling & workflows", "Content repurposing", "Operations support"],
+    items: ["Editorial production", "Scheduling & workflows", "Content repurposing", "Operations support"],
   },
   {
     icon: Briefcase,
-    category: "Working Capital / Admin / Contingency",
+    category: "Working Capital / Admin",
     pct: 10,
     amount: 20000,
     color: "hsl(240 10% 45%)",
-    items: ["Legal, admin & tools", "Flexibility and runway buffer"],
+    items: ["Legal, admin & tools", "Runway buffer"],
   },
 ];
 
@@ -59,7 +59,7 @@ const UseOfFundsSlide = () => (
         <span className="text-primary neon-glow">$200K</span> — intentionally lean, strategically allocated.
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Founder-led execution. Every dollar mapped to a validation milestone. Build the core, prove demand, then raise from a position of strength.
+        Founder-led execution. Every dollar mapped to a validation milestone.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -77,45 +77,45 @@ const UseOfFundsSlide = () => (
             </ResponsiveContainer>
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="text-center">
-                <div className="text-[28px] font-black text-primary">$200K</div>
-                <div className="text-[15px] text-muted-foreground font-medium">Total Raise</div>
+                <div className="text-[32px] font-black text-primary">$200K</div>
+                <div className="text-[17px] text-muted-foreground font-medium">Total Raise</div>
               </div>
             </div>
           </div>
           {/* Legend */}
-          <div className="flex flex-col gap-2 w-full mt-2">
+          <div className="flex flex-col gap-2.5 w-full mt-2">
             {funds.map(f => (
-              <div key={f.category} className="flex items-center gap-2">
-                <div className="w-3.5 h-3.5 rounded-sm shrink-0" style={{ backgroundColor: f.color }} />
-                <span className="text-[15px] text-muted-foreground flex-1">{f.category}</span>
-                <span className="text-[15px] font-bold text-foreground">{f.pct}%</span>
-                <span className="text-[15px] text-muted-foreground">${(f.amount / 1000).toFixed(0)}K</span>
+              <div key={f.category} className="flex items-center gap-2.5">
+                <div className="w-4 h-4 rounded-sm shrink-0" style={{ backgroundColor: f.color }} />
+                <span className="text-[16px] text-muted-foreground flex-1">{f.category}</span>
+                <span className="text-[16px] font-bold text-foreground">{f.pct}%</span>
+                <span className="text-[16px] text-muted-foreground">${(f.amount / 1000).toFixed(0)}K</span>
               </div>
             ))}
           </div>
         </div>
 
         {/* Right: Detail cards */}
-        <div className="flex-1 flex flex-col gap-2.5">
+        <div className="flex-1 flex flex-col gap-3">
           {funds.map((f, i) => (
             <div
               key={f.category}
-              className="glass-card p-4 flex items-start gap-3.5 opacity-0 animate-fade-up hover:border-primary/20 transition-colors"
+              className="glass-card p-5 flex items-start gap-4 opacity-0 animate-fade-up"
               style={{ animationDelay: `${0.3 + i * 0.07}s` }}
             >
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: `${f.color.replace(')', ' / 0.15)')}` }}>
+              <div className="w-11 h-11 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: `${f.color.replace(')', ' / 0.15)')}` }}>
                 <f.icon className="w-5 h-5" style={{ color: f.color.replace(' / 0.15)', ')') }} />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-1">
-                  <h3 className="text-[15px] font-bold text-foreground">{f.category}</h3>
-                  <span className="ml-auto text-[15px] font-bold" style={{ color: f.color }}>{f.pct}% — ${(f.amount / 1000).toFixed(0)}K</span>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <h3 className="text-[17px] font-bold text-foreground">{f.category}</h3>
+                  <span className="ml-auto text-[17px] font-bold" style={{ color: f.color }}>{f.pct}% — ${(f.amount / 1000).toFixed(0)}K</span>
                 </div>
-                <div className="grid grid-cols-2 gap-x-3 gap-y-1">
+                <div className="grid grid-cols-2 gap-x-4 gap-y-1.5">
                   {f.items.map(item => (
-                    <div key={item} className="flex items-center gap-2">
+                    <div key={item} className="flex items-center gap-2.5">
                       <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: f.color }} />
-                      <span className="text-[15px] text-muted-foreground">{item}</span>
+                      <span className="text-[16px] text-muted-foreground">{item}</span>
                     </div>
                   ))}
                 </div>

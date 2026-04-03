@@ -7,63 +7,56 @@ const personas = [
     title: "Sellers & Live Hosts",
     want: "Grow audience, get discovered, build credibility",
     why: "News, rankings, profiles, show discovery",
-    monetize: "Premium profiles, featured placements, lead gen",
+    monetize: "Premium profiles, featured placements",
     color: "primary",
-    categories: "Cards, Fashion, Collectibles",
   },
   {
     icon: Eye,
     title: "Buyers & Collectors",
     want: "Find shows, follow sellers, discover deals",
-    why: "Live show discovery, seller spotlights, guides",
-    monetize: "Audience scale, ad impressions, newsletter subs",
+    why: "Live show discovery, seller spotlights",
+    monetize: "Audience scale, ad impressions",
     color: "primary",
-    categories: "Beauty, Luxury, Reselling",
   },
   {
     icon: Building2,
     title: "Brands",
     want: "Reach commerce creators, launch live campaigns",
     why: "Seller directory, sponsored content, intel",
-    monetize: "Sponsored features, native ads, branded content",
+    monetize: "Sponsored features, native ads",
     color: "accent",
-    categories: "CPG, Fashion, Electronics",
   },
   {
     icon: Briefcase,
     title: "Agencies",
     want: "Find sellers for campaigns, track trends",
     why: "Rankings, seller data, platform coverage",
-    monetize: "Data products, lead gen, premium access",
+    monetize: "Data products, lead gen",
     color: "accent",
-    categories: "Influencer, Commerce, Media",
   },
   {
     icon: ShoppingBag,
     title: "Platforms",
-    want: "Attract sellers, showcase growth, recruit",
-    why: "Industry press, platform coverage, audience",
-    monetize: "Sponsorships, exclusive partnerships, events",
+    want: "Attract sellers, showcase growth",
+    why: "Industry press, platform coverage",
+    monetize: "Sponsorships, partnerships",
     color: "primary",
-    categories: "Whatnot, TikTok Shop, eBay",
   },
   {
     icon: Megaphone,
     title: "Advertisers",
-    want: "Access niche commerce audiences at scale",
-    why: "Targeted ad placements, newsletter sponsorships",
-    monetize: "Display ads, sponsored slots, takeovers",
+    want: "Access niche commerce audiences",
+    why: "Targeted ad placements, newsletter",
+    monetize: "Display ads, sponsored slots",
     color: "accent",
-    categories: "Shipping, Tools, Payments",
   },
   {
     icon: TrendingUp,
     title: "Investors & Analysts",
     want: "Track growth, identify breakout sellers",
-    why: "Industry data, trend reports, intelligence",
-    monetize: "Research products, premium subscriptions",
+    why: "Industry data, trend reports",
+    monetize: "Research, premium subs",
     color: "primary",
-    categories: "VC, PE, Strategic",
   },
 ];
 
@@ -81,9 +74,9 @@ const AudienceSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">07 — AUDIENCE & USERS</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Seven distinct audiences. <span className="font-display italic text-[54px] text-primary">All monetizable.</span>
+        Seven distinct audiences. <span className="font-display italic text-[58px] text-primary">All monetizable.</span>
       </h2>
-      <p className="text-[22px] text-muted-foreground font-medium mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+      <p className="text-[24px] text-muted-foreground font-semibold mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Every stakeholder in the live commerce value chain needs what Flipr.Media is building.
       </p>
 
@@ -107,8 +100,8 @@ const AudienceSlide = () => (
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
               <div className="w-[110px] h-[110px] rounded-full bg-primary/10 border-2 border-primary/40 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-[20px] font-black text-primary">Flipr</div>
-                  <div className="text-[14px] text-primary/60 font-medium">.Media</div>
+                  <div className="text-[22px] font-black text-primary">Flipr</div>
+                  <div className="text-[15px] text-primary/60 font-medium">.Media</div>
                 </div>
               </div>
             </div>
@@ -120,7 +113,7 @@ const AudienceSlide = () => (
               return (
                 <div key={node.label} className="absolute z-10"
                   style={{ left: `${x}px`, top: `${y}px`, transform: 'translate(-50%, -50%)' }}>
-                  <div className="glass-card px-3 py-1.5 text-[14px] font-semibold text-foreground whitespace-nowrap">
+                  <div className="glass-card px-3.5 py-2 text-[15px] font-semibold text-foreground whitespace-nowrap">
                     {node.label}
                   </div>
                 </div>
@@ -129,38 +122,32 @@ const AudienceSlide = () => (
           </div>
         </div>
 
-        {/* Right: Persona Cards */}
-        <div className="flex-1 flex flex-col gap-2 min-h-0 overflow-hidden">
-          <div className="grid grid-cols-[1fr_1.2fr_1.2fr_1fr_0.7fr] gap-3 px-3 mb-1 opacity-0 animate-fade-up" style={{ animationDelay: '0.25s' }}>
-            <span className="text-[14px] font-bold text-muted-foreground uppercase tracking-wider">Audience</span>
-            <span className="text-[14px] font-bold text-muted-foreground uppercase tracking-wider">What They Want</span>
-            <span className="text-[14px] font-bold text-muted-foreground uppercase tracking-wider">Why Flipr</span>
-            <span className="text-[14px] font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1">
-              <DollarSign className="w-3.5 h-3.5" /> Monetize
+        {/* Right: Persona Table */}
+        <div className="flex-1 flex flex-col gap-2.5 min-h-0 overflow-hidden">
+          <div className="grid grid-cols-[1fr_1.2fr_1.2fr_1fr] gap-3 px-3 mb-1 opacity-0 animate-fade-up" style={{ animationDelay: '0.25s' }}>
+            <span className="text-[15px] font-bold text-muted-foreground uppercase tracking-wider">Audience</span>
+            <span className="text-[15px] font-bold text-muted-foreground uppercase tracking-wider">What They Want</span>
+            <span className="text-[15px] font-bold text-muted-foreground uppercase tracking-wider">Why Flipr</span>
+            <span className="text-[15px] font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1">
+              <DollarSign className="w-4 h-4" /> Monetize
             </span>
-            <span className="text-[14px] font-bold text-muted-foreground uppercase tracking-wider">Verticals</span>
           </div>
 
           {personas.map((p, i) => (
             <div
               key={p.title}
-              className={`glass-card px-3 py-2.5 grid grid-cols-[1fr_1.2fr_1.2fr_1fr_0.7fr] gap-3 items-center opacity-0 animate-fade-up hover:border-${p.color}/30 transition-colors`}
+              className={`glass-card px-4 py-3 grid grid-cols-[1fr_1.2fr_1.2fr_1fr] gap-3 items-center opacity-0 animate-fade-up hover:border-${p.color}/30 transition-colors`}
               style={{ animationDelay: `${0.3 + i * 0.05}s` }}
             >
-              <div className="flex items-center gap-2">
-                <div className={`w-7 h-7 rounded-lg bg-${p.color}/10 flex items-center justify-center shrink-0`}>
-                  <p.icon className={`w-3.5 h-3.5 text-${p.color}`} />
+              <div className="flex items-center gap-2.5">
+                <div className={`w-8 h-8 rounded-lg bg-${p.color}/10 flex items-center justify-center shrink-0`}>
+                  <p.icon className={`w-4 h-4 text-${p.color}`} />
                 </div>
-                <span className="text-[14px] font-semibold text-foreground leading-tight">{p.title}</span>
+                <span className="text-[16px] font-semibold text-foreground leading-tight">{p.title}</span>
               </div>
-              <p className="text-[14px] text-muted-foreground leading-relaxed">{p.want}</p>
-              <p className="text-[14px] text-foreground leading-relaxed">{p.why}</p>
-              <p className="text-[14px] text-primary/90 leading-relaxed">{p.monetize}</p>
-              <div className="flex flex-wrap gap-1">
-                {p.categories.split(", ").map(c => (
-                  <span key={c} className="text-[12px] px-1.5 py-0.5 rounded-full bg-muted/50 text-muted-foreground font-medium">{c}</span>
-                ))}
-              </div>
+              <p className="text-[15px] text-muted-foreground leading-relaxed">{p.want}</p>
+              <p className="text-[15px] text-foreground leading-relaxed">{p.why}</p>
+              <p className="text-[15px] text-primary/90 leading-relaxed">{p.monetize}</p>
             </div>
           ))}
         </div>
@@ -171,8 +158,8 @@ const AudienceSlide = () => (
         <div className="flex items-center justify-center gap-3">
           {["Discover", "Engage", "Subscribe", "Monetize"].map((step, i) => (
             <div key={step} className="flex items-center gap-3">
-              <div className="glass-card px-5 py-2.5 text-[15px] font-semibold text-foreground">{step}</div>
-              {i < 3 && <span className="text-primary text-[16px]">→</span>}
+              <div className="glass-card px-6 py-3 text-[17px] font-semibold text-foreground">{step}</div>
+              {i < 3 && <span className="text-primary text-[18px]">→</span>}
             </div>
           ))}
         </div>

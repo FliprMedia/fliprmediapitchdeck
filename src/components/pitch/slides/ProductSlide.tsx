@@ -1,22 +1,22 @@
 import SlideLayout from "../SlideLayout";
 import DesktopMockup from "../mockups/DesktopMockup";
 import MobileMockup from "../mockups/MobileMockup";
-import { Newspaper, Users, Radio, BarChart3, Mail, Star, Megaphone, Mic, Layers, Zap, Code } from "lucide-react";
+import { Newspaper, Users, Radio, Star, Mic, Mail, BarChart3, Megaphone, Layers, Zap, Code } from "lucide-react";
 
 const currentModules = [
-  { icon: Newspaper, title: "Industry News", desc: "Breaking coverage across all platforms", live: true },
-  { icon: Users, title: "Seller Spotlights", desc: "In-depth creator profiles & stories", live: true },
-  { icon: Radio, title: "Live Show Discovery", desc: "Find shows across Whatnot, TikTok & more", live: true },
-  { icon: Star, title: "Platform Watch", desc: "Deep-dive platform reporting", live: true },
-  { icon: Mic, title: "Interviews", desc: "Conversations with industry leaders", live: true },
-  { icon: Mail, title: "Newsletter", desc: "Daily/weekly industry briefing", live: true },
+  { icon: Newspaper, title: "Industry News", desc: "Breaking coverage across platforms" },
+  { icon: Users, title: "Seller Spotlights", desc: "In-depth creator profiles" },
+  { icon: Radio, title: "Live Show Discovery", desc: "Shows across Whatnot, TikTok & more" },
+  { icon: Star, title: "Platform Watch", desc: "Deep-dive platform reporting" },
+  { icon: Mic, title: "Interviews", desc: "Industry leader conversations" },
+  { icon: Mail, title: "Newsletter", desc: "Daily/weekly industry briefing" },
 ];
 
 const nextModules = [
-  { icon: BarChart3, title: "Rankings & Activity Index", desc: "Seller performance data & benchmarks" },
+  { icon: BarChart3, title: "Rankings & Activity Index", desc: "Seller performance benchmarks" },
   { icon: Megaphone, title: "Advertiser Placements", desc: "Native ads & sponsored content" },
   { icon: Star, title: "Premium Seller Profiles", desc: "Verified profiles with analytics" },
-  { icon: Layers, title: "Data & Insights", desc: "Market intelligence & trend reports" },
+  { icon: Layers, title: "Data & Insights", desc: "Market intelligence & reports" },
 ];
 
 const ProductSlide = () => (
@@ -29,7 +29,7 @@ const ProductSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-20 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">05 — PRODUCT OVERVIEW</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Already built. Already live. <span className="font-display italic text-[54px] text-primary">Already proving the thesis.</span>
+        Already built. Already live. <span className="font-display italic text-[58px] text-primary">Already proving the thesis.</span>
       </h2>
       <p className="slide-subhead mb-5 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Six operational modules today. Four high-margin modules next.
@@ -50,19 +50,19 @@ const ProductSlide = () => (
         <div className="flex-1 flex flex-col gap-3 min-h-0">
           <div>
             <div className="flex items-center gap-2 mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.25s' }}>
-              <div className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" />
-              <span className="text-[15px] font-mono-brand text-primary tracking-[0.15em] uppercase font-semibold">Operational</span>
+              <div className="w-3 h-3 rounded-full bg-primary animate-pulse" />
+              <span className="text-[17px] font-mono-brand text-primary tracking-[0.15em] uppercase font-semibold">Operational</span>
               <div className="h-px flex-1 bg-primary/10" />
             </div>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-3 gap-2.5">
               {currentModules.map((m, i) => (
-                <div key={m.title} className="glass-card p-3 flex flex-col opacity-0 animate-fade-up group hover:border-primary/20 transition-all"
+                <div key={m.title} className="glass-card p-3.5 flex flex-col opacity-0 animate-fade-up"
                   style={{ animationDelay: `${0.3 + i * 0.04}s` }}>
                   <div className="flex items-center gap-2 mb-1">
-                    <m.icon className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
-                    <h3 className="text-[15px] font-bold text-foreground">{m.title}</h3>
+                    <m.icon className="w-4.5 h-4.5 text-primary" />
+                    <h3 className="text-[16px] font-bold text-foreground">{m.title}</h3>
                   </div>
-                  <p className="text-[14px] text-muted-foreground leading-relaxed">{m.desc}</p>
+                  <p className="text-[15px] text-muted-foreground leading-relaxed">{m.desc}</p>
                 </div>
               ))}
             </div>
@@ -70,36 +70,35 @@ const ProductSlide = () => (
 
           <div>
             <div className="flex items-center gap-2 mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.55s' }}>
-              <div className="w-2.5 h-2.5 rounded-full bg-accent" />
-              <span className="text-[15px] font-mono-brand text-accent tracking-[0.15em] uppercase font-semibold">Revenue Modules</span>
+              <div className="w-3 h-3 rounded-full bg-accent" />
+              <span className="text-[17px] font-mono-brand text-accent tracking-[0.15em] uppercase font-semibold">Revenue Modules</span>
               <div className="h-px flex-1 bg-accent/10" />
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-2.5">
               {nextModules.map((m, i) => (
-                <div key={m.title} className="glass-card p-3 flex flex-col opacity-0 animate-fade-up group hover:border-accent/20 transition-all border-accent/8"
+                <div key={m.title} className="glass-card p-3.5 flex flex-col opacity-0 animate-fade-up border-accent/8"
                   style={{ animationDelay: `${0.6 + i * 0.04}s` }}>
                   <div className="flex items-center gap-2 mb-1">
-                    <m.icon className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
-                    <h3 className="text-[15px] font-bold text-foreground">{m.title}</h3>
+                    <m.icon className="w-4.5 h-4.5 text-accent" />
+                    <h3 className="text-[16px] font-bold text-foreground">{m.title}</h3>
                   </div>
-                  <p className="text-[14px] text-muted-foreground leading-relaxed">{m.desc}</p>
+                  <p className="text-[15px] text-muted-foreground leading-relaxed">{m.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Founder transparency */}
-          <div className="glass-card p-3.5 flex items-start gap-3 opacity-0 animate-fade-up mt-auto" style={{ animationDelay: '0.75s' }}>
-            <div className="w-8 h-8 rounded-lg bg-primary/8 flex items-center justify-center shrink-0 border border-primary/12">
-              <Code className="w-4 h-4 text-primary" />
+          <div className="glass-card p-4 flex items-start gap-3 opacity-0 animate-fade-up mt-auto" style={{ animationDelay: '0.75s' }}>
+            <div className="w-9 h-9 rounded-lg bg-primary/8 flex items-center justify-center shrink-0 border border-primary/12">
+              <Code className="w-4.5 h-4.5 text-primary" />
             </div>
             <div>
               <div className="flex items-center gap-2 mb-0.5">
-                <span className="text-[15px] font-bold text-foreground">Capital-Efficient Build</span>
-                <Zap className="w-3.5 h-3.5 text-primary" />
+                <span className="text-[17px] font-bold text-foreground">Capital-Efficient Build</span>
+                <Zap className="w-4 h-4 text-primary" />
               </div>
-              <p className="text-[15px] text-muted-foreground leading-relaxed">
-                Built to this point with near-zero capital using AI-driven development. This round transitions from working prototype to fully operational, revenue-generating platform.
+              <p className="text-[16px] text-muted-foreground leading-relaxed">
+                Built with near-zero capital using AI-driven development. This round transitions from working prototype to revenue-generating platform.
               </p>
             </div>
           </div>

@@ -12,9 +12,8 @@ const phases = [
     items: [
       "Polish site UX & design system",
       "Make all pages fully operational",
-      "Tighten navigation & data structure",
-      "Forms, SEO, newsletter, advertiser inquiries",
-      "Improve mobile & page performance",
+      "Forms, SEO, newsletter, inquiries",
+      "Improve mobile & performance",
     ],
   },
   {
@@ -28,7 +27,6 @@ const phases = [
       "Seller profile system",
       "Searchable seller directory",
       "Featured live show engine",
-      "Editorial workflow improvements",
       "Monetization infrastructure",
     ],
   },
@@ -44,7 +42,6 @@ const phases = [
       "Category reports & insights",
       "Brand & advertiser dashboards",
       "Premium packages",
-      "Research products",
     ],
   },
   {
@@ -58,7 +55,6 @@ const phases = [
       "Industry intelligence layer",
       "Lead-gen & sponsorship marketplace",
       "Data products & API",
-      "Event & franchise opportunities",
       "Conference / awards / annual report",
     ],
   },
@@ -73,7 +69,7 @@ const RoadmapSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">11 — PRODUCT ROADMAP</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Media property today. <span className="font-display italic text-[54px] text-primary">Industry operating system tomorrow.</span>
+        Media property today. <span className="font-display italic text-[58px] text-primary">Industry operating system tomorrow.</span>
       </h2>
       <p className="slide-subhead mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Each phase compounds audience, data, and revenue — creating deeper moats at every stage.
@@ -86,7 +82,7 @@ const RoadmapSlide = () => (
           {phases.map((p, i) => (
             <div key={p.num} className="absolute top-1/2 -translate-y-1/2 flex flex-col items-center" style={{ left: `${i * 28 + 6}%` }}>
               <div className={`w-5 h-5 rounded-full border-2 ${i === 0 ? 'bg-primary border-primary' : `border-muted-foreground/30 bg-background`} z-10`} />
-              <span className={`text-[15px] font-bold mt-2 ${i === 0 ? 'text-primary' : 'text-muted-foreground'}`}>{p.timeline}</span>
+              <span className={`text-[16px] font-bold mt-2 ${i === 0 ? 'text-primary' : 'text-muted-foreground'}`}>{p.timeline}</span>
             </div>
           ))}
         </div>
@@ -100,27 +96,25 @@ const RoadmapSlide = () => (
         {phases.map((phase, i) => (
           <div
             key={phase.num}
-            className={`glass-card p-5 flex flex-col opacity-0 animate-fade-up border-t-2 border-t-${phase.badgeColor}/40 hover:border-${phase.badgeColor}/30 transition-colors`}
+            className={`glass-card p-5 flex flex-col opacity-0 animate-fade-up border-t-2 border-t-${phase.badgeColor}/40`}
             style={{ animationDelay: `${0.3 + i * 0.08}s` }}
           >
             <div className="flex items-center gap-2 mb-3">
-              <div className={`w-9 h-9 rounded-lg bg-${phase.badgeColor}/10 flex items-center justify-center shrink-0`}>
-                <phase.icon className={`w-4.5 h-4.5 text-${phase.badgeColor}`} />
+              <div className={`w-10 h-10 rounded-lg bg-${phase.badgeColor}/10 flex items-center justify-center shrink-0`}>
+                <phase.icon className={`w-5 h-5 text-${phase.badgeColor}`} />
               </div>
-              <div>
-                <span className={`text-[14px] px-2.5 py-0.5 rounded-full bg-${phase.badgeColor}/10 text-${phase.badgeColor} font-bold`}>
-                  {phase.badge}
-                </span>
-              </div>
+              <span className={`text-[15px] px-2.5 py-0.5 rounded-full bg-${phase.badgeColor}/10 text-${phase.badgeColor} font-bold`}>
+                {phase.badge}
+              </span>
             </div>
 
-            <h3 className="text-[17px] font-bold text-foreground mb-3">{phase.title}</h3>
+            <h3 className="text-[19px] font-bold text-foreground mb-3">{phase.title}</h3>
 
-            <div className="flex flex-col gap-2.5 flex-1">
+            <div className="flex flex-col gap-3 flex-1">
               {phase.items.map(item => (
-                <div key={item} className="flex items-start gap-2">
-                  <div className={`w-1.5 h-1.5 rounded-full bg-${phase.badgeColor}/40 shrink-0 mt-2`} />
-                  <span className="text-[15px] text-muted-foreground leading-relaxed">{item}</span>
+                <div key={item} className="flex items-start gap-2.5">
+                  <div className={`w-2 h-2 rounded-full bg-${phase.badgeColor}/40 shrink-0 mt-2`} />
+                  <span className="text-[17px] text-muted-foreground leading-relaxed">{item}</span>
                 </div>
               ))}
             </div>
@@ -132,10 +126,10 @@ const RoadmapSlide = () => (
       <div className="mt-5 flex items-center justify-center gap-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
         {["Media Property", "Discovery Platform", "Data & Intelligence", "Industry OS"].map((label, i) => (
           <div key={label} className="flex items-center gap-3">
-            <div className={`glass-card px-4 py-2 text-[15px] font-semibold ${i === 3 ? 'text-primary border-primary/30' : 'text-foreground'}`}>
+            <div className={`glass-card px-5 py-2.5 text-[17px] font-semibold ${i === 3 ? 'text-primary border-primary/30' : 'text-foreground'}`}>
               {label}
             </div>
-            {i < 3 && <ArrowRight className="w-3.5 h-3.5 text-primary/30" />}
+            {i < 3 && <ArrowRight className="w-4 h-4 text-primary/30" />}
           </div>
         ))}
       </div>
