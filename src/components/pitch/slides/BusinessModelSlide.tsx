@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { Monitor, Star, BarChart3, Rocket, RefreshCw, Zap, ArrowRight } from "lucide-react";
 
