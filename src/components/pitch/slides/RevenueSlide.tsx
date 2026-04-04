@@ -3,9 +3,9 @@ import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { TrendingUp, Award, Users, Database, RefreshCw, Megaphone, ArrowRight, Star } from "lucide-react";
 
 const scenarioData = [
-  { year: "Year 1", conservative: 40, base: 80, upside: 150 },
-  { year: "Year 2", conservative: 180, base: 400, upside: 800 },
-  { year: "Year 3", conservative: 500, base: 1200, upside: 2500 },
+  { year: "Year 1", conservative: 50, base: 100, upside: 180 },
+  { year: "Year 2", conservative: 200, base: 450, upside: 900 },
+  { year: "Year 3", conservative: 550, base: 1400, upside: 2800 },
 ];
 
 const streams = [
