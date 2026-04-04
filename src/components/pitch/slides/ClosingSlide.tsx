@@ -74,7 +74,7 @@ const ClosingSlide = () => (
       </div>
 
       <div className="absolute bottom-10 text-[15px] text-muted-foreground font-mono-brand tracking-[0.15em] opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
-        CONFIDENTIAL — FLIPR.MEDIA © 2025
+        CONFIDENTIAL — FLIPR.MEDIA © 2026
       </div>
     </div>
   </SlideLayout>

@@ -77,7 +77,7 @@ const UseOfFundsSlide = () => (
             </ResponsiveContainer>
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="text-center">
-                <div className="text-[32px] font-black text-primary">$200K</div>
+                <div className="text-[32px] font-black text-primary">$250K</div>
                 <div className="text-[17px] text-muted-foreground font-medium">Total Raise</div>
               </div>
             </div>

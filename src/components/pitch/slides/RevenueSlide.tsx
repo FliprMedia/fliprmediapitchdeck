@@ -82,9 +82,9 @@ const RevenueSlide = () => (
         <div className="w-[500px] flex flex-col gap-4">
           <div className="grid grid-cols-3 gap-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
             {[
-              { label: "Conservative", yr3: "$500K", color: "hsl(240 10% 40%)", desc: "Organic growth, limited sales" },
-              { label: "Base", yr3: "$1.2M", color: "hsl(145 100% 49%)", desc: "Active sales, strong content" },
-              { label: "Upside", yr3: "$2.5M+", color: "hsl(263 70% 58%)", desc: "Fast adoption, premium products" },
+              { label: "Conservative", yr3: "$550K", color: "hsl(240 10% 40%)", desc: "Organic growth, limited sales" },
+              { label: "Base", yr3: "$1.4M", color: "hsl(145 100% 49%)", desc: "Active sales, strong content" },
+              { label: "Upside", yr3: "$2.8M+", color: "hsl(263 70% 58%)", desc: "Fast adoption, premium products" },
             ].map(s => (
               <div key={s.label} className="glass-card p-4 text-center">
                 <div className="text-[16px] font-semibold text-muted-foreground uppercase mb-1">{s.label}</div>

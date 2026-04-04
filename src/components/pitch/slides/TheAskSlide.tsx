@@ -47,7 +47,7 @@ const TheAskSlide = () => (
                 <div className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Instrument</div>
               </div>
               <div>
-                <div className="text-[52px] font-black text-accent stat-value">9–12</div>
+                <div className="text-[52px] font-black text-accent stat-value">10–14</div>
                 <div className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Months Runway</div>
               </div>
             </div>
