@@ -50,7 +50,7 @@ const ClosingSlide = () => (
       <div className="w-48 divider-glow mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }} />
 
       <p className="text-[22px] text-muted-foreground text-center max-w-[800px] leading-[1.7] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
-        Big market. Focused raise. Fast execution. Flipr.Media is raising $200K to prove the model, validate demand, and build an investable foundation — with clear follow-on upside as the <span className="text-primary font-semibold">$170B+ live commerce economy</span> keeps accelerating.
+        Big market. Focused raise. Fast execution. Flipr.Media is raising $250K to prove the model, validate demand, and build an investable foundation — with clear follow-on upside as the <span className="text-primary font-semibold">$170B+ live commerce economy</span> keeps accelerating.
       </p>
 
       <div className="glass-card-elevated px-14 py-7 text-center opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
