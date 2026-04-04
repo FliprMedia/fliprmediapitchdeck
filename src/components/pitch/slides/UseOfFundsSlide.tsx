@@ -7,7 +7,7 @@ const funds = [
     icon: Code,
     category: "Product & Engineering",
     pct: 35,
-    amount: 70000,
+    amount: 87500,
     color: "hsl(145 100% 49%)",
     items: ["Site completion & UX polish", "Backend & integrations", "Monetization flows", "Performance improvements"],
   },
@@ -15,7 +15,7 @@ const funds = [
     icon: Megaphone,
     category: "Marketing & Growth",
     pct: 20,
-    amount: 40000,
+    amount: 50000,
     color: "hsl(263 70% 58%)",
     items: ["Newsletter growth", "Paid acquisition experiments", "Social/video & SEO", "Creator collaborations"],
   },
@@ -23,7 +23,7 @@ const funds = [
     icon: Handshake,
     category: "Sales / Partnerships / BD",
     pct: 15,
-    amount: 30000,
+    amount: 37500,
     color: "hsl(145 80% 35%)",
     items: ["Advertiser outreach", "Platform relationships", "Sponsorship packaging", "Outbound systems"],
   },
@@ -31,7 +31,7 @@ const funds = [
     icon: FileText,
     category: "Content & Operations",
     pct: 20,
-    amount: 40000,
+    amount: 50000,
     color: "hsl(263 50% 45%)",
     items: ["Editorial production", "Scheduling & workflows", "Content repurposing", "Operations support"],
   },
@@ -39,7 +39,7 @@ const funds = [
     icon: Briefcase,
     category: "Working Capital / Admin",
     pct: 10,
-    amount: 20000,
+    amount: 25000,
     color: "hsl(240 10% 45%)",
     items: ["Legal, admin & tools", "Runway buffer"],
   },
@@ -56,7 +56,7 @@ const UseOfFundsSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">14 — USE OF FUNDS</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <span className="text-primary neon-glow">$200K</span> — intentionally lean, strategically allocated.
+        <span className="text-primary neon-glow">$250K</span> — intentionally lean, strategically allocated.
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Founder-led execution. Every dollar mapped to a validation milestone.
@@ -77,7 +77,7 @@ const UseOfFundsSlide = () => (
             </ResponsiveContainer>
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="text-center">
-                <div className="text-[32px] font-black text-primary">$200K</div>
+                <div className="text-[32px] font-black text-primary">$250K</div>
                 <div className="text-[17px] text-muted-foreground font-medium">Total Raise</div>
               </div>
             </div>

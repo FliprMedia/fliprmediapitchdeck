@@ -93,7 +93,7 @@ const TractionSlide = () => (
           <Zap className="w-5 h-5 text-primary shrink-0" />
           <p className="text-[17px] text-muted-foreground text-center">
             <span className="text-foreground font-semibold">Honest assessment:</span> Pre-revenue with a live product, validated positioning, and a clear monetization path.
-            $200K bridges the gap from prototype to operating business.
+            $250K bridges the gap from prototype to operating business.
           </p>
         </div>
       </div>

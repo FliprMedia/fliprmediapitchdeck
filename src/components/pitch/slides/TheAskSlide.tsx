@@ -25,11 +25,11 @@ const TheAskSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">17 — THE ASK</div>
       <h2 className="text-[48px] font-extrabold leading-[1.15] mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        A focused <span className="text-primary neon-glow">$200K</span> to prove the model{" "}
+        A focused <span className="text-primary neon-glow">$250K</span> to prove the model{" "}
         <span className="font-display italic text-[50px]">in a $170B+ market.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        A disciplined pre-seed round to complete the platform, activate revenue, and prove the model.
+        A disciplined pre-seed round to complete the platform, activate revenue, accelerate traction, and prove the model.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -39,7 +39,7 @@ const TheAskSlide = () => (
           <div className="glass-card-elevated p-7 opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
             <div className="grid grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-[52px] font-black text-primary stat-value">$200K</div>
+                <div className="text-[52px] font-black text-primary stat-value">$250K</div>
                 <div className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Raise Amount</div>
               </div>
               <div>
@@ -47,7 +47,7 @@ const TheAskSlide = () => (
                 <div className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Instrument</div>
               </div>
               <div>
-                <div className="text-[52px] font-black text-accent stat-value">9–12</div>
+                <div className="text-[52px] font-black text-accent stat-value">10–14</div>
                 <div className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Months Runway</div>
               </div>
             </div>

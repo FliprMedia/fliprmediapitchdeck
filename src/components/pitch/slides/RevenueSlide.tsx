@@ -3,9 +3,9 @@ import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { TrendingUp, Award, Users, Database, RefreshCw, Megaphone, ArrowRight, Star } from "lucide-react";
 
 const scenarioData = [
-  { year: "Year 1", conservative: 40, base: 80, upside: 150 },
-  { year: "Year 2", conservative: 180, base: 400, upside: 800 },
-  { year: "Year 3", conservative: 500, base: 1200, upside: 2500 },
+  { year: "Year 1", conservative: 50, base: 100, upside: 180 },
+  { year: "Year 2", conservative: 200, base: 450, upside: 900 },
+  { year: "Year 3", conservative: 550, base: 1400, upside: 2800 },
 ];
 
 const streams = [
@@ -82,9 +82,9 @@ const RevenueSlide = () => (
         <div className="w-[500px] flex flex-col gap-4">
           <div className="grid grid-cols-3 gap-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
             {[
-              { label: "Conservative", yr3: "$500K", color: "hsl(240 10% 40%)", desc: "Organic growth, limited sales" },
-              { label: "Base", yr3: "$1.2M", color: "hsl(145 100% 49%)", desc: "Active sales, strong content" },
-              { label: "Upside", yr3: "$2.5M+", color: "hsl(263 70% 58%)", desc: "Fast adoption, premium products" },
+              { label: "Conservative", yr3: "$550K", color: "hsl(240 10% 40%)", desc: "Organic growth, limited sales" },
+              { label: "Base", yr3: "$1.4M", color: "hsl(145 100% 49%)", desc: "Active sales, strong content" },
+              { label: "Upside", yr3: "$2.8M+", color: "hsl(263 70% 58%)", desc: "Fast adoption, premium products" },
             ].map(s => (
               <div key={s.label} className="glass-card p-4 text-center">
                 <div className="text-[16px] font-semibold text-muted-foreground uppercase mb-1">{s.label}</div>
