@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import DesktopMockup from "../mockups/DesktopMockup";
 import MobileMockup from "../mockups/MobileMockup";
 import fliprLogoDark from "@/assets/flipr-logo-dark.png";
