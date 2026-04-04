@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { Eye, Heart, Search, Target, BarChart3, FileText, Layers, ArrowUp, Star, TrendingUp } from "lucide-react";
 
 const controls = [
