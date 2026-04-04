@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { FileText, Users, Database, DollarSign, Shield, Rss, Search, Share2, Handshake, UserPlus, Mic, RefreshCw, Rocket, ArrowRight } from "lucide-react";
 
 const phases = [
