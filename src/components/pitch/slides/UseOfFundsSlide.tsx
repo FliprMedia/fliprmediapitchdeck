@@ -39,7 +39,7 @@ const funds = [
     icon: Briefcase,
     category: "Working Capital / Admin",
     pct: 10,
-    amount: 20000,
+    amount: 25000,
     color: "hsl(240 10% 45%)",
     items: ["Legal, admin & tools", "Runway buffer"],
   },
