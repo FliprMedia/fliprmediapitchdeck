@@ -59,7 +59,7 @@ const ClosingSlide = () => (
           <div className="w-px h-10 bg-border/20" />
           <div>
             <div className="text-[15px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mb-0.5">Email</div>
-            <div className="text-[18px] font-semibold text-primary">brian@flipr.media</div>
+            <div className="text-[24px] font-bold text-primary">hello@flipr.media</div>
           </div>
           <div className="w-px h-10 bg-border/20" />
           <div>

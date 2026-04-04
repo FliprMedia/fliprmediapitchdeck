@@ -109,7 +109,7 @@ const TheAskSlide = () => (
               ].map(item => (
                 <div key={item.label} className="flex items-center gap-3">
                   <span className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase w-14">{item.label}</span>
-                  <span className={`text-[18px] font-medium ${item.color}`}>{item.value}</span>
+                  <span className={`${item.size || 'text-[18px]'} font-semibold ${item.color}`}>{item.value}</span>
                 </div>
               ))}
             </div>
