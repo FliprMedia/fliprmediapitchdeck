@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { ShoppingBag, Eye, Building2, Megaphone, Tv, Briefcase, TrendingUp, DollarSign } from "lucide-react";
 
 const personas = [
