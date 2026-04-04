@@ -33,7 +33,7 @@ const CoverSlide = () => (
       <div className="mb-5 opacity-0 animate-fade-up">
         <span className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-primary/25 bg-primary/[0.06] text-primary text-[16px] font-mono-brand tracking-[0.15em] uppercase font-semibold">
           <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" />
-          Investor Presentation — 2025
+          Investor Presentation — 2026
         </span>
       </div>
 
