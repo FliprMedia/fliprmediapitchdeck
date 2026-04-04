@@ -103,8 +103,8 @@ const TheAskSlide = () => (
             </div>
             <div className="space-y-3">
               {[
-                { label: "Name", value: "Brian Weiss", color: "text-foreground" },
-                { label: "Email", value: "brian@flipr.media", color: "text-primary" },
+                { label: "Name", value: "Brian Weiss", color: "text-foreground", size: "text-[18px]" },
+                { label: "Email", value: "hello@flipr.media", color: "text-primary", size: "text-[22px]" },
                 { label: "Web", value: "flipr.media", color: "text-primary" },
               ].map(item => (
                 <div key={item.label} className="flex items-center gap-3">
