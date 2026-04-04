@@ -50,7 +50,7 @@ const CoverSlide = () => (
 
       {/* Support copy */}
       <p className="text-[22px] text-foreground/90 leading-[1.6] mb-6 max-w-[780px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
-        A focused $200K pre-seed to complete the platform, activate monetization, and validate category demand — with founder-led execution and disciplined capital efficiency.
+        A focused $250K pre-seed to complete the platform, activate monetization, and validate category demand — with founder-led execution and disciplined capital efficiency.
       </p>
 
       {/* Raise pill + platform strip */}
