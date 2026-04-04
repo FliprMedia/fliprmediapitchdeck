@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { Code, Megaphone, Handshake, FileText, Briefcase } from "lucide-react";
 
