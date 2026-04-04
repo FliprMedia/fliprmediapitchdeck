@@ -23,7 +23,7 @@ const funds = [
     icon: Handshake,
     category: "Sales / Partnerships / BD",
     pct: 15,
-    amount: 30000,
+    amount: 37500,
     color: "hsl(145 80% 35%)",
     items: ["Advertiser outreach", "Platform relationships", "Sponsorship packaging", "Outbound systems"],
   },
