@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { User, Plus, Eye, Zap, Palette, Target, Mic, Rocket, Code, Users, FileText, Handshake, TrendingUp } from "lucide-react";
 
 const whyWin = [
