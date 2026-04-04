@@ -18,10 +18,7 @@ const idealInvestors = [
 
 const TheAskSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-    <div className="absolute top-0 right-0 w-[800px] h-[800px] rounded-full bg-primary/[0.04] blur-[200px]" />
-    <div className="absolute bottom-0 left-[200px] w-[600px] h-[400px] rounded-full bg-accent/[0.03] blur-[160px]" />
+    <SlideBackground intensity="strong" glowPosition="top-right" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">17 — THE ASK</div>

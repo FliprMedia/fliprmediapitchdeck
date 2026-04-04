@@ -26,9 +26,7 @@ const valueDrivers = [
 
 const RevenueSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-    <div className="absolute top-[100px] right-[100px] w-[500px] h-[500px] bg-accent/[0.03] rounded-full blur-[180px]" />
+    <SlideBackground intensity="subtle" glowPosition="top-right" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">15 — REVENUE POTENTIAL</div>

@@ -22,10 +22,7 @@ const somChannels = [
 
 const MarketSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-    <div className="absolute top-[100px] left-[300px] w-[500px] h-[500px] bg-accent/[0.035] rounded-full blur-[180px]" />
-    <div className="absolute bottom-[50px] right-[200px] w-[400px] h-[400px] bg-primary/[0.03] rounded-full blur-[150px]" />
+    <SlideBackground intensity="strong" glowPosition="center" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="mb-6">

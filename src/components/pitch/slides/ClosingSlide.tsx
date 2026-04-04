@@ -6,12 +6,7 @@ import fliprLogoDark from "@/assets/flipr-logo-dark.png";
 
 const ClosingSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1400px] h-[1400px] rounded-full bg-primary/[0.04] blur-[250px]" />
-    <div className="absolute top-[100px] right-[200px] w-[400px] h-[400px] rounded-full bg-accent/[0.035] blur-[150px]" />
-    <div className="absolute bottom-[100px] left-[200px] w-[300px] h-[300px] rounded-full bg-primary/[0.03] blur-[120px]" />
+    <SlideBackground intensity="full" glowPosition="center" />
 
     <div className="absolute inset-0 opacity-[0.015]" style={{
       backgroundImage: `

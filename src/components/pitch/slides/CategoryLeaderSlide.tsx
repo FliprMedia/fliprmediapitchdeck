@@ -31,9 +31,7 @@ const comparables = [
 
 const CategoryLeaderSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-    <div className="absolute top-0 left-[400px] w-[700px] h-[700px] bg-accent/[0.03] rounded-full blur-[200px]" />
+    <SlideBackground intensity="strong" glowPosition="center" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">13 — CATEGORY LEADERSHIP</div>

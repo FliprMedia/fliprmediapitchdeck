@@ -61,9 +61,7 @@ const flywheelSteps = [
 
 const GoToMarketSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-    <div className="absolute top-[100px] left-[300px] w-[500px] h-[500px] bg-primary/[0.03] rounded-full blur-[200px]" />
+    <SlideBackground intensity="subtle" glowPosition="top-left" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">09 — GO-TO-MARKET</div>
