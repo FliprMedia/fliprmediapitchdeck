@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { TrendingUp, DollarSign, Globe, Layers, Megaphone } from "lucide-react";
 
 const tamLayers = [
