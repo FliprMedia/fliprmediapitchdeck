@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { Settings, Users, BarChart3, Rocket, ArrowRight } from "lucide-react";
 
 const phases = [
