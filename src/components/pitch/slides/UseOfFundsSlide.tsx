@@ -7,7 +7,7 @@ const funds = [
     icon: Code,
     category: "Product & Engineering",
     pct: 35,
-    amount: 70000,
+    amount: 87500,
     color: "hsl(145 100% 49%)",
     items: ["Site completion & UX polish", "Backend & integrations", "Monetization flows", "Performance improvements"],
   },
