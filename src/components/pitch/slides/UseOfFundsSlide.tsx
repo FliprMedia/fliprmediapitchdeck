@@ -15,7 +15,7 @@ const funds = [
     icon: Megaphone,
     category: "Marketing & Growth",
     pct: 20,
-    amount: 40000,
+    amount: 50000,
     color: "hsl(263 70% 58%)",
     items: ["Newsletter growth", "Paid acquisition experiments", "Social/video & SEO", "Creator collaborations"],
   },
