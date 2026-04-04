@@ -39,7 +39,7 @@ const TheAskSlide = () => (
           <div className="glass-card-elevated p-7 opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
             <div className="grid grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-[52px] font-black text-primary stat-value">$200K</div>
+                <div className="text-[52px] font-black text-primary stat-value">$250K</div>
                 <div className="text-[16px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mt-1">Raise Amount</div>
               </div>
               <div>
