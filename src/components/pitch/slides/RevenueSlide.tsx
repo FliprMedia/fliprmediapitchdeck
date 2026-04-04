@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { TrendingUp, Award, Users, Database, RefreshCw, Megaphone, ArrowRight, Star } from "lucide-react";
 
