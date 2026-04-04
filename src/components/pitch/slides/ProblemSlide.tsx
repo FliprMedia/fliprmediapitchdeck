@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { AlertTriangle, Search, Users, BarChart3, Megaphone, Shuffle, Eye, Radio, ShieldQuestion, Layers, ArrowRight } from "lucide-react";
 
 const painCards = [
