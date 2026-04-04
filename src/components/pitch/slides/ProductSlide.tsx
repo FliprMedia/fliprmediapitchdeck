@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import DesktopMockup from "../mockups/DesktopMockup";
 import MobileMockup from "../mockups/MobileMockup";
 import { Newspaper, Users, Radio, Star, Mic, Mail, BarChart3, Megaphone, Layers, Zap, Code } from "lucide-react";
