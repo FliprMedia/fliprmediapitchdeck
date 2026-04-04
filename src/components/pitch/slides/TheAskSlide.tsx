@@ -29,7 +29,7 @@ const TheAskSlide = () => (
         <span className="font-display italic text-[50px]">in a $170B+ market.</span>
       </h2>
       <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        A disciplined pre-seed round to complete the platform, activate revenue, and prove the model.
+        A disciplined pre-seed round to complete the platform, activate revenue, accelerate traction, and prove the model.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
