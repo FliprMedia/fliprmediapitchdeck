@@ -31,7 +31,7 @@ const funds = [
     icon: FileText,
     category: "Content & Operations",
     pct: 20,
-    amount: 40000,
+    amount: 50000,
     color: "hsl(263 50% 45%)",
     items: ["Editorial production", "Scheduling & workflows", "Content repurposing", "Operations support"],
   },
