@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { Shield, Users, BarChart3, Megaphone, Database, Award, ShoppingCart, Eye, Wrench, Building2, Target } from "lucide-react";
 
 const existsToday = [
@@ -30,9 +31,7 @@ const moats = [
 
 const FirstOfKindSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-    <div className="absolute top-[200px] left-[400px] w-[600px] h-[600px] bg-primary/[0.03] rounded-full blur-[200px]" />
+    <SlideBackground intensity="strong" glowPosition="center" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">06 — FIRST-OF-ITS-KIND</div>

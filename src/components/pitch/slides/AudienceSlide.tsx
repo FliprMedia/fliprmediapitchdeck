@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { ShoppingBag, Eye, Building2, Megaphone, Tv, Briefcase, TrendingUp, DollarSign } from "lucide-react";
 
 const personas = [
@@ -67,9 +68,7 @@ const wheelNodes = personas.map((p, i) => ({
 
 const AudienceSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-    <div className="absolute top-[300px] right-[200px] w-[500px] h-[500px] bg-accent/[0.03] rounded-full blur-[180px]" />
+    <SlideBackground intensity="subtle" glowPosition="top-right" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">07 — AUDIENCE & USERS</div>

@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { Code, Megaphone, Handshake, FileText, Briefcase } from "lucide-react";
 
@@ -49,9 +50,7 @@ const chartData = funds.map(f => ({ name: f.category, value: f.pct, color: f.col
 
 const UseOfFundsSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-    <div className="absolute bottom-0 left-[200px] w-[600px] h-[500px] bg-primary/[0.03] rounded-full blur-[180px]" />
+    <SlideBackground intensity="subtle" glowPosition="bottom-left" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">14 — USE OF FUNDS</div>

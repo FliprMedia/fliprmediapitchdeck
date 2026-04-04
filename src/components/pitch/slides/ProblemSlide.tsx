@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { AlertTriangle, Search, Users, BarChart3, Megaphone, Shuffle, Eye, Radio, ShieldQuestion, Layers, ArrowRight } from "lucide-react";
 
 const painCards = [
@@ -48,23 +49,7 @@ const gapItems = [
 
 const ProblemSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-
-    <svg className="absolute inset-0 w-full h-full opacity-[0.04]" viewBox="0 0 1920 1080">
-      {[
-        { cx: 200, cy: 200, r: 60 }, { cx: 500, cy: 120, r: 70 }, { cx: 850, cy: 180, r: 55 },
-        { cx: 1200, cy: 100, r: 65 }, { cx: 1500, cy: 200, r: 50 }, { cx: 350, cy: 500, r: 45 },
-        { cx: 1600, cy: 500, r: 55 },
-      ].map((c, i) => (
-        <g key={i}>
-          <circle cx={c.cx} cy={c.cy} r={c.r} fill="none" stroke="hsl(var(--muted-foreground))" strokeWidth="1" strokeDasharray="4 6" />
-        </g>
-      ))}
-    </svg>
-
-    <div className="absolute top-[-100px] right-[-50px] w-[700px] h-[700px] bg-destructive/[0.04] rounded-full blur-[180px]" />
-    <div className="absolute bottom-[-100px] left-[200px] w-[500px] h-[500px] bg-primary/[0.03] rounded-full blur-[150px]" />
+    <SlideBackground intensity="strong" glowPosition="top-right" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-16">
       <div className="mb-6">

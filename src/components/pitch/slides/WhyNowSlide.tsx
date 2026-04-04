@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { Area, AreaChart, ResponsiveContainer, XAxis, YAxis, CartesianGrid } from "recharts";
 import { TrendingUp, ShoppingBag, Radio, Target, Users, Globe } from "lucide-react";
 
@@ -31,10 +32,7 @@ const themes = [
 
 const WhyNowSlide = () => (
   <SlideLayout>
-    <div className="absolute inset-0 bg-[hsl(240,25%,3%)]" />
-    <div className="absolute inset-0 noise-overlay" />
-    <div className="absolute top-[-200px] left-[300px] w-[800px] h-[800px] bg-primary/[0.04] rounded-full blur-[200px]" />
-    <div className="absolute bottom-[-100px] right-[100px] w-[500px] h-[500px] bg-accent/[0.03] rounded-full blur-[150px]" />
+    <SlideBackground intensity="strong" glowPosition="top-left" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">03 — WHY NOW</div>
