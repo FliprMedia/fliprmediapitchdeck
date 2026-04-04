@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { Check, Minus } from "lucide-react";
 
 const columns = [
