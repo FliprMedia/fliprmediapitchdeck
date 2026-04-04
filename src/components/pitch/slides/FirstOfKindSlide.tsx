@@ -1,4 +1,5 @@
 import SlideLayout from "../SlideLayout";
+import SlideBackground from "../SlideBackground";
 import { Shield, Users, BarChart3, Megaphone, Database, Award, ShoppingCart, Eye, Wrench, Building2, Target } from "lucide-react";
 
 const existsToday = [
