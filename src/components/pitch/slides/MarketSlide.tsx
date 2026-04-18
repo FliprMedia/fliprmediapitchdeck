@@ -51,25 +51,25 @@ const MarketSlide = () => (
               );
             })}
 
-            {/* TAM — anchored to top arc of outer ring */}
-            <div className="absolute left-1/2 -translate-x-1/2 text-center" style={{ top: 14 }}>
-              <div className="text-[14px] font-mono tracking-widest text-secondary mb-0.5">TAM</div>
-              <div className="text-[24px] font-black text-secondary leading-tight">$1.48T+</div>
-              <div className="text-[12px] text-muted-foreground leading-tight max-w-[220px] mx-auto">Global Live + Social Commerce</div>
+            {/* TAM — within outer ring band (y: 0–60) */}
+            <div className="absolute left-1/2 -translate-x-1/2 text-center" style={{ top: 8 }}>
+              <div className="text-[11px] font-mono tracking-[0.2em] text-secondary leading-none mb-1">TAM</div>
+              <div className="text-[18px] font-black text-secondary leading-none mb-1">$1.48T+</div>
+              <div className="text-[10px] text-muted-foreground leading-tight max-w-[260px] mx-auto">Global Live + Social Commerce</div>
             </div>
 
-            {/* SAM — anchored to top arc of middle ring */}
-            <div className="absolute left-1/2 -translate-x-1/2 text-center" style={{ top: 74 }}>
-              <div className="text-[13px] font-mono tracking-widest text-primary mb-0.5">SAM</div>
-              <div className="text-[20px] font-black text-primary leading-tight">$20B+</div>
-              <div className="text-[11px] text-muted-foreground leading-tight max-w-[170px] mx-auto">US Live Selling + Media & Ad Spend</div>
+            {/* SAM — within middle ring band (y: 60–125) */}
+            <div className="absolute left-1/2 -translate-x-1/2 text-center" style={{ top: 68 }}>
+              <div className="text-[11px] font-mono tracking-[0.2em] text-primary leading-none mb-1">SAM</div>
+              <div className="text-[16px] font-black text-primary leading-none mb-1">$20B+</div>
+              <div className="text-[10px] text-muted-foreground leading-tight max-w-[180px] mx-auto">US Live Selling + Media & Ad Spend</div>
             </div>
 
-            {/* SOM — centered in innermost circle */}
+            {/* SOM — centered in innermost circle (170px) */}
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-              <div className="text-[13px] font-mono tracking-widest text-primary mb-1">SOM</div>
-              <div className="text-[26px] font-black text-primary leading-tight">$5–15M</div>
-              <div className="text-[11px] text-muted-foreground leading-tight max-w-[130px] mx-auto mt-1">Early Revenue Opportunity</div>
+              <div className="text-[11px] font-mono tracking-[0.2em] text-primary leading-none mb-1.5">SOM</div>
+              <div className="text-[24px] font-black text-primary leading-none mb-1.5">$5–15M</div>
+              <div className="text-[10px] text-muted-foreground leading-tight max-w-[130px] mx-auto">Early Revenue Opportunity</div>
             </div>
           </div>
         </div>
