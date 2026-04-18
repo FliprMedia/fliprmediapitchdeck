@@ -49,9 +49,14 @@ const CoverSlide = () => (
       </h1>
 
       {/* Support copy */}
-      <p className="text-[22px] text-foreground/90 leading-[1.6] mb-6 max-w-[780px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
-        <span className="font-semibold text-foreground">What we are:</span> An online publication covering live selling the same way Variety covers Hollywood. <span className="font-semibold text-foreground">How we make money:</span> Advertising, sponsorships, and seller subscriptions — the same model trade publications have used for 100 years.
-      </p>
+      <div className="mb-6 max-w-[820px] opacity-0 animate-fade-up space-y-3" style={{ animationDelay: '0.26s' }}>
+        <p className="text-[22px] text-foreground/90 leading-[1.6]">
+          <span className="font-semibold text-foreground">What we are:</span> An online publication that covers the live selling industry — the platforms, the sellers, and the trends — the same way Variety covers Hollywood.
+        </p>
+        <p className="text-[22px] text-foreground/90 leading-[1.6]">
+          <span className="font-semibold text-foreground">How we make money:</span> Advertising, sponsorships, and seller subscriptions. The same business model trade publications have used for 100 years.
+        </p>
+      </div>
 
       {/* Raise pill + platform strip */}
       <div className="flex items-center gap-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.34s' }}>
