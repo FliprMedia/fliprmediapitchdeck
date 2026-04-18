@@ -36,11 +36,11 @@ const WhyNowSlide = () => (
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">03 — WHY NOW</div>
-      <p className="text-[19px] text-foreground/90 leading-[1.5] max-w-[1150px] mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.05s' }}>
-        Every major industry gets a defining trade publication at some point. For live selling, that moment is right now — <span className="text-primary font-semibold">and the window to be first is still open.</span>
+      <p className="text-[18px] text-foreground/90 leading-[1.5] max-w-[1200px] mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.05s' }}>
+        Live selling in the US is growing 30% per year and just crossed $14 billion. TikTok Shop launched in the US in 2023. eBay and Amazon are both racing to build live selling features. Whatnot just raised at a $5 billion valuation. <span className="text-primary font-semibold">This industry is moving from fringe to mainstream right now — and the window to become its defining media brand is open today and will not stay open forever.</span>
       </p>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        The window is open <span className="font-display italic text-[58px] text-primary">right now.</span>
+        Why this matters <span className="font-display italic text-[58px] text-primary">right now.</span>
       </h2>
       <p className="slide-subhead mb-5 max-w-[800px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Six forces converging to create a once-in-a-category opportunity for a media brand that moves first.

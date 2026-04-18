@@ -73,10 +73,10 @@ const AudienceSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">07 — AUDIENCE & USERS</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Seven distinct audiences. <span className="font-display italic text-[58px] text-primary">All monetizable.</span>
+        Seven types of people who <span className="font-display italic text-[58px] text-primary">need what we are building.</span>
       </h2>
-      <p className="text-[24px] text-muted-foreground font-semibold mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Every stakeholder in the live commerce value chain needs what Flipr.Media is building.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        Every person in the live selling ecosystem — sellers, buyers, brands, platforms, agencies, advertisers, and investors — needs a trusted media source. Right now none of them have one. <span className="text-primary font-semibold">Each of these audiences is monetizable in a different way, which means our revenue compounds as we grow.</span>
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">

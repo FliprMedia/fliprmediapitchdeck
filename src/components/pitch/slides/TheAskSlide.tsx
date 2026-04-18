@@ -22,12 +22,12 @@ const TheAskSlide = () => (
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">17 — THE ASK</div>
-      <h2 className="text-[48px] font-extrabold leading-[1.15] mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        A focused <span className="text-primary neon-glow">$250K</span> to prove the model{" "}
-        <span className="font-display italic text-[50px]">in a $170B+ market.</span>
+      <h2 className="text-[44px] font-extrabold leading-[1.15] mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        We are raising <span className="text-primary neon-glow">$250K</span> to prove this model{" "}
+        <span className="font-display italic text-[46px]">in a $170B+ market.</span>
       </h2>
-      <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        A disciplined pre-seed round to complete the platform, activate revenue, accelerate traction, and prove the model.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        This round gets us to a fully monetized, revenue-generating publication with a growing audience, active advertisers, and paying seller subscribers. It is a disciplined, lean raise with a clear path to a larger follow-on round once the model is validated. <span className="text-primary font-semibold">The market is enormous. The slot is open. The product is already live. We are asking for the capital to pour fuel on what is already working.</span>
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">

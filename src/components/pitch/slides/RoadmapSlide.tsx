@@ -68,10 +68,10 @@ const RoadmapSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">11 — PRODUCT ROADMAP</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Media property today. <span className="font-display italic text-[58px] text-primary">Industry operating system tomorrow.</span>
+        Where the product <span className="font-display italic text-[58px] text-primary">goes from here.</span>
       </h2>
-      <p className="slide-subhead mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Each phase compounds audience, data, and revenue — creating deeper moats at every stage.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        We are already live with the core publication. The next phases turn that foundation into a full industry platform — with seller rankings, data products, premium subscriptions, and eventually events and a sponsorship marketplace. <span className="text-primary font-semibold">Each phase deepens the moat.</span>
       </p>
 
       {/* Timeline bar */}

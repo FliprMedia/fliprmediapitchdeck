@@ -44,17 +44,20 @@ const CoverSlide = () => (
 
       {/* Headline */}
       <h1 className="text-[48px] font-extrabold leading-[1.15] mb-4 max-w-[950px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
-        <span className="text-foreground">We are the trade magazine for live selling</span>{" "}
-        <span className="gradient-text font-display italic text-[50px]">— the fastest-growing segment of e-commerce.</span>
+        <span className="text-foreground">We are the trade magazine</span>{" "}
+        <span className="gradient-text font-display italic text-[50px]">for live selling.</span>
       </h1>
 
       {/* Support copy */}
-      <div className="mb-6 max-w-[820px] opacity-0 animate-fade-up space-y-3" style={{ animationDelay: '0.26s' }}>
-        <p className="text-[22px] text-foreground/90 leading-[1.6]">
-          <span className="font-semibold text-foreground">What we are:</span> An online publication that covers the live selling industry — the platforms, the sellers, and the trends — the same way Variety covers Hollywood.
+      <div className="mb-6 max-w-[900px] opacity-0 animate-fade-up space-y-3" style={{ animationDelay: '0.26s' }}>
+        <p className="text-[20px] text-foreground/90 leading-[1.55]">
+          Live selling is the fastest-growing part of e-commerce. Millions of people sell products on live video every day — on TikTok, eBay, Amazon, and Whatnot. <span className="text-primary font-semibold">Flipr Media is the first publication built specifically for this industry.</span>
         </p>
-        <p className="text-[22px] text-foreground/90 leading-[1.6]">
-          <span className="font-semibold text-foreground">How we make money:</span> Advertising, sponsorships, and seller subscriptions. The same business model trade publications have used for 100 years.
+        <p className="text-[19px] text-foreground/90 leading-[1.55]">
+          <span className="font-semibold text-foreground">What we are:</span> An online trade magazine — think Variety for Hollywood, or ESPN for sports. We cover the news, the sellers, and the platforms.
+        </p>
+        <p className="text-[19px] text-foreground/90 leading-[1.55]">
+          <span className="font-semibold text-foreground">How we make money:</span> Advertising, sponsorships, and seller subscriptions — the same way every successful trade publication makes money.
         </p>
       </div>
 

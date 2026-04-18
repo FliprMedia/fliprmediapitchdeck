@@ -27,10 +27,13 @@ const MarketSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="mb-6">
         <div className="slide-label mb-3 opacity-0 animate-fade-up">04 — MARKET OPPORTUNITY</div>
-        <h2 className="slide-headline mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          Massive TAM. Clear monetization layers.{" "}
-          <span className="font-display italic text-[58px] text-primary">Capital-efficient entry.</span>
+        <h2 className="slide-headline mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          A giant market with{" "}
+          <span className="font-display italic text-[58px] text-primary">no media layer yet.</span>
         </h2>
+        <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+          Every major industry eventually gets a dominant trade publication. That publication captures the advertising dollars, the sponsorship dollars, and the subscription dollars of everyone who needs to reach that industry's audience. <span className="text-primary font-semibold">Live selling is that industry right now. The market is enormous and the media slot is completely empty.</span>
+        </p>
       </div>
 
       <div className="flex-1 flex gap-10">

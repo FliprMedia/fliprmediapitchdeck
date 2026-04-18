@@ -36,10 +36,10 @@ const CategoryLeaderSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">13 — CATEGORY LEADERSHIP</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Own the attention. Own the data. <span className="font-display italic text-[58px] text-primary">Own the category economics.</span>
+        The publication that defines a category <span className="font-display italic text-[58px] text-primary">becomes extremely valuable.</span>
       </h2>
-      <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Value accrues to the trusted media, discovery, and intelligence layers that shape attention.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        When a trade publication becomes the trusted voice of an industry, it does not just make money — it becomes the infrastructure that industry runs on. Variety does not just cover Hollywood. It IS Hollywood's record of truth. <span className="text-primary font-semibold">That is the position Flipr Media is building in live selling.</span> The comparable exits below show what category-defining media brands are worth.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">

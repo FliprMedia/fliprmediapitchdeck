@@ -54,13 +54,10 @@ const BusinessModelSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">08 — BUSINESS MODEL</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Four revenue layers. <span className="font-display italic text-[58px] text-primary">Increasing margin at each level.</span>
+        How Flipr Media <span className="font-display italic text-[58px] text-primary">makes money.</span>
       </h2>
-      <p className="slide-subhead mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Starts with proven media economics. Scales into high-margin data and intelligence products.
-      </p>
-      <p className="text-[18px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
-        Think about how trade publications make money — advertising, sponsorships, and subscriptions. <span className="text-primary font-semibold">That's exactly how Flipr Media makes money.</span> We are not inventing a new business model. We are applying a proven 100-year-old model to a market that doesn't have one yet.
+      <p className="text-[18px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        This is not a new or complicated business model. Trade publications have made money the same way for over a hundred years. We are applying that proven model to a market that does not have one yet. <span className="text-primary font-semibold">As our audience grows, each of these four revenue layers grows with it.</span>
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
