@@ -495,7 +495,7 @@ export async function generatePptx() {
     }], {
       x: 9.4, y: 2.85, w: 3.4, h: 2.2,
       chartColors: [TEAL, "00B894", ACCENT, "6D5DD3", "008F7A", "667085"],
-      showLegend: false, dataBorder: { pct: 0, color: PANEL },
+      showLegend: false, dataBorder: { pt: 0, color: PANEL },
       holeSize: 60, plotArea: { fill: { color: PANEL } },
     });
     const legend = [
@@ -754,7 +754,7 @@ export async function generatePptx() {
     }], {
       x: 0.6, y: 2.85, w: 4.3, h: 2.5,
       chartColors: [TEAL, ACCENT, "00B894", "6D5DD3", "5C6675"],
-      showLegend: false, dataBorder: { pct: 0, color: PANEL },
+      showLegend: false, dataBorder: { pt: 0, color: PANEL },
       holeSize: 60, plotArea: { fill: { color: PANEL } },
     });
     s.addText("$250K", { x: 0.6, y: 3.85, w: 4.3, h: 0.5, fontSize: 24, color: TEAL, bold: true, align: "center", fontFace: "Calibri" });
