@@ -66,10 +66,10 @@ const GoToMarketSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">09 — GO-TO-MARKET</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Content builds authority. Authority builds <span className="font-display italic text-[58px] text-primary">a revenue engine.</span>
+        How we build the audience — <span className="font-display italic text-[58px] text-primary">and then monetize it.</span>
       </h2>
-      <p className="slide-subhead mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Three phases. Each compounds into the next. By month 9, multiple revenue streams are active.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        Great trade publications all follow the same playbook: publish indispensable content first, build a loyal audience, then turn that audience into revenue. <span className="text-primary font-semibold">That is exactly our plan. Each phase below compounds into the next.</span>
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">

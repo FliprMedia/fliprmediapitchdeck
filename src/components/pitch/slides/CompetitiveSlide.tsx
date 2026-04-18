@@ -30,10 +30,10 @@ const CompetitiveSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">10 — COMPETITIVE LANDSCAPE</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        No one else is building this. <span className="font-display italic text-[58px] text-primary">The space is wide open.</span>
+        No one checks every box. <span className="font-display italic text-[58px] text-primary">We check all of them.</span>
       </h2>
-      <p className="slide-subhead mb-7 max-w-[1000px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        None combine dedicated live selling editorial, cross-platform discovery, and advertiser infrastructure.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        There are general e-commerce blogs. There are platform-specific communities. There are seller tools and creator newsletters. None of them are a dedicated trade publication for live selling that combines editorial coverage, seller discovery, cross-platform reach, and an advertising layer. <span className="text-primary font-semibold">That combination is what makes Flipr Media defensible.</span>
       </p>
 
       {/* Comparison Matrix */}

@@ -31,10 +31,10 @@ const RevenueSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">15 — REVENUE POTENTIAL</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Media revenue first. <span className="font-display italic text-[58px] text-primary">SaaS-like margins next.</span>
+        What the revenue looks like <span className="font-display italic text-[58px] text-primary">as the audience grows.</span>
       </h2>
-      <p className="slide-subhead mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Illustrative scenarios — not forecasts. Each pathway shows how stacked revenue layers compound.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        These are illustrative scenarios, not guarantees. But the math is straightforward: trade publications with audiences of this size routinely generate $30 to $150 million per year. <span className="text-primary font-semibold">We do not need to be Variety to build a very significant business.</span> Capturing even a small fraction of the advertising spend in this market makes Flipr Media a highly valuable company.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">

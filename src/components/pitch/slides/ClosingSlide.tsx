@@ -38,15 +38,15 @@ const ClosingSlide = () => (
         <img src={fliprLogoDark} alt="Flipr.Media" className="h-[140px] w-auto" />
       </div>
 
-      <h2 className="text-[42px] font-bold text-center text-foreground mb-4 max-w-[900px] opacity-0 animate-fade-up leading-[1.2]" style={{ animationDelay: '0.2s' }}>
-        Every maturing ecosystem needs a trusted{" "}
-        <span className="font-display italic text-primary text-[44px]">media, discovery, and intelligence layer.</span>
+      <h2 className="text-[38px] font-bold text-center text-foreground mb-4 max-w-[1000px] opacity-0 animate-fade-up leading-[1.2]" style={{ animationDelay: '0.2s' }}>
+        Every industry eventually gets its{" "}
+        <span className="font-display italic text-primary text-[40px]">defining trade publication.</span>
       </h2>
 
       <div className="w-48 divider-glow mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }} />
 
-      <p className="text-[22px] text-muted-foreground text-center max-w-[800px] leading-[1.7] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
-        Big market. Focused raise. Fast execution. Flipr.Media is raising $250K to prove the model, validate demand, and build an investable foundation — with clear follow-on upside as the <span className="text-primary font-semibold">$170B+ live commerce economy</span> keeps accelerating.
+      <p className="text-[19px] text-muted-foreground text-center max-w-[920px] leading-[1.65] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
+        For Hollywood it was Variety. For advertising it was Ad Age. For finance it was Bloomberg. Live selling is a <span className="text-primary font-semibold">$170 billion global industry growing 30% a year</span> — and it does not have one yet. Flipr Media is building it. The product is live, the model is proven, and the window is open right now. <span className="text-foreground font-semibold">We would love to build this with you.</span>
       </p>
 
       <div className="glass-card-elevated px-14 py-7 text-center opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>

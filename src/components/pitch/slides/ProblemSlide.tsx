@@ -55,11 +55,11 @@ const ProblemSlide = () => (
       <div className="mb-6">
         <div className="slide-label mb-4 opacity-0 animate-fade-up">02 — THE PROBLEM</div>
         <h2 className="slide-headline mb-4 opacity-0 animate-fade-up max-w-[1200px]" style={{ animationDelay: '0.1s' }}>
-          A massive industry with no{" "}
-          <span className="font-display italic text-[58px] text-primary">trade press — yet.</span>
+          Millions of sellers.{" "}
+          <span className="font-display italic text-[58px] text-primary">Zero trade press.</span>
         </h2>
         <p className="text-[18px] text-foreground/85 leading-[1.55] max-w-[1150px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-          Live selling is what happens when QVC meets TikTok. Sellers go live on video, show products, and viewers buy in real time. TikTok, eBay, Amazon, and Whatnot are all doing this — and it's growing 30% a year. There are millions of professional sellers, thousands of brands, and dozens of platforms — and none of them have a trade publication to turn to. There is no ESPN for live selling. No Billboard. No Variety. <span className="text-primary font-semibold">That's the gap Flipr Media fills.</span>
+          Imagine the film industry with no Variety. The music industry with no Billboard. Advertising with no Ad Age. That is exactly the situation in live selling today. It is a multi-hundred-billion dollar global industry and there is not a single dedicated trade publication covering it. <span className="text-primary font-semibold">No trusted news source. No place for sellers to be discovered. No channel for brands to reach this audience.</span>
         </p>
       </div>
 

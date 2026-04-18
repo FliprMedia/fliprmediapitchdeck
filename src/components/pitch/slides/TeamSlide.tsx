@@ -33,7 +33,7 @@ const TeamSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">16 — TEAM & FOUNDER</div>
       <h2 className="slide-headline mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Solo founder. Full product. <span className="font-display italic text-[58px] text-primary">Zero capital burned.</span>
+        Built by someone who knows media, business, <span className="font-display italic text-[58px] text-primary">and this market.</span>
       </h2>
 
       <div className="flex flex-1 gap-7 min-h-0">
@@ -47,9 +47,8 @@ const TeamSlide = () => (
               <div className="flex-1">
                 <h3 className="text-[26px] font-bold text-foreground">Brian Weiss</h3>
                 <p className="text-[18px] text-primary font-semibold">Founder & CEO — Flipr.Media</p>
-                <p className="text-[17px] text-muted-foreground mt-2 leading-relaxed">
-                  Background in entertainment, marketing, and brand strategy. Identified the live selling media gap early,
-                  built and launched the entire platform using AI-driven workflows — proving speed, resourcefulness, and product instinct.
+                <p className="text-[16px] text-muted-foreground mt-2 leading-relaxed">
+                  Brian Weiss is a serial entrepreneur and media consultant who has advised over 100 businesses across entertainment, cannabis, digital media, and tech. He founded L.A. Cannabis News, accepted into the Canopy Boulder accelerator. Featured in Forbes and Business Insider. His grandfather Lou Weiss spent 70 years at William Morris Agency, rising to co-chairman and helping shape modern entertainment. <span className="text-primary font-semibold">Media is not a new skill for this founder — it is in the DNA.</span> Brian identified the live selling media gap early, built the entire Flipr Media platform himself, and launched it live — all with minimal capital.
                 </p>
               </div>
             </div>

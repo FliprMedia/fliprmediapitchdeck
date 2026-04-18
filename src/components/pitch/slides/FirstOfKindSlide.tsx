@@ -36,10 +36,10 @@ const FirstOfKindSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">06 — FIRST-OF-ITS-KIND</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Not another media site. <span className="font-display italic text-[58px] text-muted-foreground/90">A category-level infrastructure play.</span>
+        Nobody else is doing this. <span className="font-display italic text-[58px] text-primary">The space is completely open.</span>
       </h2>
-      <p className="slide-subhead mb-8 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        No one else is building the editorial, discovery, and advertiser layer for live selling.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        There are marketplaces that process transactions. There are platforms that host the video. There are tools that help sellers manage their business. But there is no editorial brand that covers the industry, ranks the sellers, or gives advertisers a way to reach this audience at scale. <span className="text-primary font-semibold">That is what Flipr Media is building — and no one has done it yet.</span>
       </p>
 
       <div className="flex flex-1 gap-8 min-h-0">

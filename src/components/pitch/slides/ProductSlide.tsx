@@ -27,10 +27,10 @@ const ProductSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-20 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">05 — PRODUCT OVERVIEW</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Already built. Already live. <span className="font-display italic text-[58px] text-primary">Already proving the thesis.</span>
+        What we've built — <span className="font-display italic text-[58px] text-primary">and what's already live.</span>
       </h2>
-      <p className="slide-subhead mb-5 max-w-[900px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Six operational modules today. Four high-margin modules next.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1100px] mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        Flipr Media is not a concept. The site is live at flipr.media today with published articles, an active newsletter, seller profiles, a working ad system, and full analytics. <span className="text-primary font-semibold">Here is what is operational right now and what we are building next.</span>
       </p>
 
       <div className="flex flex-1 gap-6 min-h-0">

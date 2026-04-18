@@ -28,10 +28,10 @@ const TractionSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-20 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">12 — TRACTION & EARLY PROOF</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Pre-revenue, <span className="font-display italic text-[58px] text-primary">not pre-product.</span>
+        Already live. Already working. <span className="font-display italic text-[58px] text-primary">Built on near-zero capital.</span>
       </h2>
-      <p className="text-[24px] text-muted-foreground font-semibold mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        The product is live. The category position is clear. Capital unlocks revenue and scale.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        Most companies at this stage have a pitch deck and a prototype. Flipr Media has a fully operational publication with 8 published articles, 9 active ad units, 15 priced ad placements, a working newsletter on Beehiiv, seller profiles, eBay integration, Google Analytics, Search Console, sitemap, RSS feed, and Stripe launching June 1. <span className="text-primary font-semibold">Built by one founder with minimal capital.</span>
       </p>
 
       <div className="flex flex-1 gap-6 min-h-0">

@@ -55,10 +55,10 @@ const UseOfFundsSlide = () => (
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">14 — USE OF FUNDS</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <span className="text-primary neon-glow">$250K</span> — intentionally lean, strategically allocated.
+        <span className="text-primary neon-glow">$250K</span> — every dollar mapped <span className="font-display italic text-[58px] text-primary">to a specific outcome.</span>
       </h2>
-      <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Founder-led execution. Every dollar mapped to a validation milestone.
+      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        This is a lean, focused raise. We are not raising to figure out the business model — we already know what it is. <span className="text-primary font-semibold">We are raising to accelerate what is already working: more content, faster audience growth, and Stripe monetization fully live by June 1.</span>
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
