@@ -45,33 +45,32 @@ const MarketSlide = () => (
               return (
                 <div
                   key={layer.label}
-                  className={`absolute rounded-full border-2 ${layer.borderColor} flex flex-col items-center justify-center ${layer.filled ? 'bg-primary/8' : ''}`}
+                  className={`absolute rounded-full border-2 ${layer.borderColor} ${layer.filled ? 'bg-primary/8' : ''}`}
                   style={{ width: layer.size, height: layer.size, top: offset, left: offset }}
-                >
-                  {layer.label === "TAM" && (
-                    <div className="absolute top-5 text-center">
-                      <div className={`text-[16px] font-mono tracking-widest ${layer.textColor} mb-1`}>{layer.label}</div>
-                      <div className={`text-[30px] font-black ${layer.textColor}`}>{layer.value}</div>
-                      <div className="text-[16px] text-muted-foreground mt-0.5 max-w-[200px]">{layer.title}</div>
-                    </div>
-                  )}
-                  {layer.label === "SAM" && (
-                    <div className="absolute top-4 text-center">
-                      <div className={`text-[16px] font-mono tracking-widest ${layer.textColor} mb-1`}>{layer.label}</div>
-                      <div className={`text-[26px] font-black ${layer.textColor}`}>{layer.value}</div>
-                      <div className="text-[15px] text-muted-foreground mt-0.5 max-w-[160px]">{layer.title}</div>
-                    </div>
-                  )}
-                  {layer.label === "SOM" && (
-                    <div className="text-center">
-                      <div className={`text-[16px] font-mono tracking-widest ${layer.textColor} mb-1`}>{layer.label}</div>
-                      <div className={`text-[24px] font-black ${layer.textColor}`}>{layer.value}</div>
-                      <div className="text-[14px] text-muted-foreground mt-0.5 max-w-[120px] leading-tight">{layer.title}</div>
-                    </div>
-                  )}
-                </div>
+                />
               );
             })}
+
+            {/* TAM — anchored to top arc of outer ring */}
+            <div className="absolute left-1/2 -translate-x-1/2 text-center" style={{ top: 14 }}>
+              <div className="text-[14px] font-mono tracking-widest text-secondary mb-0.5">TAM</div>
+              <div className="text-[24px] font-black text-secondary leading-tight">$1.48T+</div>
+              <div className="text-[12px] text-muted-foreground leading-tight max-w-[220px] mx-auto">Global Live + Social Commerce</div>
+            </div>
+
+            {/* SAM — anchored to top arc of middle ring */}
+            <div className="absolute left-1/2 -translate-x-1/2 text-center" style={{ top: 74 }}>
+              <div className="text-[13px] font-mono tracking-widest text-primary mb-0.5">SAM</div>
+              <div className="text-[20px] font-black text-primary leading-tight">$20B+</div>
+              <div className="text-[11px] text-muted-foreground leading-tight max-w-[170px] mx-auto">US Live Selling + Media & Ad Spend</div>
+            </div>
+
+            {/* SOM — centered in innermost circle */}
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+              <div className="text-[13px] font-mono tracking-widest text-primary mb-1">SOM</div>
+              <div className="text-[26px] font-black text-primary leading-tight">$5–15M</div>
+              <div className="text-[11px] text-muted-foreground leading-tight max-w-[130px] mx-auto mt-1">Early Revenue Opportunity</div>
+            </div>
           </div>
         </div>
 
