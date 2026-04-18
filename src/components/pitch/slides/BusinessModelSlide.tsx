@@ -56,8 +56,11 @@ const BusinessModelSlide = () => (
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
         Four revenue layers. <span className="font-display italic text-[58px] text-primary">Increasing margin at each level.</span>
       </h2>
-      <p className="slide-subhead mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+      <p className="slide-subhead mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Starts with proven media economics. Scales into high-margin data and intelligence products.
+      </p>
+      <p className="text-[18px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
+        Think about how trade publications make money — advertising, sponsorships, and subscriptions. <span className="text-primary font-semibold">That's exactly how Flipr Media makes money.</span> We are not inventing a new business model. We are applying a proven 100-year-old model to a market that doesn't have one yet.
       </p>
 
       <div className="flex flex-1 gap-7 min-h-0">
