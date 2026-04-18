@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { ScaledSlide } from "./SlideLayout";
+import { generatePptx } from "./generatePptx";
 import CoverSlide from "./slides/CoverSlide";
 import ProblemSlide from "./slides/ProblemSlide";
 import WhyNowSlide from "./slides/WhyNowSlide";
@@ -36,6 +37,19 @@ const PitchDeck: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const handleDownload = useCallback(async () => {
+    if (isDownloading) return;
+    setIsDownloading(true);
+    try {
+      await generatePptx();
+    } catch (err) {
+      console.error("Failed to generate PPTX:", err);
+    } finally {
+      setIsDownloading(false);
+    }
+  }, [isDownloading]);
 
   const goToSlide = useCallback((index: number) => {
     if (index < 0 || index >= slides.length || isTransitioning) return;
@@ -115,9 +129,19 @@ const PitchDeck: React.FC = () => {
         </div>
       </div>
 
-      {/* Slide Counter */}
-      <div className="absolute bottom-4 right-6 z-50 glass-card px-3 py-1.5 text-xs text-muted-foreground font-mono">
-        {currentSlide + 1} / {slides.length}
+      {/* Top-right controls: Download + Counter */}
+      <div className="absolute bottom-4 right-6 z-50 flex items-center gap-2">
+        <button
+          onClick={(e) => { e.stopPropagation(); handleDownload(); }}
+          disabled={isDownloading}
+          className="glass-card px-3 py-1.5 text-xs text-muted-foreground hover:text-primary transition-colors font-medium disabled:opacity-50"
+          title="Download as PowerPoint"
+        >
+          {isDownloading ? "Generating…" : "⬇ Download Deck"}
+        </button>
+        <div className="glass-card px-3 py-1.5 text-xs text-muted-foreground font-mono">
+          {currentSlide + 1} / {slides.length}
+        </div>
       </div>
 
       {/* Fullscreen Toggle */}
