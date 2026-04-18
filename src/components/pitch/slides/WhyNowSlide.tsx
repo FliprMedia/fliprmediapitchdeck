@@ -36,10 +36,13 @@ const WhyNowSlide = () => (
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
       <div className="slide-label mb-3 opacity-0 animate-fade-up">03 — WHY NOW</div>
+      <p className="text-[19px] text-foreground/90 leading-[1.5] max-w-[1150px] mb-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.05s' }}>
+        Every major industry gets a defining trade publication at some point. For live selling, that moment is right now — <span className="text-primary font-semibold">and the window to be first is still open.</span>
+      </p>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
         The window is open <span className="font-display italic text-[58px] text-primary">right now.</span>
       </h2>
-      <p className="slide-subhead mb-6 max-w-[800px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+      <p className="slide-subhead mb-5 max-w-[800px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
         Six forces converging to create a once-in-a-category opportunity for a media brand that moves first.
       </p>
 
