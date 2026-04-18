@@ -44,13 +44,13 @@ const CoverSlide = () => (
 
       {/* Headline */}
       <h1 className="text-[48px] font-extrabold leading-[1.15] mb-4 max-w-[950px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
-        <span className="text-foreground">The media, discovery, and intelligence platform</span>{" "}
-        <span className="gradient-text font-display italic text-[50px]">for the $170B+ live commerce economy.</span>
+        <span className="text-foreground">We are the trade magazine for live selling</span>{" "}
+        <span className="gradient-text font-display italic text-[50px]">— the fastest-growing segment of e-commerce.</span>
       </h1>
 
       {/* Support copy */}
       <p className="text-[22px] text-foreground/90 leading-[1.6] mb-6 max-w-[780px] opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
-        A focused $250K pre-seed to complete the platform, activate monetization, and validate category demand — with founder-led execution and disciplined capital efficiency.
+        <span className="font-semibold text-foreground">What we are:</span> An online publication covering live selling the same way Variety covers Hollywood. <span className="font-semibold text-foreground">How we make money:</span> Advertising, sponsorships, and seller subscriptions — the same model trade publications have used for 100 years.
       </p>
 
       {/* Raise pill + platform strip */}
