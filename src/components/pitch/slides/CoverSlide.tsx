@@ -1,7 +1,7 @@
 import SlideLayout from "../SlideLayout";
 import fliprLogoDark from "@/assets/flipr-logo-dark.png";
 
-const platforms = ["Whatnot", "TikTok Shop", "eBay Live", "Poshmark", "Popshop Live", "Facebook Live Shopping", "Instagram Live", "YouTube Shopping", "TalkShopLive"];
+const platforms = ["TikTok Shop", "Whatnot", "eBay Live", "Amazon Live", "Poshmark Live", "YouTube Shopping", "Instagram Live", "TalkShopLive"];
 
 const stats = [
   { value: "$172.86B", label: "Global Live Commerce 2025" },
@@ -38,27 +38,21 @@ const CoverSlide = () => (
       </div>
 
       {/* Hero Logo */}
-      <div className="mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+      <div className="mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
         <img src={fliprLogoDark} alt="Flipr.Media" className="h-[320px] w-auto" />
       </div>
 
       {/* Headline */}
-      <h1 className="text-[64px] font-extrabold leading-[1.1] mb-6 max-w-[1100px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
-        <span className="text-foreground">We are the trade magazine</span>{" "}
-        <span className="gradient-text font-display italic text-[68px]">for live selling.</span>
+      <h1 className="text-[64px] font-extrabold leading-[1.1] mb-5 max-w-[1200px] opacity-0 animate-fade-up" style={{ animationDelay: '0.18s' }}>
+        <span className="text-foreground">Flipr.Media is the</span>{" "}
+        <span className="gradient-text font-display italic text-[68px]">trade publication</span>{" "}
+        <span className="text-foreground">for live selling.</span>
       </h1>
 
-      {/* Support copy */}
-      <div className="mb-6 max-w-[950px] opacity-0 animate-fade-up space-y-3" style={{ animationDelay: '0.26s' }}>
-        <p className="text-[18px] text-foreground/90 leading-[1.6]">
-          <span className="text-primary font-mono-brand tracking-[0.18em] text-[14px] font-bold uppercase">What we are →</span>{" "}
-          <span className="text-foreground">An online trade magazine — think Variety for Hollywood or ESPN for sports. We cover the news, the sellers, and the platforms.</span>
-        </p>
-        <p className="text-[18px] text-foreground/90 leading-[1.6]">
-          <span className="text-primary font-mono-brand tracking-[0.18em] text-[14px] font-bold uppercase">How we make money →</span>{" "}
-          <span className="text-foreground">Advertising, sponsorships, seller subscriptions, affiliate marketing, and AI-sourced industry data — the same proven model trade publications have used for 100 years, plus modern digital revenue streams built for scale.</span>
-        </p>
-      </div>
+      {/* Subheadline */}
+      <p className="text-[22px] text-foreground/85 leading-[1.5] max-w-[1100px] mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.26s' }}>
+        The first media brand built for the fastest-growing part of commerce.
+      </p>
 
       {/* Raise pill + platform strip */}
       <div className="flex items-center gap-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.34s' }}>

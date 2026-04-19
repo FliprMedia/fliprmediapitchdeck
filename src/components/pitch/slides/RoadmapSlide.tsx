@@ -1,34 +1,32 @@
 import SlideLayout from "../SlideLayout";
 import SlideBackground from "../SlideBackground";
-import { Settings, Users, BarChart3, Rocket, ArrowRight } from "lucide-react";
+import { Newspaper, DollarSign, BarChart3, Rocket, ArrowRight } from "lucide-react";
 
 const phases = [
   {
     num: "01",
-    icon: Settings,
+    icon: Newspaper,
     timeline: "Now",
-    badge: "IN PROGRESS",
+    badge: "MONTHS 0–3",
     badgeColor: "primary",
-    title: "Foundation & Polish",
+    title: "Strengthen the publication",
     items: [
-      "Polish site UX & design system",
-      "Make all pages fully operational",
-      "Forms, SEO, newsletter, inquiries",
-      "Improve mobile & performance",
+      "Sharpen editorial cadence",
+      "Grow newsletter audience",
+      "Polish site UX & SEO",
     ],
   },
   {
     num: "02",
-    icon: Users,
+    icon: DollarSign,
     timeline: "Next",
-    badge: "MONTHS 2–5",
+    badge: "MONTHS 3–6",
     badgeColor: "primary",
-    title: "Profiles & Monetization",
+    title: "Launch monetization",
     items: [
-      "Seller profile system",
-      "Searchable seller directory",
-      "Featured live show engine",
-      "Monetization infrastructure",
+      "Advertising & sponsorships live",
+      "Premium seller profiles",
+      "Featured live show packages",
     ],
   },
   {
@@ -37,26 +35,24 @@ const phases = [
     timeline: "Later",
     badge: "MONTHS 6–12",
     badgeColor: "accent",
-    title: "Data & Intelligence",
+    title: "Build rankings & data",
     items: [
-      "Rankings / Flipr Activity Index",
-      "Category reports & insights",
+      "Seller rankings / activity index",
+      "Category reports & benchmarks",
       "Brand & advertiser dashboards",
-      "Premium packages",
     ],
   },
   {
     num: "04",
     icon: Rocket,
     timeline: "Scale",
-    badge: "9–12+ MONTHS",
+    badge: "12+ MONTHS",
     badgeColor: "accent",
-    title: "Category Operating Layer",
+    title: "Expand industry products",
     items: [
-      "Industry intelligence layer",
-      "Lead-gen & sponsorship marketplace",
-      "Data products & API",
-      "Conference / awards / annual report",
+      "Subscription intelligence layer",
+      "Sponsorship & lead-gen marketplace",
+      "Events, awards, and annual report",
     ],
   },
 ];
@@ -66,12 +62,13 @@ const RoadmapSlide = () => (
     <SlideBackground intensity="subtle" glowPosition="bottom-left" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
-      <div className="slide-label mb-3 opacity-0 animate-fade-up">11 — PRODUCT ROADMAP</div>
-      <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        Where the product <span className="font-display italic text-[58px] text-primary">goes from here.</span>
+      <div className="slide-label mb-3 opacity-0 animate-fade-up">10 — ROADMAP</div>
+      <h2 className="slide-headline mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        From publication to{" "}
+        <span className="font-display italic text-[58px] text-primary">industry platform.</span>
       </h2>
-      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        We are already live with the core publication. The next phases turn that foundation into a full industry platform — with seller rankings, data products, premium subscriptions, and eventually events and a sponsorship marketplace. <span className="text-primary font-semibold">Each phase deepens the moat.</span>
+      <p className="text-[19px] text-foreground/85 leading-[1.55] max-w-[1300px] mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        We are already live with the core publication. Each phase below builds on the last — strengthening the media brand, then layering in monetization, data, and category-wide products.
       </p>
 
       {/* Timeline bar */}
@@ -102,12 +99,12 @@ const RoadmapSlide = () => (
               <div className={`w-10 h-10 rounded-lg bg-${phase.badgeColor}/10 flex items-center justify-center shrink-0`}>
                 <phase.icon className={`w-5 h-5 text-${phase.badgeColor}`} />
               </div>
-              <span className={`text-[15px] px-2.5 py-0.5 rounded-full bg-${phase.badgeColor}/10 text-${phase.badgeColor} font-bold`}>
+              <span className={`text-[14px] px-2.5 py-0.5 rounded-full bg-${phase.badgeColor}/10 text-${phase.badgeColor} font-bold`}>
                 {phase.badge}
               </span>
             </div>
 
-            <h3 className="text-[19px] font-bold text-foreground mb-3">{phase.title}</h3>
+            <h3 className="text-[20px] font-bold text-foreground mb-3 leading-tight">{phase.title}</h3>
 
             <div className="flex flex-col gap-3 flex-1">
               {phase.items.map(item => (
@@ -117,18 +114,6 @@ const RoadmapSlide = () => (
                 </div>
               ))}
             </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Bottom evolution strip */}
-      <div className="mt-5 flex items-center justify-center gap-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
-        {["Media Property", "Discovery Platform", "Data & Intelligence", "Industry OS"].map((label, i) => (
-          <div key={label} className="flex items-center gap-3">
-            <div className={`glass-card px-5 py-2.5 text-[17px] font-semibold ${i === 3 ? 'text-primary border-primary/30' : 'text-foreground'}`}>
-              {label}
-            </div>
-            {i < 3 && <ArrowRight className="w-4 h-4 text-primary/30" />}
           </div>
         ))}
       </div>
