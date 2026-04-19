@@ -18,9 +18,9 @@ const painCards = [
     body: "Millions of active live sellers in the US. None of them have an industry publication built for their world.",
   },
   {
-    number: "$0",
-    headline: "Ad spend with nowhere to go",
-    body: "Brands and platforms want to reach this audience but there is no media property serving it at scale. The money has nowhere to land.",
+    number: "—",
+    headline: "No central ad destination",
+    body: "Brands and platforms want to reach this audience, but there is no dedicated trade-media brand where ad spend can consistently land.",
   },
 ];
 
