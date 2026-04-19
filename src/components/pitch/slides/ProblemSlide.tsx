@@ -3,24 +3,24 @@ import SlideBackground from "../SlideBackground";
 
 const painCards = [
   {
-    number: "7M+",
-    headline: "Sellers with no voice",
-    body: "Over 7 million active live sellers in the US alone — and not a single publication covering their industry.",
-  },
-  {
-    number: "$0",
-    headline: "Ad spend with nowhere to go",
-    body: "Brands want to reach live sellers but there is no media property that reaches this audience at scale. The money has nowhere to go.",
+    number: "0",
+    headline: "No trade publication",
+    body: "Live selling has no Variety, no Billboard, no Ad Age. The category has grown into a real industry with no central voice.",
   },
   {
     number: "12+",
     headline: "Platforms, no scorecard",
-    body: "There are over 12 active live selling platforms in the US. Sellers have no trusted source to compare them or know which is right for their business.",
+    body: "Over a dozen live selling platforms compete for sellers and shoppers. There is no trusted source comparing them or covering the space.",
   },
   {
-    number: "0",
-    headline: "Trade publications for this industry",
-    body: "Every major industry has a trade publication. Live selling does not have one. That is the entire opportunity.",
+    number: "7M+",
+    headline: "Sellers with no media layer",
+    body: "Millions of active live sellers in the US. None of them have an industry publication built for their world.",
+  },
+  {
+    number: "$0",
+    headline: "Ad spend with nowhere to go",
+    body: "Brands and platforms want to reach this audience but there is no media property serving it at scale. The money has nowhere to land.",
   },
 ];
 
@@ -30,13 +30,13 @@ const ProblemSlide = () => (
 
     <div className="relative z-10 flex flex-col h-full px-24 py-16">
       <div className="mb-8">
-        <div className="slide-label mb-4 opacity-0 animate-fade-up">02 — THE PROBLEM</div>
+        <div className="slide-label mb-4 opacity-0 animate-fade-up">03 — THE PROBLEM</div>
         <h2 className="slide-headline mb-5 opacity-0 animate-fade-up max-w-[1300px]" style={{ animationDelay: '0.1s' }}>
-          Millions of sellers.{" "}
-          <span className="font-display italic text-[58px] text-primary">Zero trade press.</span>
+          A real industry —{" "}
+          <span className="font-display italic text-[58px] text-primary">with no media layer.</span>
         </h2>
         <p className="text-[20px] text-foreground/85 leading-[1.55] max-w-[1400px] opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-          Imagine the film industry with no Variety. The music industry with no Billboard. Advertising with no Ad Age. That is exactly the situation in live selling today. It is a multi-hundred-billion dollar global industry and there is not a single dedicated trade publication covering it.
+          Live selling is growing fast and reshaping how people shop, but the industry has no trade publication, no central news source, and no media layer connecting sellers, platforms, advertisers, and investors.
         </p>
       </div>
 

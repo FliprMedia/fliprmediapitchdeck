@@ -2,35 +2,52 @@ import React, { useState, useEffect, useCallback } from "react";
 import { ScaledSlide } from "./SlideLayout";
 import { generatePptx } from "./generatePptx";
 import CoverSlide from "./slides/CoverSlide";
+import WhatIsLiveSellingSlide from "./slides/WhatIsLiveSellingSlide";
 import ProblemSlide from "./slides/ProblemSlide";
 import WhyNowSlide from "./slides/WhyNowSlide";
-import MarketSlide from "./slides/MarketSlide";
 import ProductSlide from "./slides/ProductSlide";
-import FirstOfKindSlide from "./slides/FirstOfKindSlide";
-import AudienceSlide from "./slides/AudienceSlide";
 import BusinessModelSlide from "./slides/BusinessModelSlide";
-import GoToMarketSlide from "./slides/GoToMarketSlide";
-import CompetitiveSlide from "./slides/CompetitiveSlide";
-import RoadmapSlide from "./slides/RoadmapSlide";
 import TractionSlide from "./slides/TractionSlide";
-import CategoryLeaderSlide from "./slides/CategoryLeaderSlide";
+import GoToMarketSlide from "./slides/GoToMarketSlide";
+import MarketSlide from "./slides/MarketSlide";
+import RoadmapSlide from "./slides/RoadmapSlide";
 import UseOfFundsSlide from "./slides/UseOfFundsSlide";
-import RevenueSlide from "./slides/RevenueSlide";
 import TeamSlide from "./slides/TeamSlide";
 import TheAskSlide from "./slides/TheAskSlide";
 import ClosingSlide from "./slides/ClosingSlide";
 
 const slides = [
-  CoverSlide, ProblemSlide, WhyNowSlide, MarketSlide, ProductSlide,
-  FirstOfKindSlide, AudienceSlide, BusinessModelSlide, GoToMarketSlide,
-  CompetitiveSlide, RoadmapSlide, TractionSlide, CategoryLeaderSlide,
-  UseOfFundsSlide, RevenueSlide, TeamSlide, TheAskSlide, ClosingSlide,
+  CoverSlide,
+  WhatIsLiveSellingSlide,
+  ProblemSlide,
+  WhyNowSlide,
+  ProductSlide,
+  BusinessModelSlide,
+  TractionSlide,
+  GoToMarketSlide,
+  MarketSlide,
+  RoadmapSlide,
+  UseOfFundsSlide,
+  TeamSlide,
+  TheAskSlide,
+  ClosingSlide,
 ];
 
 const slideLabels = [
-  "Cover", "Problem", "Why Now", "Market", "Product", "First-of-Kind",
-  "Audience", "Business Model", "Go-To-Market", "Competitive", "Roadmap",
-  "Traction", "Category Leader", "Use of Funds", "Revenue", "Team", "The Ask", "Closing",
+  "Cover",
+  "What Is Live Selling",
+  "Problem",
+  "Why Now",
+  "Why Flipr",
+  "Business Model",
+  "Traction",
+  "Go-To-Market",
+  "Market",
+  "Roadmap",
+  "Use of Funds",
+  "Founder",
+  "The Ask",
+  "Closing",
 ];
 
 const PitchDeck: React.FC = () => {

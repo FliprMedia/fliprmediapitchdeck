@@ -53,7 +53,7 @@ const UseOfFundsSlide = () => (
     <SlideBackground intensity="subtle" glowPosition="bottom-left" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
-      <div className="slide-label mb-3 opacity-0 animate-fade-up">14 — USE OF FUNDS</div>
+      <div className="slide-label mb-3 opacity-0 animate-fade-up">11 — USE OF FUNDS</div>
       <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
         <span className="text-primary neon-glow">$250K</span> — every dollar mapped <span className="font-display italic text-[58px] text-primary">to a specific outcome.</span>
       </h2>

@@ -32,25 +32,25 @@ const ClosingSlide = () => (
 
     {/* Main content */}
     <div className="relative z-10 flex flex-col items-center justify-center h-full px-20">
-      <div className="slide-label mb-10 opacity-0 animate-fade-up">18 — CLOSING VISION</div>
+      <div className="slide-label mb-10 opacity-0 animate-fade-up">14 — CLOSING</div>
 
       <div className="mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
         <img src={fliprLogoDark} alt="Flipr.Media" className="h-[140px] w-auto" />
       </div>
 
-      <h2 className="text-[38px] font-bold text-center text-foreground mb-4 max-w-[1000px] opacity-0 animate-fade-up leading-[1.2]" style={{ animationDelay: '0.2s' }}>
-        Every industry eventually gets its{" "}
-        <span className="font-display italic text-primary text-[40px]">defining trade publication.</span>
+      <h2 className="text-[42px] font-bold text-center text-foreground mb-4 max-w-[1100px] opacity-0 animate-fade-up leading-[1.2]" style={{ animationDelay: '0.2s' }}>
+        Live selling will have a defining{" "}
+        <span className="font-display italic text-primary text-[44px]">media brand.</span>
       </h2>
 
       <div className="w-48 divider-glow mb-7 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }} />
 
-      <p className="text-[19px] text-muted-foreground text-center max-w-[920px] leading-[1.65] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
-        For Hollywood it was Variety. For advertising it was Ad Age. For finance it was Bloomberg. Live selling is a <span className="text-primary font-semibold">$170 billion global industry growing 30% a year</span> — and it does not have one yet. Flipr Media is building it. The product is live, the model is proven, and the window is open right now. <span className="text-foreground font-semibold">We would love to build this with you.</span>
+      <p className="text-[20px] text-muted-foreground text-center max-w-[920px] leading-[1.65] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
+        For Hollywood it was Variety. For advertising it was Ad Age. For finance it was Bloomberg. Live selling is a <span className="text-primary font-semibold">$170 billion global industry growing 30% a year</span> — and it does not have one yet. <span className="text-foreground font-semibold">Flipr Media is building it now.</span>
       </p>
 
       <div className="glass-card-elevated px-14 py-7 text-center opacity-0 animate-scale-in" style={{ animationDelay: '0.5s' }}>
-        <div className="text-[18px] font-semibold text-foreground mb-4 tracking-wide">Let's Build This Together</div>
+        <div className="text-[18px] font-semibold text-foreground mb-4 tracking-wide">Let's build this together</div>
         <div className="flex items-center gap-8">
           <div>
             <div className="text-[15px] text-muted-foreground font-mono-brand tracking-[0.1em] uppercase mb-0.5">Founder</div>

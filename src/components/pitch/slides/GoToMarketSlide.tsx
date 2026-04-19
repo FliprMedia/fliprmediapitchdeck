@@ -1,62 +1,29 @@
 import SlideLayout from "../SlideLayout";
 import SlideBackground from "../SlideBackground";
-import { FileText, Users, Database, DollarSign, Shield, Rss, Search, Share2, Handshake, UserPlus, Mic, RefreshCw, Rocket, ArrowRight } from "lucide-react";
+import { FileText, Users, DollarSign, RefreshCw, ArrowRight } from "lucide-react";
 
-const phases = [
+const steps = [
   {
     num: "01",
-    title: "Launch & Authority",
-    timeline: "Now – Month 3",
+    icon: FileText,
+    title: "Publish category-defining content",
+    desc: "Industry news, seller interviews, platform coverage, and a daily newsletter that becomes the must-read for the space.",
     color: "primary",
-    items: [
-      "Category-defining news content",
-      "Weekly top seller interviews",
-      "Newsletter launch & growth",
-      "Platform watch coverage",
-    ],
   },
   {
     num: "02",
-    title: "Network & Monetize",
-    timeline: "Month 4 – 8",
+    icon: Users,
+    title: "Attract audience and sellers",
+    desc: "Sellers want coverage. Shoppers want discovery. Press wants context. The publication becomes the gravity well of the industry.",
     color: "primary",
-    items: [
-      "Seller profile acquisition",
-      "Top seller & creator partnerships",
-      "Advertiser outreach campaigns",
-      "Founding advertiser packages",
-    ],
   },
   {
     num: "03",
-    title: "Scale & Expand",
-    timeline: "Month 9 – 18",
+    icon: DollarSign,
+    title: "Monetize the audience",
+    desc: "Once the audience is concentrated, advertisers, sponsors, and premium seller products turn attention into revenue.",
     color: "accent",
-    items: [
-      "Rankings, reports & benchmarks",
-      "Events, webinars, sponsorships",
-      "Premium products launch",
-      "Deeper data & intelligence",
-    ],
   },
-];
-
-const channels = [
-  { icon: Search, label: "SEO" },
-  { icon: Rss, label: "Newsletter" },
-  { icon: Share2, label: "Social" },
-  { icon: UserPlus, label: "Founder Outreach" },
-  { icon: Handshake, label: "Partnerships" },
-  { icon: Mic, label: "Interviews" },
-  { icon: Users, label: "Community" },
-];
-
-const flywheelSteps = [
-  { icon: FileText, label: "Content", color: "primary" },
-  { icon: Shield, label: "Authority", color: "primary" },
-  { icon: Users, label: "Audience", color: "primary" },
-  { icon: DollarSign, label: "Advertisers", color: "accent" },
-  { icon: Database, label: "Data", color: "accent" },
 ];
 
 const GoToMarketSlide = () => (
@@ -64,94 +31,41 @@ const GoToMarketSlide = () => (
     <SlideBackground intensity="subtle" glowPosition="top-left" />
 
     <div className="relative z-10 flex flex-col h-full px-24 py-14">
-      <div className="slide-label mb-3 opacity-0 animate-fade-up">09 — GO-TO-MARKET</div>
-      <h2 className="slide-headline mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        How we build the audience — <span className="font-display italic text-[58px] text-primary">and then monetize it.</span>
+      <div className="slide-label mb-3 opacity-0 animate-fade-up">08 — GO-TO-MARKET</div>
+      <h2 className="slide-headline mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        A simple three-step{" "}
+        <span className="font-display italic text-[58px] text-primary">media flywheel.</span>
       </h2>
-      <p className="text-[17px] text-foreground/85 leading-[1.55] max-w-[1200px] mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-        Great trade publications all follow the same playbook: publish indispensable content first, build a loyal audience, then turn that audience into revenue. <span className="text-primary font-semibold">That is exactly our plan. Each phase below compounds into the next.</span>
+      <p className="text-[19px] text-foreground/85 leading-[1.55] max-w-[1300px] mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+        Every great trade publication followed the same playbook: publish indispensable content, build a loyal audience, then monetize. That is exactly our path — and each step compounds the next.
       </p>
 
-      <div className="flex flex-1 gap-7 min-h-0">
-        {/* Left */}
-        <div className="w-[520px] flex flex-col gap-5">
-          <div className="glass-card p-5 opacity-0 animate-scale-in" style={{ animationDelay: '0.2s' }}>
-            <div className="text-[17px] font-semibold text-muted-foreground uppercase tracking-wider mb-3">Growth Flywheel</div>
-            <div className="flex items-center justify-center gap-1">
-              {flywheelSteps.map((step, i) => (
-                <div key={step.label} className="flex items-center gap-1">
-                  <div className="flex flex-col items-center gap-1.5">
-                    <div className={`w-14 h-14 rounded-full bg-${step.color}/10 border border-${step.color}/30 flex items-center justify-center`}>
-                      <step.icon className={`w-5 h-5 text-${step.color}`} />
-                    </div>
-                    <span className={`text-[15px] font-semibold text-${step.color}`}>{step.label}</span>
-                  </div>
-                  {i < flywheelSteps.length - 1 && (
-                    <ArrowRight className="w-4 h-4 text-muted-foreground/80 mx-0.5 mb-5" />
-                  )}
-                </div>
-              ))}
-              <div className="flex items-center gap-1">
-                <ArrowRight className="w-4 h-4 text-primary/30 mx-0.5 mb-5" />
-                <div className="flex flex-col items-center gap-1.5">
-                  <div className="w-14 h-14 rounded-full bg-primary/15 border-2 border-primary/40 flex items-center justify-center">
-                    <RefreshCw className="w-5 h-5 text-primary" />
-                  </div>
-                  <span className="text-[15px] font-bold text-primary">Repeat</span>
-                </div>
-              </div>
+      <div className="flex-1 grid grid-cols-3 gap-6 min-h-0">
+        {steps.map((step, i) => (
+          <div
+            key={step.num}
+            className={`glass-card p-8 flex flex-col opacity-0 animate-fade-up border-${step.color}/15 hover:border-${step.color}/30 transition-colors relative`}
+            style={{ animationDelay: `${0.25 + i * 0.12}s` }}
+          >
+            <div className="flex items-center gap-3 mb-5">
+              <span className={`text-[18px] font-mono-brand text-${step.color}/70 tracking-wider`}>{step.num}</span>
+              <div className={`h-px flex-1 bg-${step.color}/20`} />
             </div>
+            <div className={`w-16 h-16 rounded-2xl bg-${step.color}/10 border border-${step.color}/20 flex items-center justify-center mb-5`}>
+              <step.icon className={`w-8 h-8 text-${step.color}`} />
+            </div>
+            <h3 className="text-[24px] font-bold text-foreground mb-3 leading-tight">{step.title}</h3>
+            <p className="text-[18px] text-muted-foreground leading-relaxed">{step.desc}</p>
           </div>
+        ))}
+      </div>
 
-          <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.35s' }}>
-            <div className="text-[17px] font-semibold text-muted-foreground uppercase tracking-wider mb-3">Acquisition Channels</div>
-            <div className="flex flex-wrap gap-2.5">
-              {channels.map((ch, i) => (
-                <div key={ch.label} className="glass-card px-4 py-3 flex items-center gap-2.5 opacity-0 animate-fade-up"
-                  style={{ animationDelay: `${0.4 + i * 0.04}s` }}>
-                  <ch.icon className="w-4.5 h-4.5 text-primary" />
-                  <span className="text-[17px] font-semibold text-foreground">{ch.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="glass-card p-5 border-primary/20 opacity-0 animate-fade-up" style={{ animationDelay: '0.7s' }}>
-            <div className="flex items-center gap-2 mb-1.5">
-              <Rocket className="w-5 h-5 text-primary" />
-              <span className="text-[17px] font-bold text-foreground">Built-In Viral Loop</span>
-            </div>
-            <p className="text-[17px] text-muted-foreground leading-relaxed">
-              Sellers share their Flipr coverage → new sellers want to be featured → content grows → audience grows → advertisers pay for access.
-            </p>
-          </div>
-        </div>
-
-        {/* Right: Phases */}
-        <div className="flex-1 flex flex-col gap-3.5">
-          {phases.map((phase, i) => (
-            <div
-              key={phase.num}
-              className={`glass-card p-5 flex-1 flex flex-col opacity-0 animate-fade-up border-${phase.color}/15 hover:border-${phase.color}/30 transition-colors`}
-              style={{ animationDelay: `${0.25 + i * 0.1}s` }}
-            >
-              <div className="flex items-center gap-2.5 mb-3">
-                <span className={`text-[16px] font-mono text-${phase.color}/70`}>{phase.num}</span>
-                <h3 className="text-[20px] font-bold text-foreground">{phase.title}</h3>
-                <span className={`ml-auto text-[16px] px-3 py-1 rounded-full bg-${phase.color}/10 text-${phase.color} font-semibold`}>
-                  {phase.timeline}
-                </span>
-              </div>
-              <div className="flex flex-col gap-2.5 flex-1">
-                {phase.items.map(item => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className={`w-2 h-2 rounded-full bg-${phase.color}/40 shrink-0`} />
-                    <span className="text-[17px] text-muted-foreground">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+      {/* Loop indicator */}
+      <div className="mt-8 flex items-center justify-center gap-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.65s' }}>
+        <div className="glass-card px-5 py-3 flex items-center gap-3 border-primary/20">
+          <RefreshCw className="w-5 h-5 text-primary" />
+          <span className="text-[18px] font-bold text-foreground">More revenue funds more content — the flywheel accelerates.</span>
+          <ArrowRight className="w-5 h-5 text-primary/60" />
         </div>
       </div>
     </div>
